@@ -6,12 +6,12 @@
   padding: 0;
 }
 
-/* !!!!!!!!!!!!!!!!!! NAVBAR !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!! NAVBAR !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .nav {
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,6 @@
   width: 100%;
   padding: 0 24px;
   font-family: 'Inter', sans-serif;
-  /* max-width: 1100px; */
 }
 
 .nav-logo {
@@ -55,20 +54,24 @@
 
 .nav-item {
   height: 80px;
-  font-weight: 600px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+
 }
 
 .nav-btn {
   display: flex;
   align-items: center;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
 }
 
 .mobile-icon {
   display: none;
 }
 
-/* !!!!!!!!!!!!!!!!!! SIDEBAR !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!! SIDEBAR !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .close-icon {
   color: white;
@@ -100,8 +103,8 @@
   text-align: center;
 }
 
-/* !!!!!!!!!!!!!!!!!! HERO !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!! HERO !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .hero-container {
   background: #0c0c0c;
@@ -112,7 +115,17 @@
   height: 800px;
   position: relative;
   z-index: 1;
-  /* Add :before styles */
+}
+
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(76, 25, 25, 0.3) 0%, rgba(76, 25, 25, 0.5) 100%), linear-gradient(180deg, rgba(76, 25, 25, 0.2) 0%, transparent 100%);
+  z-index: 2;
 }
 
 .hero-bg {
@@ -126,7 +139,7 @@
   overflow: hidden;
 }
 
-.hero-content{
+.hero-content {
   z-index: 3;
   max-width: 1200px;
   position: absolute;
@@ -137,31 +150,32 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.hero-h1{
-  color: #85432e;
+.hero-h1 {
+  color: #3f170b;
   font-family: Montserrat;
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.hero-p{
+.hero-p {
   margin-top: 24px;
-  color: #85432e;
+  color: #3f170b;
   font-size: 44px;
   text-align: center;
   max-width: 600px;
   font-weight: 800;
 }
 
-.hero-btn-wrapper{
+.hero-btn-wrapper {
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.arrow-forward, .arrow-right{
+.arrow-forward,
+.arrow-right {
   margin-left: 8px;
   font-size: 20px;
 }
@@ -174,7 +188,68 @@ video {
   background: #232424;
 }
 
-/* !!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!! MAIN HOME PAGE !!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.main-wrapper {
+  display: grid;
+  z-index: 1;
+  height: 860px;
+  width: 100%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.column1 {
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col1;
+}
+
+.column2 {
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col2;
+}
+
+.text-wrapper {
+  max-width: 540px;
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.top-line {
+  color: #a84523;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px
+}
+
+.btn-wrap-main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.img-main {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+}
+
+.img-wrap-main {
+  max-width: 555px;
+  height: 100%;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (max-width: 768px) {
   .mobile-icon {
@@ -196,11 +271,7 @@ video {
     display: none;
   }
 
-  .hero-h1{
-    font-size: 40px;
-  }
-
-  .hero-p{
+  .hero-p {
     font-size: 24px;
   }
 }
@@ -216,13 +287,14 @@ video {
     grid-template-rows: repeat(4, 40px);
   }
 
-  .hero-h1{
-    font-size: 32px;
+  .hero-h1 {
+    font-size: 15px;
   }
 
-  .hero-p{
+  .hero-p {
     font-size: 18px;
   }
 }
 
-/* !!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!! */

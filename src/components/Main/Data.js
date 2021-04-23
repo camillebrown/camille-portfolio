@@ -1,0 +1,33 @@
+export const homeObjOne = {
+    id: 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Hi, I\'m Camille',
+    headline: 'Web designer based in Los Angeles, CA.',
+    description: 'I develop websites with passion, creativity, and user experience in mind. With eye-catching pages that draw in your end users, you\'ll truly see your vision come to life!',
+    buttonLabel: 'Get Started',
+    imgStart: false,
+    img: "https://i.ibb.co/3CNLs7P/svg-2.png",
+    alt: 'Cartoon Girl',
+    dark: true,
+    primary: true,
+    darkText: false,
+}
+
+export const homeObjTwo = {
+    id: 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Premium Bank',
+    headline: 'Unlimited Transactions with zero fees',
+    buttonLabel: 'Get Started',
+    description: 'I am a web designer and developer based in Los Angeles. I build websites with passion and creativity in mind and I truly enjoy creating eye-catching pages to  draw in your end users. Work with me to see your vision come to life.',
+    imgStart: false,
+    img: "https://i.ibb.co/3CNLs7P/svg-2.png",
+    alt: 'Car',
+    dark: true,
+    primary: true,
+    darkText: false,
+}

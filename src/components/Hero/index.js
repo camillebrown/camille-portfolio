@@ -19,7 +19,14 @@ const Hero = () => {
                 <h1 className="hero-h1">Developer, Creator, Traveler</h1>
                 <p className="hero-p">Work with me to design websites for your brands and products.</p>
                 <div className="hero-btn-wrapper">
-                    <Button to="/work" onMouseEnter={onHover} onMouseLeave={onHover} id="hero-btn">
+                    <Button
+                        to="/work"
+                        onMouseEnter={onHover}
+                        onMouseLeave={onHover}
+                        id="hero-btn"
+                        primary="true"
+                        dark="true"
+                        >
                         Check Out My Latest Work! {hover ? <MdArrowForward className="arrow-forward" /> : <MdKeyboardArrowRight className="arrow-right" />}
                     </Button>
                 </div>
