@@ -12,17 +12,17 @@ const Navbar = ({ toggle }) => {
                     <div className="mobile-icon" onClick={toggle}>
                         <FaBars />
                     </div>
-                    <div className="nav-menu">
-                        <div className="nav-item">
+                    <ul className="nav-menu">
+                        <li className="nav-item">
                             <NavLinks to="about">about me. </NavLinks>
-                        </div>
-                        <div className="nav-item">
+                        </li>
+                        <li className="nav-item">
                             <NavLinks to="work">work.</NavLinks>
-                        </div>
-                        <div className="nav-item">
+                        </li>
+                        <li className="nav-item">
                             <NavLinks to="contact">contact.</NavLinks>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                     <div className="nav-btn">
                         <NavBtnLink to="/contact">
                             let's connect!

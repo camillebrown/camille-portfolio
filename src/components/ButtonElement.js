@@ -8,12 +8,14 @@ const Button = styled(LinkScroll)`
     padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
     color: ${({ dark }) => (dark ? '#df9c37' : '#fff')};
     font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
-    font-weight:400;
+    font-weight:700;
     cursor: pointer;
     display: flex;
     justify-content:center;
     align-items:center;
     transition: all 0.2s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 
     &:hover{
         transition: all 0.2s ease-in-out;

@@ -12,7 +12,7 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active{
-        border-bottom:3px solid #a65941;
+        border-bottom:3px solid #3f170b;
     }
 `
 
@@ -25,6 +25,7 @@ export const NavBtnLink = styled(LinkRouter)`
     color: white;
     font-size:16px;
     /* border: none; */
+    /* outline: none; */
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration:none;

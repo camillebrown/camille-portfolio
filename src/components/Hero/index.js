@@ -27,7 +27,7 @@ const Hero = () => {
                         primary="true"
                         dark="true"
                         >
-                        Check Out My Latest Work! {hover ? <MdArrowForward className="arrow-forward" /> : <MdKeyboardArrowRight className="arrow-right" />}
+                        See My Projects {hover ? <MdArrowForward className="arrow-forward" /> : <MdKeyboardArrowRight className="arrow-right" />}
                     </Button>
                 </div>
             </div>

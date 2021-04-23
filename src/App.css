@@ -10,6 +10,7 @@
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .nav {
+  background: #fff;
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -19,7 +20,6 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  font-family: 'Inter', sans-serif;
 }
 
 .nav-container {
@@ -29,7 +29,7 @@
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  font-family: 'Inter', sans-serif;
+  /* max-width: 1100px; */
 }
 
 .nav-logo {
@@ -42,6 +42,7 @@
   margin-left: 24px;
   font-weight: 800;
   text-decoration: none;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav-menu {
@@ -55,7 +56,7 @@
 .nav-item {
   height: 80px;
   font-weight: 600;
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
 
 }
 
@@ -107,7 +108,7 @@
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .hero-container {
-  background: #0c0c0c;
+  background: #ca3c3c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,6 +116,7 @@
   height: 800px;
   position: relative;
   z-index: 1;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero-container::before {
@@ -124,7 +126,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(76, 25, 25, 0.3) 0%, rgba(76, 25, 25, 0.5) 100%), linear-gradient(180deg, rgba(76, 25, 25, 0.2) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(76, 25, 25, 0.5) 100%), linear-gradient(180deg, rgba(76, 25, 25, 0.2) 0%, transparent 100%);
   z-index: 2;
 }
 
@@ -147,12 +149,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .hero-h1 {
   color: #3f170b;
-  font-family: Montserrat;
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -196,12 +196,11 @@ video {
   z-index: 1;
   height: 860px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .column1 {
@@ -217,7 +216,7 @@ video {
 }
 
 .text-wrapper {
-  max-width: 540px;
+  max-width: 600px;
   padding-top: 0;
   padding-bottom: 60px;
 }
@@ -229,7 +228,8 @@ video {
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-wrap-main {
