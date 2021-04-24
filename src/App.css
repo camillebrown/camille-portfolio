@@ -248,6 +248,49 @@ video {
   height: 100%;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!! PROJECT DIVS !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.proj-container {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #010606;
+}
+
+.proj-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+  padding: 0 50px;
+}
+
+.proj-icon {
+  height: 180px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.proj-h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 64px;
+}
+
+.proj-h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.proj-p{
+  font-size: 1rem;
+  text-align: center;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -274,11 +317,26 @@ video {
   .hero-p {
     font-size: 24px;
   }
+
+  .proj-container {
+    height: 1100px;
+  }
+
+  .proj-wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 960px) {
   .nav {
     transition: 0.8s all ease;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .proj-wrapper {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -293,6 +351,14 @@ video {
 
   .hero-p {
     font-size: 18px;
+  }
+
+  .proj-container {
+    height: 1300px;
+  }
+
+  .proj-h1 {
+    font-size: 2rem;
   }
 }
 

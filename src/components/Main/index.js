@@ -1,8 +1,9 @@
 import React from 'react'
-import Button from '../ButtonElement'
-import { MainContainer, MainRow, Subtitle, Heading } from './MainElements'
+import { Button2 } from '../ButtonElement'
+import { MainContainer, MainRow, Subtitle, Heading, ProjRow } from './MainElements'
+import Projects from '../Projects';
 
-const Main = ({lightText, lightBg, imgStart, topLine, headline, description, darkText, buttonLabel, img, alt, id, primary, dark, dark2}) => {
+const Main = ({ lightText, lightBg, imgStart, topLine, headline, description, darkText, buttonLabel, img, alt, id, primary, dark, dark2, grid, page }) => {
     return (
         <>
             <MainContainer lightBg={lightBg} id={id}>
@@ -14,17 +15,17 @@ const Main = ({lightText, lightBg, imgStart, topLine, headline, description, dar
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <div className="btn-wrap-main">
-                                    <Button 
-                                    to="home"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1 : 0}
-                                    > {buttonLabel}</Button>
+                                    <Button2
+                                        to={page}
+                                        smooth="true"
+                                        duration={500}
+                                        spy="true"
+                                        exact="true"
+                                        offset={-80}
+                                        primary={primary ? 1 : 0}
+                                        dark={dark ? 1 : 0}
+                                        dark2={dark2 ? 1 : 0}
+                                    > {buttonLabel}</Button2>
                                 </div>
                             </div>
                         </div>
@@ -34,6 +35,9 @@ const Main = ({lightText, lightBg, imgStart, topLine, headline, description, dar
                             </div>
                         </div>
                     </MainRow>
+                    <ProjRow grid={grid}>
+                        <Projects />
+                    </ProjRow>
                 </div>
             </MainContainer>
         </>

@@ -13,6 +13,8 @@ export const homeObjOne = {
     dark: true,
     primary: true,
     darkText: false,
+    grid: false,
+    page: '/about'
 }
 
 export const homeObjTwo = {
@@ -30,6 +32,8 @@ export const homeObjTwo = {
     primary: false,
     dark: false,
     darkText: true,
+    grid: true,
+    page: '/work'
 }
 
 export const homeObjThree = {
@@ -47,4 +51,6 @@ export const homeObjThree = {
     dark: true,
     primary: true,
     darkText: false,
+    grid: false,
+    page: '/contact'
 }
