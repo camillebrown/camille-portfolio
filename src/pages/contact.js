@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { NavBtnLink } from '../components/Navbar/NavbarElements'
 import { Link as LinkRouter } from 'react-router-dom'
+import Sidebar from '../components/Sidebar'
 
 const Contact = () => {
 
@@ -9,6 +10,7 @@ const Contact = () => {
 
     const toggle = () => {
         setIsOpen(!isOpen)
+        return( <Sidebar isOpen={isOpen} toggle={toggle} />)
     }
 
     return (
@@ -16,10 +18,10 @@ const Contact = () => {
             <div className="nav">
                 <div className="nav-container">
                     <LinkRouter className="nav-logo" to='/'>Camille Brown</LinkRouter>
-                    <div className="mobile-icon" onClick={toggle}>
+                    <div className="mobile-icon2" onClick={toggle}>
                         <FaBars />
                     </div>
-                    <ul className="nav-menu">
+                    <ul className="nav-menu-solo">
                         <li className="nav-item">
                             <LinkRouter className="nav-links" to="/about">about me. </LinkRouter>
                         </li>
@@ -30,11 +32,6 @@ const Contact = () => {
                             <LinkRouter className="nav-links" to="/contact">contact.</LinkRouter>
                         </li>
                     </ul>
-                    <div className="nav-btn">
-                        <NavBtnLink to="/contact">
-                            let's connect!
-                        </NavBtnLink>
-                    </div>
                 </div>
             </div>
             <h1>Contact page</h1>

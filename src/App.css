@@ -44,6 +44,14 @@
   margin-right: -22px;
 }
 
+.nav-menu-solo{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: 20px;
+}
+
 .nav-item {
   font-size: small;
   height: 80px;
@@ -58,12 +66,13 @@
   align-items: center;
 }
 
-.mobile-icon {
+.mobile-icon1,
+.mobile-icon2 {
   display: none;
 }
 
 .nav-links {
-  color: #df9c37;
+  color: #444443;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -81,8 +90,16 @@
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .close-icon {
-  color: white;
-  margin-right: 7%;
+  /* color: white;
+  margin-right: 7%; */
+  display: block;
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #444443;
 }
 
 .icon {
@@ -232,9 +249,12 @@
 }
 
 .text-wrapper {
+  width: 80%;
   max-width: 600px;
   padding-top: 0;
   padding-bottom: 60px;
+  margin: 30px;
+  text-align: center;
 }
 
 .top-line {
@@ -289,6 +309,10 @@
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .proj-container {
   height: 860px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,7 +333,7 @@
   padding: 0 50px;
 }
 
-.info-wrapper {
+.info-wrapper{
   max-width: 80%;
   margin: 0 auto;
 }
@@ -419,19 +443,153 @@
   transition: all 0.2s ease-in-out;
 }
 
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!! ABOUT PAGE !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.about-container {
+  height: 860px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('images/aboutpagebg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.about-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
+  margin-top: 30px;
+}
+
+.about-btn-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #a5a5a5;
+  background: white;
+  font-size: small;
+  letter-spacing: 1.5px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  margin-right: 24px;
+  color: #444443;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.about-btn-link:hover {
+  transition: all 0.2s ease-in-out;
+  background: #444443;
+  color: white;
+}
+
+.download {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.about-img {
+  border: 3px solid #EBE9E5;
+  padding: 20px;
+  height: 576px;
+  width: 576px;
+  margin: 20px;
+}
+
+.about-row {
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: 'col2 col1';
+}
+
+.skills-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.skills-icon {
+  font-size: 32px;
+  margin: 5px 35px;
+  color: #444443;
+}
+
+.skills-icon:hover {
+  transition: all 0.2s ease-in-out;
+  color: #df9c37;
+}
+
+.single-skill{
+  margin-bottom: 30px;
+  font-size: small;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: #df9c37;
+}
+
+
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (max-width: 768px) {
-  .mobile-icon {
+
+  .main-container {
+    padding: 100px 0;
+  }
+
+  .proj-container {
+    height: 1300px;
+  }
+
+  .mobile-icon1 {
     display: block;
     position: absolute;
     top: 5%;
-    right: 5%;
+    right: 3%;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #df9c37;
+    color: #444443;
+  }
+
+  .mobile-icon2 {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 3%;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #444443;
   }
 
   .nav-menu {
@@ -444,10 +602,6 @@
 
   .hero-p {
     font-size: 24px;
-  }
-
-  .proj-container {
-    height: 1100px;
   }
 
   .proj-wrapper {

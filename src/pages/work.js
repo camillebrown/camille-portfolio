@@ -16,10 +16,10 @@ const Work = () => {
             <div className="nav">
                 <div className="nav-container">
                     <LinkRouter className="nav-logo" to='/'>Camille Brown</LinkRouter>
-                    <div className="mobile-icon" onClick={toggle}>
+                    <div className="mobile-icon2" onClick={toggle}>
                         <FaBars />
                     </div>
-                    <ul className="nav-menu">
+                    <ul className="nav-menu-solo">
                         <li className="nav-item">
                             <LinkRouter className="nav-links" to="/about">about me. </LinkRouter>
                         </li>
@@ -30,11 +30,6 @@ const Work = () => {
                             <LinkRouter className="nav-links" to="/contact">contact.</LinkRouter>
                         </li>
                     </ul>
-                    <div className="nav-btn">
-                        <NavBtnLink to="/contact">
-                            let's connect!
-                        </NavBtnLink>
-                    </div>
                 </div>
             </div>
             <h1>Work page</h1>

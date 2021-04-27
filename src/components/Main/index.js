@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Button2 } from '../ButtonElement'
-import { MainContainer, MainRow } from './MainElements'
+import { MainRow } from './MainElements'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
 
-const Main = ({ lightBg, imgStart, topLine, headline, description, buttonLabel, img, alt, id, page }) => {
+const Main = ({ imgStart, topLine, headline, description, buttonLabel, img, alt, id, page }) => {
 
     const [hover, setHover] = useState(false)
 
@@ -13,7 +13,7 @@ const Main = ({ lightBg, imgStart, topLine, headline, description, buttonLabel, 
 
     return (
         <>
-            <MainContainer lightBg={lightBg} id={id}>
+            <div className="main-container" id={id}>
                 <div className="main-wrapper">
                     <MainRow imgStart={imgStart}>
                         <div className="column1">
@@ -38,7 +38,7 @@ const Main = ({ lightBg, imgStart, topLine, headline, description, buttonLabel, 
                         </div>
                     </MainRow>
                 </div>
-            </MainContainer>
+            </div>
         </>
     )
 }

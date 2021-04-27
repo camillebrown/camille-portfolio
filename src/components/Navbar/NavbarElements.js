@@ -16,7 +16,7 @@ export const Nav = styled.nav`
 `
 
 export const NavLinks = styled(LinkScroll)`
-    color: rgb(68, 68, 67);
+    color: #444443;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -35,7 +35,7 @@ export const NavLinks = styled(LinkScroll)`
 `
 
 export const NavBtnLink = styled(LinkRouter)`
-    border: 1px solid rgb(165, 165, 165);
+    border: 1px solid #a5a5a5;
     background: white;
     font-size: small;
     letter-spacing: 1.5px;
