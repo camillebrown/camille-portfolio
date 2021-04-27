@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button2 } from '../ButtonElement'
-import { MainContainer, MainRow, Subtitle, Heading, ProjRow } from './MainElements'
-import Projects from '../Projects';
+import { MainContainer, MainRow, Subtitle, Heading } from './MainElements'
 
 const Main = ({ lightText, lightBg, imgStart, topLine, headline, description, darkText, buttonLabel, img, alt, id, primary, dark, dark2, grid, page }) => {
     return (
@@ -35,9 +34,6 @@ const Main = ({ lightText, lightBg, imgStart, topLine, headline, description, da
                             </div>
                         </div>
                     </MainRow>
-                    <ProjRow grid={grid}>
-                        <Projects />
-                    </ProjRow>
                 </div>
             </MainContainer>
         </>

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ProjectsCard = styled.div`
+export const ProjectCard = styled.div`
     background: white;
     display: flex;
     flex-direction: column;
@@ -18,5 +18,3 @@ const ProjectsCard = styled.div`
         cursor: pointer;
     }
 `
-
-export default ProjectsCard

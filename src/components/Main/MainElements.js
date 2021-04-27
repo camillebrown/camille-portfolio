@@ -19,10 +19,6 @@ export const MainRow = styled.div`
     }
 `
 
-export const ProjRow = styled.div`
-    display: ${({ grid }) => (grid ? 'visible' : 'none')};
-`
-
 export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: 48px;

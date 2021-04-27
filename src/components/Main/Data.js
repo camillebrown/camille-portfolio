@@ -18,25 +18,6 @@ export const homeObjOne = {
 }
 
 export const homeObjTwo = {
-    id: 'work',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Check out my work',
-    headline: 'Projects made with passion',
-    buttonLabel: 'Check out my work',
-    description: 'Officia do officia ea do ullamco quis nisi deserunt adipisicing officia aute qui eiusmod in. Do veniam est mollit laborum duis anim laboris pariatur proident non do occaecat culpa tempor.',
-    imgStart: true,
-    img: "https://i.ibb.co/CmdWVMz/undraw-Portfolio-re-qwm5.png",
-    alt: 'Portfolio Illustration',
-    primary: false,
-    dark: false,
-    darkText: true,
-    grid: true,
-    page: '/work'
-}
-
-export const homeObjThree = {
     id: 'contact',
     lightBg: false,
     lightText: true,

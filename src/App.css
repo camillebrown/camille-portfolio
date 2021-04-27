@@ -6,21 +6,12 @@
   padding: 0;
 }
 
+.active {
+  border-bottom: 3px solid blue;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!! NAVBAR !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-.nav {
-  background: #fff;
-  height: 80px;
-  margin-top: -80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
 
 .nav-container {
   display: flex;
@@ -69,6 +60,16 @@
 
 .mobile-icon {
   display: none;
+}
+
+.nav-links {
+  color: #df9c37;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! SIDEBAR !!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -251,12 +252,13 @@ video {
 /* !!!!!!!!!!!!!!!!!!!!!!!!! PROJECT DIVS !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .proj-container {
-  height: 800px;
+  height: 860px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  text-align: center;
+  background: #f2d09b;
 }
 
 .proj-wrapper {
@@ -269,16 +271,24 @@ video {
   padding: 0 50px;
 }
 
+.info-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 .proj-icon {
   height: 180px;
   width: 200px;
   margin-bottom: 10px;
 }
 
-.proj-h1 {
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 64px;
+.proj-heading {
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: black;
 }
 
 .proj-h2 {
@@ -286,9 +296,74 @@ video {
   margin-bottom: 10px;
 }
 
-.proj-p{
+.proj-p {
   font-size: 1rem;
   text-align: center;
+}
+
+.proj-desc {
+  margin-bottom: 35px;
+  font-size: 21px;
+  line-height: 28px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.4px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.footer-container {
+  background-color: #a84523;
+}
+
+.footer-wrap {
+  padding: 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.social-media {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.social-media-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+}
+
+.social-logo {
+  color: black;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.web-rights {
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+.social-icon-link {
+  color: black;
+  font-size: 24px;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -340,6 +415,12 @@ video {
   }
 }
 
+@media screen and (max-width: 820px) {
+  .social-media-wrap {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .sidebar-menu {
     grid-template-rows: repeat(4, 40px);
@@ -357,8 +438,8 @@ video {
     height: 1300px;
   }
 
-  .proj-h1 {
-    font-size: 2rem;
+  .proj-heading {
+    font-size: 32px;
   }
 }
 
