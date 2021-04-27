@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button2 } from '../ButtonElement'
-import { MainContainer, MainRow, Subtitle, Heading } from './MainElements'
+import { MainContainer, MainRow } from './MainElements'
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
 
-const Main = ({ lightText, lightBg, imgStart, topLine, headline, description, darkText, buttonLabel, img, alt, id, primary, dark, dark2, grid, page }) => {
+const Main = ({ lightBg, imgStart, topLine, headline, description, buttonLabel, img, alt, id, page }) => {
+
+    const [hover, setHover] = useState(false)
+
+    const onHover = () => {
+        setHover(!hover)
+    }
+
     return (
         <>
             <MainContainer lightBg={lightBg} id={id}>
@@ -11,20 +19,15 @@ const Main = ({ lightText, lightBg, imgStart, topLine, headline, description, da
                         <div className="column1">
                             <div className="text-wrapper">
                                 <p className="top-line">{topLine}</p>
-                                <Heading lightText={lightText}>{headline}</Heading>
-                                <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <h1 className="main-h1">{headline}</h1>
+                                <p className="main-desc" >{description}</p>
                                 <div className="btn-wrap-main">
                                     <Button2
                                         to={page}
-                                        smooth="true"
-                                        duration={500}
-                                        spy="true"
-                                        exact="true"
-                                        offset={-80}
-                                        primary={primary ? 1 : 0}
-                                        dark={dark ? 1 : 0}
-                                        dark2={dark2 ? 1 : 0}
-                                    > {buttonLabel}</Button2>
+                                        onMouseEnter={onHover}
+                                        onMouseLeave={onHover}
+                                    > {buttonLabel}{hover ? <MdArrowForward className="arrow-forward" /> : <MdKeyboardArrowRight className="arrow-right" />}
+                                    </Button2>
                                 </div>
                             </div>
                         </div>

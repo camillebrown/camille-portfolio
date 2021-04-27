@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Lato:wght@100;300&family=Lora&family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Lato:wght@100;300;400;500;600;700;900&family=Lora&family=Montserrat:wght@200&display=swap');
 
 * {
   box-sizing: border-box;
@@ -26,11 +26,10 @@
   color: rgb(68, 68, 67);
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
-  font-weight: 800;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   letter-spacing: 1.5px;
@@ -71,6 +70,11 @@
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+}
+
+.nav-links:hover {
+  color: #df9c37;
+  border-bottom: 3px solid #df9c37;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! SIDEBAR !!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -154,12 +158,13 @@
 }
 
 .hero-h1 {
-  color: rgb(92, 92, 92);
+  color: #5c5c5c;
   font-family: 'Lato', serif;
   letter-spacing: 2px;
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 300;
 }
 
 .hero-p {
@@ -168,7 +173,7 @@
   text-align: center;
   max-width: 750px;
   font-weight: 800;
-  color: rgb(68, 68, 67);
+  color: #444443;
   font-family: 'Lora', serif;
   letter-spacing: 1.5px;
 }
@@ -233,14 +238,35 @@
 }
 
 .top-line {
-  color: #a84523;
+  color: #df9c37;
+  font-family: 'Lato', serif;
+  letter-spacing: 2px;
+  font-weight: 300;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  font-family: 'Montserrat', sans-serif;
+}
+
+.main-desc {
+  max-width: 500px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #444443;
+  font-family: 'Lato', serif;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+
+.main-h1 {
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #444443;
+  font-family: 'Lora', serif;
+  letter-spacing: 1.5px;
 }
 
 .btn-wrap-main {
@@ -250,7 +276,7 @@
 
 .img-main {
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 0 auto;
   padding-right: 0;
 }
 
@@ -268,12 +294,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #f2d09b;
+  background-image: url('images/projectpage.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .proj-wrapper {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -282,9 +310,8 @@
 }
 
 .info-wrapper {
-  max-width: 60%;
+  max-width: 80%;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 .proj-icon {
@@ -293,38 +320,45 @@
   margin-bottom: 10px;
 }
 
-.proj-heading {
-  margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: black;
+.proj-icon2 {
+  height: 180px;
+  width: 220px;
+  margin-bottom: 10px;
 }
 
 .proj-h2 {
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin: 10px;
+  font-family: 'Lato', serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #df9c37;
 }
 
 .proj-p {
-  font-size: 1rem;
+  font-size: 0.75rem;
   text-align: center;
+  font-family: 'Lora', serif;
+  letter-spacing: 1.1px;
+  color: #444443;
 }
 
 .proj-desc {
-  margin-bottom: 35px;
-  font-size: 21px;
+  max-width: 600px;
+  font-size: 18px;
   line-height: 28px;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  letter-spacing: -0.4px;
+  color: #444443;
+  font-family: 'Lato', serif;
+  font-weight: 300;
+  letter-spacing: 1.2px;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .footer-container {
-  background-color: #a84523;
+  background-color: #F2F0EB;
 }
 
 .footer-wrap {
@@ -333,12 +367,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 .social-media {
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
 }
 
@@ -350,18 +384,22 @@
 }
 
 .social-logo {
-  color: black;
+  color: #444443;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
-  font-weight: bold;
+  color: #444443;
+  font-family: 'Lato', serif;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 .web-rights {
-  color: black;
+  color: #444443;
+  font-family: 'Lora', serif;
 }
 
 .social-icons {
@@ -372,8 +410,13 @@
 }
 
 .social-icon-link {
-  color: black;
+  color: #444443;
   font-size: 24px;
+}
+
+.social-icon-link:hover {
+  color: #df9c37;
+  transition: all 0.2s ease-in-out;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -449,6 +492,10 @@
   }
 
   .proj-heading {
+    font-size: 32px;
+  }
+
+  .main-h1 {
     font-size: 32px;
   }
 }

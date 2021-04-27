@@ -12,10 +12,10 @@ const Hero = () => {
     return (
         <div className="hero-container">
             <div className="hero-bg">
-            <div className="hero-img" />
+                <div className="hero-img" />
             </div>
             <div className="hero-content">
-                <h1 className="hero-h1">Developer. &nbsp;&nbsp; Creator. &nbsp;&nbsp; Traveler</h1>
+                <h1 className="hero-h1">Developer. &nbsp;&nbsp; Creator. &nbsp;&nbsp; Traveler.</h1>
                 <p className="hero-p">Work with me to design websites for your brands and products.</p>
                 <div className="hero-btn-wrapper">
                     <Button1
@@ -25,6 +25,11 @@ const Hero = () => {
                         id="hero-btn"
                         primary="true"
                         dark="true"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
                     >
                         See My Projects {hover ? <MdArrowForward className="arrow-forward" /> : <MdKeyboardArrowRight className="arrow-right" />}
                     </Button1>

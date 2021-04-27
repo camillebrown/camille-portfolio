@@ -11,7 +11,7 @@ const Navbar = ({ toggle }) => {
     const [state, setState] = useState({});
 
     const changeNav = () => {
-        if (window.scrollY >= 150) {
+        if (window.scrollY >= 170) {
             setSetScrollNav(true)
         } else {
             setSetScrollNav(false)
@@ -79,7 +79,7 @@ const Navbar = ({ toggle }) => {
                         <div className="nav-btn">
                             <NavBtnLink to="/contact">
                                 let's connect!
-                        </NavBtnLink>
+                            </NavBtnLink>
                         </div>
                     </div>
                 </Nav>

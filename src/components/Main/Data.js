@@ -4,15 +4,15 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'Hi, I\'m Camille',
-    headline: 'Web designer based in Los Angeles, CA.',
-    description: 'I develop websites with passion, creativity, and user experience in mind. With eye-catching pages that draw in your end users, you\'ll truly see your vision come to life!',
+    headline: 'Web developer based in Los Angeles, CA.',
+    description: 'I design websites with passion, creativity, and user experience in mind. With eye-catching pages that draw in your end users, you\'ll truly see your vision come to life!',
     buttonLabel: 'Learn More About Me',
     imgStart: false,
-    img: "https://i.ibb.co/3CNLs7P/svg-2.png",
-    alt: 'Girl Illustration',
+    img: "https://i.ibb.co/FgMkdgy/aboutpage.png",
+    alt: 'Collage of Camille',
     dark: true,
     primary: true,
-    darkText: false,
+    darktext: false,
     grid: false,
     page: '/about'
 }
@@ -31,7 +31,7 @@ export const homeObjTwo = {
     alt: 'Contact Illustration',
     dark: true,
     primary: true,
-    darkText: false,
+    darktext: false,
     grid: false,
     page: '/contact'
 }
