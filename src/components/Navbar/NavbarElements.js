@@ -16,36 +16,42 @@ export const Nav = styled.nav`
 `
 
 export const NavLinks = styled(LinkScroll)`
-    color: #df9c37;
+    color: rgb(68, 68, 67);
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 3rem;
     height:100%;
     cursor: pointer;
 
     &.active{
         border-bottom:3px solid #df9c37;
     }
+
+    &:hover{
+        color: #df9c37;
+        border-bottom:3px solid #df9c37;
+    }
 `
 
 export const NavBtnLink = styled(LinkRouter)`
-    border-radius: 50px;
-    background: #df9c37;
-    /* white-space:nowrap; */
+    /* border-radius: 50px; */
+    border: 1px solid rgb(165, 165, 165);
+    background: white;
+    font-size: small;
+    letter-spacing: 1.5px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
     padding: 10px 22px;
     margin-right: 24px;
-    color: white;
-    font-size:16px;
-    /* border: none; */
-    /* outline: none; */
+    color: rgb(68, 68, 67);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration:none;
 
     &:hover{
         transition:all 0.2s ease-in-out;
-        background: #85432e;
+        background: rgb(68, 68, 67);
         color: white;
     }
 `

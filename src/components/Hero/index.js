@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Video from '../../videos/video.mp4'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
 import { Button1 } from '../ButtonElement'
 
@@ -13,7 +12,7 @@ const Hero = () => {
     return (
         <div className="hero-container">
             <div className="hero-bg">
-                <video autoPlay loop muted src={Video} type="video/mp4" />
+            <div className="hero-img" />
             </div>
             <div className="hero-content">
                 <h1 className="hero-h1">Developer, Creator, Traveler</h1>
