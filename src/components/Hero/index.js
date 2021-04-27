@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="hero-img" />
             </div>
             <div className="hero-content">
-                <h1 className="hero-h1">Developer, Creator, Traveler</h1>
+                <h1 className="hero-h1">Developer. &nbsp;&nbsp; Creator. &nbsp;&nbsp; Traveler</h1>
                 <p className="hero-p">Work with me to design websites for your brands and products.</p>
                 <div className="hero-btn-wrapper">
                     <Button1

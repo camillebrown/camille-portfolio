@@ -25,12 +25,12 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active{
-        border-bottom:3px solid #df9c37;
+        border-bottom: 1px solid #df9c37;
     }
 
     &:hover{
         color: #df9c37;
-        border-bottom:3px solid #df9c37;
+        border-bottom: 3px solid #df9c37;
     }
 `
 
