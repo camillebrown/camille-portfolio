@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { FaBars, FaDatabase } from 'react-icons/fa'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
-import { SiJavascript, SiPython, SiCss3, SiReact, SiNodeDotJs, SiFlask, SiHtml5, SiMongodb, SiPostman, SiPostgresql, SiGit } from 'react-icons/si'
+import { SiJavascript, SiPython, SiCss3, SiReact, SiNodeDotJs, SiFlask, SiHtml5, SiMongodb, SiPostgresql } from 'react-icons/si'
 import { HiOutlineMail } from 'react-icons/hi'
-import { NavBtnLink } from '../components/Navbar/NavbarElements'
 import { Link as LinkRouter } from 'react-router-dom'
 
 const About = () => {

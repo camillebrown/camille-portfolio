@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
-import { NavBtnLink } from '../components/Navbar/NavbarElements'
 import { Link as LinkRouter } from 'react-router-dom'
 
 const Work = () => {
