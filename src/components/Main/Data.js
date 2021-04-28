@@ -7,7 +7,8 @@ export const homeObjOne = {
     imgStart: false,
     img: "https://i.ibb.co/FgMkdgy/aboutpage.png",
     alt: 'Collage of Camille',
-    page: '/about'
+    page: '/about',
+    className: 'main-container2'
 }
 
 export const homeObjTwo = {
@@ -19,5 +20,6 @@ export const homeObjTwo = {
     imgStart: false,
     img: "https://i.ibb.co/hXF4tD3/Contact-us-amico-1.png",
     alt: 'Contact Illustration',
-    page: '/contact'
+    page: '/contact',
+    className: 'main-container1'
 }

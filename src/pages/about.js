@@ -13,6 +13,64 @@ const About = () => {
         setIsOpen(!isOpen)
     }
 
+    const iconDivs = () => {
+        let skills = [
+            {
+                name: "Javascript",
+                icon: SiJavascript
+            },
+            {
+                name: "Python",
+                icon: SiPython
+            },
+            {
+                name: "MongoDB",
+                icon: SiMongodb
+            },
+            {
+                name: "Node JS",
+                icon: SiNodeDotJs
+            },
+            {
+                name: "React JS",
+                icon: SiReact
+            },
+            {
+                name: "HTML 5",
+                icon: SiHtml5
+            },
+            {
+                name: "Flask",
+                icon: SiFlask
+            },
+            {
+                name: "CSS",
+                icon: SiCss3
+            },
+            {
+                name: "SQL",
+                icon: FaDatabase
+            },
+            {
+                name: "PostgreSQL",
+                icon: SiPostgresql
+            }
+        ]
+
+        const skillsDivs = skills.map((skill) =>
+            <div className="single-skill">
+                <skill.icon className="skills-icon" />
+                <p>{skill.name}</p>
+            </div>
+        )
+
+        return (
+            <div className="skills-container">
+                {skillsDivs}
+            </div>
+        )
+    }
+
     return (
         <>
             <div className="nav">
@@ -41,10 +99,10 @@ const About = () => {
                     <div className="about-row">
                         <div className="column1">
                             <div className="about-wrapper">
-                            <p className="top-line">Hello!</p>
+                                <p className="top-line">Hello!</p>
                                 <h1 className="main-h1">I'm Camille Brown.</h1>
                                 <p className="proj-desc">
-                                    I create websites with attention to detail and design accuracy. I look forward  to helping you through all of the stages of your digital project including strategy, design, and web development.
+                                    When I'm not working at the frontend developer at <a className="ck" href="https://www.creditkey.com/">Credit Key</a>, as a California native, I love the outdoors, sunny days on the beach and all things music. Don't hesitate to reach out! I look forward to  working with you.
                                 </p>
                                 <div className="about-btns">
                                     <a
@@ -63,48 +121,7 @@ const About = () => {
                                         <HiOutlineMail className="download" />
                                     </LinkRouter>
                                 </div>
-                                <div className="skills-container">
-                                    <div className="single-skill">
-                                        <SiJavascript className="skills-icon" />
-                                        <p>Javascript</p>
-                                    </div>
-                                    <div className="single-skill">
-                                        <SiPython className="skills-icon" />
-                                        <p>Python</p>
-                                    </div>
-                                    <div className="single-skill">
-                                        <SiMongodb className="skills-icon" />
-                                        <p>MongoDB</p>
-                                    </div>
-                                    <div className="single-skill">
-                                        <SiNodeDotJs className="skills-icon" />
-                                        <p>Node JS</p>
-                                    </div>
-                                    <div className="single-skill">
-                                        <SiReact className="skills-icon" />
-                                        <p>React JS</p>
-                                    </div>
-                                    <div className="single-skill">
-                                        <SiHtml5 className="skills-icon" />
-                                        <p>HTML 5</p>
-                                    </div>
-                                    <div className="single-skill">
-                                        <SiFlask className="skills-icon" />
-                                        <p>Flask</p>
-                                    </div>
-                                    <div className="single-skill">
-                                        <SiCss3 className="skills-icon" />
-                                        <p>CSS</p>
-                                    </div>
-                                    <div className="single-skill">
-                                        <FaDatabase className="skills-icon" />
-                                        <p>SQL</p>
-                                    </div>
-                                    <div className="single-skill">
-                                        <SiPostgresql className="skills-icon" />
-                                        <p>PostgreSQL</p>
-                                    </div>
-                                </div>
+                                {iconDivs()}
                             </div>
                         </div>
                         <div className="column2">

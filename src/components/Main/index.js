@@ -3,7 +3,7 @@ import { Button2 } from '../ButtonElement'
 import { MainRow } from './MainElements'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
 
-const Main = ({ imgStart, topLine, headline, description, buttonLabel, img, alt, id, page }) => {
+const Main = ({ imgStart, topLine, headline, description, buttonLabel, img, alt, id, page, className }) => {
 
     const [hover, setHover] = useState(false)
 
@@ -13,7 +13,7 @@ const Main = ({ imgStart, topLine, headline, description, buttonLabel, img, alt,
 
     return (
         <>
-            <div className="main-container" id={id}>
+            <div className={className} id={id}>
                 <div className="main-wrapper">
                     <MainRow imgStart={imgStart}>
                         <div className="column1">

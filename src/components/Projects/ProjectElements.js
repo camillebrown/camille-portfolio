@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { Link as LinkRouter } from 'react-router-dom'
 
-export const ProjectCard = styled.div`
+export const ProjectCard = styled(LinkRouter)`
     background: white;
     display: flex;
     flex-direction: column;
@@ -11,6 +12,7 @@ export const ProjectCard = styled.div`
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 
     &:hover {
         transform: scale(1.02);
