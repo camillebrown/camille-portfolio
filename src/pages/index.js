@@ -8,22 +8,24 @@ import Projects from '../components/Projects'
 
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
 
-    return (
-        <>
-            <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
-            <Hero />
-            <Main {...homeObjOne} />
-            <Projects />
-            <Main {...homeObjTwo} />
-        </>
-    )
+  return (
+    <>
+      <div className="body">
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} />
+        <Hero />
+        <Main {...homeObjOne} />
+        <Projects />
+        <Main {...homeObjTwo} />
+      </div>
+    </>
+  )
 }
 
 export default Home

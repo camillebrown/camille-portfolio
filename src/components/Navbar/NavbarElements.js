@@ -5,7 +5,7 @@ import { Link as LinkScroll } from 'react-scroll'
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? '#fff' : 'transparent')};
   height: 80px;
-  margin-top: -80px;
+  margin-top: -190px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +30,7 @@ export const NavLinks = styled(LinkScroll)`
 
     &:hover{
         color: #df9c37;
+        font-weight: bold;
         border-bottom: 3px solid #df9c37;
     }
 `

@@ -1,5 +1,5 @@
 import { FaDatabase } from 'react-icons/fa'
-import { SiJavascript, SiPython, SiCss3, SiReact, SiNodeDotJs, SiFlask, SiHtml5, SiMongodb, SiPostgresql } from 'react-icons/si'
+import { SiJavascript, SiPython, SiCss3, SiReact, SiNodeDotJs, SiFlask, SiHtml5, SiPostgresql } from 'react-icons/si'
 
 export const projects = [
     {

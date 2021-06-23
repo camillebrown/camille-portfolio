@@ -5,10 +5,9 @@ export const homeObjOne = {
     description: 'I design websites with passion, creativity, and user experience in mind. With eye-catching pages that draw in your end users, you\'ll truly see your vision come to life!',
     buttonLabel: 'Learn More About Me',
     imgStart: false,
-    img: "https://i.ibb.co/FgMkdgy/aboutpage.png",
-    alt: 'Collage of Camille',
-    page: '/about',
-    className: 'main-container2'
+    img: "https://i.ibb.co/D7WSYgR/portfolio.jpg",
+    alt: 'Portfolio Image of Camille',
+    page: '/about'
 }
 
 export const homeObjTwo = {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Box, FormControl, Input } from "@chakra-ui/react"
 import { FaBars } from 'react-icons/fa'
 import { Link as LinkRouter } from 'react-router-dom'
 import Sidebar from '../components/Sidebar'
@@ -48,33 +49,33 @@ const Contact = () => {
                     </ul>
                 </div>
             </div>
-            <div className="contact-container">
+            <Box h="84.5vh">
                 <div className="contact-wrap">
                     <h1 className="contact-h1">Let's Work Together</h1>
                     <p className="contact-p"> Have a project in mind? <br></br>Send me a message using the form below. </p>
-                    <form class="contact-form">
-                        <input
+                    <FormControl className="contact-form">
+                        <Input
                             type="text"
                             placeholder="First Name  *"
                             name="first_name"
                             onChange={handleChange}
                             className="input"
                         />
-                        <input
+                        <Input
                             type="text"
                             placeholder="Last Name  *"
                             name="last_name"
                             onChange={handleChange}
                             className="input"
                         />
-                        <input
+                        <Input
                             type="text"
                             placeholder="Email  *"
                             name="email"
                             onChange={handleChange}
                             className="input"
                         />
-                        <input
+                        <Input
                             type="text"
                             placeholder="Phone Number  *"
                             name="phone"
@@ -96,9 +97,9 @@ const Contact = () => {
                         <div className="btn-div">
                             <button id="submit" class="fa fa-search" type="submit">Submit</button>
                         </div>
-                    </form>
+                    </FormControl>
                 </div>
-            </div>
+            </Box>
         </>
     )
 }
