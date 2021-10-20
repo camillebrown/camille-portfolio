@@ -53,5 +53,6 @@ export const Button2 = styled(LinkRouter)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #444443;
+    color: #df9c37;
   }
 `;
