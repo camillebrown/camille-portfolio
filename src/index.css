@@ -1,0 +1,17 @@
+@import '~@creativebulma/bulma-divider';
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Lato:wght@100;300;400;500;600;700;900&family=Lora&family=Montserrat:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:empty.divider:before {
+  margin-right: 0;
+}
+
+:empty.divider:after {
+  margin-left: 0;
+}
