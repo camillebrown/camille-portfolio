@@ -14,15 +14,14 @@ export const MainContainer = styled.div`
   @media screen and (max-width: 1024px) {
     height: 80vh;
   }
+
+  @media screen and (max-width: 375px) {
+    height: 110vh;
+  }
 `;
 
 export const ProjectBg1 = styled.div`
   background: #ebe9e6;
-  position: relative;
-
-  @media screen and (max-width: 1024px) {
-    background: transparent;
-  }
 `;
 
 export const MainImg = styled.img`
@@ -38,9 +37,10 @@ export const MainImg = styled.img`
 export const IndexProjectContainer = styled.div`
   z-index: 3;
   position: absolute;
-
+  
   @media screen and (max-width: 1024px) {
-    background: #ebe9e6;
+    z-index: 1;
+    background: transparent;
     padding: 30px 0px;
   }
   @media screen and (max-width: 768px) {
@@ -114,6 +114,12 @@ export const ProjectCard = styled(LinkRouter)`
   @media screen and (max-width: 768px) {
     min-width: 70%;
     max-width: 70%;
+    height: 20px;
+  }
+
+  @media screen and (max-width: 375px) {
+    min-width: 70%;
+    max-width: 90%;
     height: 20px;
   }
 `;

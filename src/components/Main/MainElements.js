@@ -7,6 +7,10 @@ export const MainContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
   }
+
+  @media screen and (max-width: 375px) {
+    height: 110vh;
+  }
 `;
 
 export const MainBackground = styled.div`
@@ -16,6 +20,10 @@ export const MainBackground = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-top: 45%;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin: 20%;
   }
 `;
 
@@ -35,6 +43,10 @@ export const MainBlock1 = styled.div`
   @media screen and (max-width: 768px) {
     height: 51%;
   }
+
+  @media screen and (max-width: 375px) {
+    display: none;
+  }
 `;
 
 export const MainBlock2 = styled.div`
@@ -44,6 +56,10 @@ export const MainBlock2 = styled.div`
 
   @media screen and (max-width: 768px) {
     height: 52.5%;
+  }
+
+  @media screen and (max-width: 375px) {
+    display: none;
   }
 `;
 
@@ -56,22 +72,46 @@ export const MainRow = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
 export const Column1 = styled.div`
   grid-area: col1;
+  padding: 0px 20px;
+  margin: 0px 40px;
+
+  @media screen and (max-width: 768px) {
+    margin: 30px 0px;
+    padding: 0;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
 `;
 
 export const Column2 = styled.div`
   grid-area: col2;
   padding: 0px 20px;
   margin: 0px 40px;
-  
+
   @media screen and (max-width: 1024px) {
     margin: 0px 10px;
     padding: 0px 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin: 0;
+    padding: 0;
   }
 `;
 
@@ -81,4 +121,11 @@ export const ProjectDesc = styled.p`
   color: #444443;
   font-family: 'Lato', serif;
   letter-spacing: 1.2px;
+
+  @media screen and (max-width: 375px) {
+    max-width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
 `;

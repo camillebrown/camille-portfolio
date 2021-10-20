@@ -8,6 +8,11 @@ export const HeroContainer = styled.div`
 export const HeroBackground = styled.div`
   height: 110vh;
   width: 100%;
+
+  @media screen and (max-width: 375px) {
+    height: 80vh;
+    width: 100%;
+  }
 `;
 
 export const HeroBlock1 = styled.div`
@@ -18,14 +23,22 @@ export const HeroBlock1 = styled.div`
     height: 51%;
     width: 100%;
   }
+  @media screen and (max-width: 375px) {
+    height: 65%;
+    width: 100%;
+  }
 `;
 
 export const HeroBlock2 = styled.div`
-  background-color: #F2F0EC;
+  background-color: #f2f0ec;
   position: relative;
 
   @media screen and (max-width: 768px) {
     height: 52.5%;
+    width: 100%;
+  }
+  @media screen and (max-width: 375px) {
+    height: 45%;
     width: 100%;
   }
 `;
@@ -81,6 +94,11 @@ export const HeroContent = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    margin-top: 50%;
   }
 `;
 

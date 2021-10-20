@@ -45,31 +45,25 @@ const Main = ({
       </MainBackground>
       <MainWrapper className="is-flex is-justify-content-center">
         <MainRow imgStart={imgStart}>
-          <Column1 className="px-4 mx-6">
-              <PageTitle className="is-size-4 is-uppercase has-text-weight-light my-3">
-                {topLine}
-              </PageTitle>
-              <PageHeader className="is-size-4 has-text-weight-semibold my-3">
-                {headline}
-              </PageHeader>
-              <ProjectDesc className="is-size-6 my-5 has-text-weight-light">
-                {description}
-              </ProjectDesc>
-              <div className="is-flex is-justify-content-flex-start">
-                <Button2
-                  to={page}
-                  onMouseEnter={onHover}
-                  onMouseLeave={onHover}
-                >
-                  {' '}
-                  {buttonLabel}
-                  {hover ? (
-                    <MdArrowForward className="arrow-forward" />
-                  ) : (
-                    <MdKeyboardArrowRight className="arrow-right" />
-                  )}
-                </Button2>
-              </div>
+          <Column1>
+            <PageTitle className="is-size-6 is-uppercase has-text-weight-light-desktop my-3">
+              {topLine}
+            </PageTitle>
+            <PageHeader className="is-size-4-desktop is-size-6-touch has-text-weight-semibold my-3">
+              {headline}
+            </PageHeader>
+            <ProjectDesc className="is-size-6 my-5 has-text-weight-light">
+              {description}
+            </ProjectDesc>
+            <Button2 to={page} onMouseEnter={onHover} onMouseLeave={onHover}>
+              {' '}
+              {buttonLabel}
+              {hover ? (
+                <MdArrowForward className="arrow-forward" />
+              ) : (
+                <MdKeyboardArrowRight className="arrow-right" />
+              )}
+            </Button2>
           </Column1>
           <Column2 className="column is-flex is-justify-content-center">
             <img

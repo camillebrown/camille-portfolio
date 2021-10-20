@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, SocialIcon, WebRights } from './StaticFooterElements';
+import { Footer, FooterIcons, SocialIcon, WebRights } from './StaticFooterElements';
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function StaticFooter() {
@@ -10,9 +10,8 @@ export default function StaticFooter() {
           <WebRights>
             Camille Brown © {new Date().getFullYear()}. All rights reserved.
           </WebRights>
-          <div
+          <FooterIcons
             className="is-flex is-justify-content-space-between is-align-items-center mt-4"
-            style={{ width: '10vw' }}
           >
             <SocialIcon
               className="is-size-4"
@@ -38,7 +37,7 @@ export default function StaticFooter() {
             >
               <FaTwitter />
             </SocialIcon>
-          </div>
+          </FooterIcons>
         </div>
       </div>
     </Footer>

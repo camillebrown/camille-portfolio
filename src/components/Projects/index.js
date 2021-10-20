@@ -28,7 +28,7 @@ const Projects = () => {
       className="is-flex is-justify-content-center is-align-items-center"
       id="work"
     >
-      <div className="columns">
+      <div className="columns" style={{ width: '100%' }}>
         <ProjectBg1 className="column" />
         <ProjectBg1 className="column">
           <MainImg
@@ -38,11 +38,11 @@ const Projects = () => {
         </ProjectBg1>
       </div>
       <IndexProjectContainer className="is-flex is-flex-direction-column has-text-centered is-align-items-center">
-        <div className="is-flex is-flex-direction-column is-align-items-center">
-          <PageTitle className="is-size-5-desktop is-size-6-touch has-text-centered is-uppercase mt-3">
+        <div className="is-flex is-flex-direction-column is-align-items-center px-5">
+          <PageTitle className="is-size-6 is-uppercase has-text-weight-light-desktop has-text-centered is-uppercase mt-3">
             Check Out My Work
           </PageTitle>
-          <IndexProjectSubtitle className="mb-3 mt-2 is-size-3-desktop is-size-5-touch has-text-centered has-text-weight-bold">
+          <IndexProjectSubtitle className="mb-3 mt-2 is-size-4-desktop is-size-6-touch has-text-centered has-text-weight-bold">
             A Few Featured Projects
           </IndexProjectSubtitle>
           <ProjectDesc className="is-size-6 has-text-weight-light">

@@ -22,3 +22,11 @@ export const SocialIcon = styled(LinkRouter)`
     transition: all 0.2s ease-in-out;
   }
 `;
+
+export const FooterIcons = styled.div`
+  width: 10vw;
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
+`;

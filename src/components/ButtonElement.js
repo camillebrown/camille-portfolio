@@ -38,7 +38,7 @@ export const Button2 = styled(LinkRouter)`
   font-size: '16px';
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   transition: all 0.2s ease-in-out;
   font-family: 'Lato', sans-serif;
@@ -50,5 +50,17 @@ export const Button2 = styled(LinkRouter)`
     transition: all 0.2s ease-in-out;
     background: #444443;
     color: #df9c37;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 14px 48px;
+    width: 60%;
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
   }
 `;
