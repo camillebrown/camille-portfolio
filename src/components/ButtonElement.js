@@ -38,13 +38,15 @@ export const Button2 = styled(LinkRouter)`
   font-size: '16px';
   cursor: pointer;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-decoration: none;
+  width: 60%;
+  
 
   &:hover {
     transition: all 0.2s ease-in-out;
@@ -55,7 +57,7 @@ export const Button2 = styled(LinkRouter)`
   @media screen and (max-width: 375px) {
     padding: 14px 48px;
     width: 60%;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   @media screen and (max-width: 768px) {
