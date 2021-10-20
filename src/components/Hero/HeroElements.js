@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
 
 export const HeroBackground = styled.div`
   height: 110vh;
-  width: 100%;
+  width: 110%;
 `;
 
 export const HeroBlock1 = styled.div`

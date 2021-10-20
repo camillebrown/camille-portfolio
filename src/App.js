@@ -1,4 +1,4 @@
-import './index.css'
+import './index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
 import About from './pages/about';
@@ -10,12 +10,12 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/' component={Home} exact />
-        <Route path='/about' component={About} exact />
-        <Route path='/work' component={Work2} exact/>
-        <Route path='/contact' component={Contact} exact />
+        <Route path="/" component={Home} exact />
+        <Route path="/about" component={About} exact />
+        <Route path="/work" component={Work2} exact />
+        <Route path="/contact" component={Contact} exact />
       </Switch>
-      <StaticFooter/>
+      <StaticFooter />
     </Router>
   );
 }

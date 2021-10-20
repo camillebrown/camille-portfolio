@@ -7,7 +7,12 @@ export const MainContainer = styled.div`
 
 export const MainBackground = styled.div`
   height: 80vh;
-  width: 100%;
+  width: 110%;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 45%;
+  }
 `;
 
 export const MainWrapper = styled.div`
