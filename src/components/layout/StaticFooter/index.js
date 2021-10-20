@@ -1,10 +1,10 @@
 import React from 'react';
-import { SocialIcon, WebRights } from './StaticFooterElements';
+import { Footer, SocialIcon, WebRights } from './StaticFooterElements';
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function StaticFooter() {
   return (
-    <footer className="footer py-5" style={{ background: '#f2f0eb' }}>
+    <Footer className="footer py-5">
       <div className="content has-text-centered px-6">
         <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
           <WebRights>
@@ -41,6 +41,6 @@ export default function StaticFooter() {
           </div>
         </div>
       </div>
-    </footer>
+    </Footer>
   );
 }

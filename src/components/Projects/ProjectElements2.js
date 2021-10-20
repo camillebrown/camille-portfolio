@@ -6,7 +6,13 @@ export const MainContainer = styled.div`
   font-family: 'Montserrat', sans-serif;
 
   @media screen and (max-width: 768px) {
+    width: 100%;
     background: #ebe9e6;
+    margin: 30% 0%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 80vh;
   }
 `;
 
@@ -14,14 +20,9 @@ export const ProjectBg1 = styled.div`
   background: #ebe9e6;
   position: relative;
 
-  @media screen and(max-width: 768px) {
-    height: 100vh;
+  @media screen and (max-width: 1024px) {
+    background: transparent;
   }
-`;
-
-export const ProjectBg2 = styled.div`
-  background: #ebe9e6;
-  position: relative;
 `;
 
 export const MainImg = styled.img`
@@ -29,15 +30,24 @@ export const MainImg = styled.img`
   object-fit: contain;
   float: right;
 
-   @media screen and (max-width: 768px) {
-    background: #ebe9e6;
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
 export const IndexProjectContainer = styled.div`
   z-index: 3;
   position: absolute;
-  /* max-width: 1200px; */
+
+  @media screen and (max-width: 1024px) {
+    background: #ebe9e6;
+    padding: 30px 0px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 35% 0%;
+    background: #ebe9e6;
+  }
 `;
 
 export const IndexProjectSubtitle = styled.h1`
@@ -90,8 +100,6 @@ export const ProjectLinks = styled.a`
 export const ProjectCard = styled(LinkRouter)`
   background: white;
   border-radius: 10px;
-  width: 25%;
-  margin: 0 30px;
   min-height: 30vh;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   transition: all 0.2s ease-in-out;
@@ -103,8 +111,10 @@ export const ProjectCard = styled(LinkRouter)`
     cursor: pointer;
   }
 
-  @media screen and(max-width: 768px) {
-    min-width: 85%;
+  @media screen and (max-width: 768px) {
+    min-width: 70%;
+    max-width: 70%;
+    height: 20px;
   }
 `;
 

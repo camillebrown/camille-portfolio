@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
 
 export const HeroBackground = styled.div`
   height: 110vh;
-  width: 110%;
+  width: 100%;
 `;
 
 export const HeroBlock1 = styled.div`
@@ -16,6 +16,7 @@ export const HeroBlock1 = styled.div`
 
   @media screen and (max-width: 768px) {
     height: 51%;
+    width: 100%;
   }
 `;
 
@@ -25,6 +26,7 @@ export const HeroBlock2 = styled.div`
 
   @media screen and (max-width: 768px) {
     height: 52.5%;
+    width: 100%;
   }
 `;
 
@@ -75,7 +77,11 @@ export const HeroImg3 = styled.img`
 export const HeroContent = styled.div`
   z-index: 3;
   position: absolute;
-  max-width: 1200px;
+  max-width: 90%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const HeroTitle = styled.h1`

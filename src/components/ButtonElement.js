@@ -24,10 +24,6 @@ export const Button1 = styled(LinkScroll)`
     color: #df9c37;
   }
 
-  @media screen and (max-width: 768px) {
-    transform: scale(0.8);
-  }
-
   @media screen and (max-width: 375px) {
     transform: scale(0.7);
   }

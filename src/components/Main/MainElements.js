@@ -3,11 +3,15 @@ import styled from 'styled-components';
 export const MainContainer = styled.div`
   z-index: 1;
   font-family: 'Montserrat', sans-serif;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const MainBackground = styled.div`
   height: 80vh;
-  width: 110%;
+  width: 100%;
   overflow: hidden;
 
   @media screen and (max-width: 768px) {
@@ -52,7 +56,7 @@ export const MainRow = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
@@ -62,6 +66,13 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
   grid-area: col2;
+  padding: 0px 20px;
+  margin: 0px 40px;
+  
+  @media screen and (max-width: 1024px) {
+    margin: 0px 10px;
+    padding: 0px 10px;
+  }
 `;
 
 export const ProjectDesc = styled.p`

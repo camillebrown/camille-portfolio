@@ -71,7 +71,7 @@ const Main = ({
                 </Button2>
               </div>
           </Column1>
-          <Column2 className="column px-4 mx-6 is-flex is-justify-content-center">
+          <Column2 className="column is-flex is-justify-content-center">
             <img
               className={classnames('image mb-5', classname)}
               src={img}
