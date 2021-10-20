@@ -1,12 +1,10 @@
-import './App.css'
+import './index.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
 import About from './pages/about';
-import Work from './pages/work';
+import Work2 from './pages/work2';
 import Contact from './pages/contact';
-import Footer from './components/layout/Footer';
-
-
+import StaticFooter from './components/layout/StaticFooter';
 
 function App() {
   return (
@@ -14,10 +12,10 @@ function App() {
       <Switch>
         <Route path='/' component={Home} exact />
         <Route path='/about' component={About} exact />
-        <Route path='/work' component={Work} exact/>
+        <Route path='/work' component={Work2} exact/>
         <Route path='/contact' component={Contact} exact />
       </Switch>
-      <Footer/>
+      <StaticFooter/>
     </Router>
   );
 }

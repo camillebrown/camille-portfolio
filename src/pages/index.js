@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Main from '../components/Main'
 import Hero from '../components/Hero'
-import Navbar from '../components/layout/Navbar'
+import Navbar from '../components/layout/ScrollNavbar'
 import Sidebar from '../components/layout/Sidebar'
 import { homeObjOne, homeObjTwo } from '../components/Main/Data'
 import Projects from '../components/Projects'
