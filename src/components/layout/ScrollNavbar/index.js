@@ -5,6 +5,7 @@ import {
   Nav,
   NavLinks,
   NavBarMenu,
+  Hamburger,
   NavBtnLink,
   NavBarLogo,
   NavContainer,
@@ -41,7 +42,7 @@ const Navbar = ({ toggle }) => {
       >
         <NavContainer className="is-flex is-justify-content-space-between px-4">
           <NavBarLogo
-            className="is-size-5 is-uppercase has-text-centered m-5"
+            className="is-size-5 is-uppercase has-text-centered"
             onClick={toggleHome}
             to="/"
           >
@@ -86,8 +87,8 @@ const Navbar = ({ toggle }) => {
             </NavLinks>
           </NavBarMenu>
           <div className="is-flex is-align-items-center m-5">
-            <button
-              className="navbar-burger m-3"
+            <Hamburger
+              className="navbar-burger"
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample"
@@ -96,7 +97,7 @@ const Navbar = ({ toggle }) => {
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
-            </button>
+            </Hamburger>
             <NavBtnLink
               className="is-size-6 is-uppercase has-text-centered py-3 px-5"
               to="/contact"

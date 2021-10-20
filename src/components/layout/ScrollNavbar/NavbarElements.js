@@ -23,6 +23,23 @@ export const NavBarLogo = styled(LinkRouter)`
   color: #444443;
   font-family: 'Lato', serif;
   letter-spacing: 2px;
+  margin: 15px 25px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 25px;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+`;
+
+export const Hamburger = styled.button`
+  @media screen and (max-width: 375px) {
+    margin-top: -20px;
+    margin-right: -15px;
+  }
 `;
 
 export const NavBarMenu = styled.ul`
@@ -49,7 +66,7 @@ export const NavLinks = styled(LinkScroll)`
 
   &:hover {
     color: #df9c37;
-    font-weight: bolder;
+    font-weight: 900;
     border-bottom: 3px solid #df9c37;
   }
 `;
