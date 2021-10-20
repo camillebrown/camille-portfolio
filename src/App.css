@@ -45,7 +45,22 @@
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: 20px;
+  margin-right: 35px;
+}
+
+.static-nav {
+  background: #fff;
+  height: 80px;
+  width: 100%;
+  margin-top: -190px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .nav-item {
@@ -328,7 +343,7 @@
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .footer-container {
-  background-color: #F2F0EB;
+  background-color: #f2f0eb;
 }
 
 .footer-wrap {
@@ -388,7 +403,6 @@
   color: #df9c37;
   transition: all 0.2s ease-in-out;
 }
-
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! ABOUT PAGE !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -501,7 +515,7 @@
   align-items: center;
 }
 
-input[type="text"] {
+input[type='text'] {
   width: 40%;
   margin: 20px 24px;
   padding: 12px 24px;
@@ -515,7 +529,7 @@ input[type="text"] {
   /* background-position: 95% center; */
   backface-visibility: hidden;
   border: none;
-  border-bottom: 1px solid #EBE9E5;
+  border-bottom: 1px solid #ebe9e5;
   letter-spacing: 1.5px;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
@@ -535,13 +549,13 @@ input[type="text"] {
   background-size: 18px 18px;
   background-position: 95% center;
   border: none;
-  border-bottom: 1px solid #EBE9E5;
+  border-bottom: 1px solid #ebe9e5;
   letter-spacing: 1.5px;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
 }
 
-button[type="submit"] {
+button[type='submit'] {
   border: 1px solid #a5a5a5;
   background: white;
   font-size: 14px;
@@ -565,7 +579,7 @@ button[type="submit"] {
 
 .input::placeholder,
 .textarea::placeholder {
-  color: color(#EBE9E5 a(0.8));
+  color: color(#ebe9e5 a(0.8));
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
@@ -596,7 +610,7 @@ button[type="submit"] {
 }
 
 .contact-p {
-  margin: 20px auto;
+  margin-top: 20vh;
   width: 90%;
   font-size: 40px;
   line-height: 1.1;
@@ -606,14 +620,24 @@ button[type="submit"] {
   letter-spacing: 1.5px;
 }
 
+.contact-submit {
+  display: flex;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background: white;
+  border: 1px solid #444443;
+  color: #444443;
+  text-transform: uppercase;
+  font-family: 'Lato', serif;
+  letter-spacing: 2px;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!! PROJECT PAGE !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-
-
 .proj-page-cont {
   min-height: 83.5vh;
-  margin: 20px auto;
+  margin: 20vh auto;
 }
 
 .proj-page-h1 {
@@ -637,15 +661,15 @@ button[type="submit"] {
 }
 
 .main-proj {
-  border: 0.5px solid #EBE9E5;
+  border: 0.5px solid #ebe9e5;
   min-height: 600px;
-  background: #EBE9E5;
+  background: #ebe9e5;
   margin: 20px auto;
 }
 
 .line-break {
   width: 70%;
-  border: 0.5px solid #EBE9E5;
+  border: 0.5px solid #ebe9e5;
   margin: 0 auto;
 }
 
@@ -690,8 +714,6 @@ button[type="submit"] {
   text-transform: uppercase;
   color: #df9c37;
 }
-
-
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -796,3 +818,9 @@ button[type="submit"] {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media screen and (max-width: 375px) {
+  .nav-menu-solo {
+    display: none;
+  }
+}

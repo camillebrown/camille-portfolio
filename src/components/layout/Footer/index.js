@@ -20,16 +20,16 @@ const Footer = () => {
                         </LinkRouter>
                         <small className="web-rights">Camille Brown © {new Date().getFullYear()}. All rights reserved.</small>
                         <div className="social-icons">
-                            <a className="social-icon-link" href='//www.github.com/camillebrown'  target="_blank" aria-label="Github">
+                            <a className="social-icon-link" href='//www.github.com/camillebrown'  target="_blank" rel="noreferrer" aria-label="Github">
                                 <FaGithub />
                             </a>
-                            <a className="social-icon-link" href='//www.linkedin.com/in/camillenbrown/'  target="_blank" aria-label="LinkedIn">
+                            <a className="social-icon-link" href='//www.linkedin.com/in/camillenbrown/'  target="_blank" rel="noreferrer" aria-label="LinkedIn">
                                 <FaLinkedin />
                             </a>
-                            <a className="social-icon-link" href='//www.instagram.com/camilllebrown'  target="_blank" aria-label="Instagram">
+                            <a className="social-icon-link" href='//www.instagram.com/camilllebrown'  target="_blank" rel="noreferrer" aria-label="Instagram">
                                 <FaInstagram />
                             </a>
-                            <a className="social-icon-link" href='//www.twitter.com/camilllebrown'  target="_blank" aria-label="Twitter">
+                            <a className="social-icon-link" href='//www.twitter.com/camilllebrown'  target="_blank" rel="noreferrer" aria-label="Twitter">
                                 <FaTwitter />
                             </a>
                         </div>

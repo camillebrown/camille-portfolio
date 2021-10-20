@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Main from '../components/Main'
 import Hero from '../components/Hero'
-import Navbar from '../components/Navbar'
-import Sidebar from '../components/Sidebar'
+import Navbar from '../components/layout/Navbar'
+import Sidebar from '../components/layout/Sidebar'
 import { homeObjOne, homeObjTwo } from '../components/Main/Data'
 import Projects from '../components/Projects'
 
