@@ -1,40 +1,64 @@
-import React, { useState, useEffect } from 'react';
-import Logo from './Logo';
-import MenuToggle from './MenuToggle';
-import MenuLinks from './MenuLinks';
-import NavBarContainer from './NavBarContainer';
-import Sidebar from '../Sidebar';
+import React from 'react';
+import { NavBarLogo, NavLinks } from './StaticNavbarElements';
 
-const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
-
-  const [scrollNav, setScrollNav] = useState(false);
-  const [state, setState] = useState({});
-
-  const changeNav = () => {
-    if (window.scrollY >= 170) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', changeNav);
-    return () => {
-      setState({});
-    };
-  }, []);
-
+export default function StaticNavbar() {
   return (
-    <NavBarContainer scrollNav={scrollNav}>
-      <Logo />
-      <MenuToggle toggle={toggle} isOpen={isOpen} />
-      <MenuLinks isOpen={isOpen} />
-      <Sidebar toggle={toggle} isOpen={isOpen} />
-    </NavBarContainer>
-  );
-};
+    <nav
+      className="navbar"
+      role="navigation"
+      aria-label="main navigation"
+      style={{
+        minHeight: '10vh',
+        borderBottom: '1px solid #ffdead',
+      }}
+    >
+      <div className="navbar-brand is-flex is-align-items-center">
+        <NavBarLogo
+          className="is-size-5 is-uppercase has-text-centered mx-6"
+          to="/"
+        >
+          Camille Brown
+        </NavBarLogo>
 
-export default NavBar;
+        <button
+          className="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div id="navbarBasicExample" className="navbar-menu">
+        <div className="navbar-start" />
+
+        <div className="navbar-end mx-6">
+          <NavLinks
+            to="/about"
+            className="navbar-item is-size-6 is-uppercase px-2 mx-4"
+            style={{ background: 'transparent', textDecoration: 'none' }}
+          >
+            about me.
+          </NavLinks>
+          <NavLinks
+            className="navbar-item is-size-6 is-uppercase px-2 mx-4"
+            style={{ background: 'transparent', textDecoration: 'none' }}
+            to="/work"
+          >
+            work.
+          </NavLinks>
+          <NavLinks
+            className="navbar-item is-size-6 is-uppercase px-2 mx-4"
+            style={{ background: 'transparent', textDecoration: 'none' }}
+            to="/contact"
+          >
+            contact.
+          </NavLinks>
+        </div>
+      </div>
+    </nav>
+  );
+}

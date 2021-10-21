@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { Box, Input } from '@chakra-ui/react';
+import classnames from 'classnames';
 import { useDisclosure } from '@chakra-ui/react';
 
-import ConfirmationModal from '../components/Modal';
-import StaticNav from '../components/layout/StaticNav/index';
+import StaticNavbar from '../components/layout/StaticNav';
+import ConfirmationModal from '../components/common/Modal';
+import {
+  TextInput,
+  TextArea,
+  SubmitBtn,
+  ContactForm,
+  ContactTitle,
+  ContactSubtitle,
+  ContactContainer,
+} from '../components/page-css-elements/ContactElements';
+import { MainContainer } from '../components/Main/MainElements';
 
 const Contact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const [loading, setLoading] = useState(false);
   const [messageData, setMessageData] = useState({
     first_name: '',
     last_name: '',
@@ -17,7 +27,6 @@ const Contact = () => {
     description: '',
     found_me: '',
   });
-
   const templateParams = {
     to_name: 'Camille',
     from_name: `${messageData.first_name} ${messageData.last_name}`,
@@ -31,6 +40,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true)
     emailjs
       .send(
         'service_32otv78',
@@ -40,6 +50,7 @@ const Contact = () => {
       )
       .then(
         () => {
+          setLoading(false)
           onOpen();
         },
         (error) => {
@@ -50,66 +61,75 @@ const Contact = () => {
 
   return (
     <>
-      <StaticNav />
-      <Box h="100.75vh" className="main-container">
+      <StaticNavbar />
+      <MainContainer className="is-flex is-justify-content-center is-align-items-center">
         <ConfirmationModal isOpen={isOpen} onClose={onClose} />
-        <div className="contact-wrap">
-          <h1 className="contact-h1">Let's Work Together</h1>
-          <p className="contact-p">
-            {' '}
-            Have a project in mind? <br></br>Send me a message using the form
-            below.{' '}
-          </p>
-          <form className="contact-form" id="contact-form" onSubmit={sendEmail}>
-            <Input
+        <ContactContainer className="my-6 has-text-centered">
+          <ContactSubtitle className="my-6 is-size-4 has-text-weight-bold">
+            <ContactTitle className="is-uppercase has-text-weight-semibold has-text-centered mb-4 is-size-5">
+              Let's Work Together
+            </ContactTitle>
+            <p className="mb-2">Have a project in mind?</p>
+            <p className="mb-2">Send me a message using the form below.</p>
+          </ContactSubtitle>
+          <ContactForm
+            className="is-flex is-justify-content-space-between is-align-content-center is-align-items-center"
+            id="contact-form"
+            onSubmit={sendEmail}
+          >
+            <TextInput
               type="text"
-              placeholder="First Name  *"
+              className="is-uppercase py-2 px-3 my-3 mx-4"
               name="first_name"
               onChange={handleChange}
-              className="input"
+              placeholder="First Name  *"
             />
-            <Input
+            <TextInput
               type="text"
-              placeholder="Last Name  *"
+              className="is-uppercase py-2 px-3 my-3 mx-4"
               name="last_name"
               onChange={handleChange}
-              className="input"
+              placeholder="Last Name  *"
             />
-            <Input
+            <TextInput
               type="text"
-              placeholder="Email  *"
+              className="is-uppercase py-2 px-3 my-3 mx-4"
               name="email"
               onChange={handleChange}
-              className="input"
+              placeholder="Email  *"
             />
-            <Input
+            <TextInput
               type="text"
-              placeholder="Phone Number  *"
+              className="is-uppercase py-2 px-3 my-3 mx-4"
               name="phone"
               onChange={handleChange}
-              className="input"
+              placeholder="Phone  *"
             />
-            <textarea
+            <TextArea
               placeholder="Please describe your project  *"
               name="description"
               onChange={handleChange}
-              className="textarea"
+              className="is-uppercase is-size-6 my-3 mx-5"
             />
-            <textarea
+            <TextArea
               placeholder="How did you find me? (LinkedIn, Referral, etc)"
               name="found_me"
               onChange={handleChange}
-              className="textarea"
+              className="is-uppercase is-size-6 my-3 mx-5"
             />
-            <input
-              id="submit"
-              className="fa fa-search contact-submit"
+            <SubmitBtn
+              onClick={sendEmail}
+              className={classnames(
+                'button is-size-6 is-uppercase px-5 py-3',
+                { 'is-loading': loading },
+              )}
               type="submit"
-              value="Submit"
-            />
-          </form>
-        </div>
-      </Box>
+            >
+              Submit
+            </SubmitBtn>
+          </ContactForm>
+        </ContactContainer>
+      </MainContainer>
     </>
   );
 };

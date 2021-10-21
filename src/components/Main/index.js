@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import classnames from 'classnames';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 
-import { Button2 } from '../ButtonElement';
 import {
   MainContainer,
   MainRow,
@@ -14,7 +13,8 @@ import {
   Column2,
   ProjectDesc,
 } from './MainElements';
-import { PageTitle, PageHeader } from '../Projects/ProjectElements2';
+import { Button2 } from '../common/ButtonElement';
+import { PageTitle, PageHeader } from '../Projects/ProjectElements';
 
 const Main = ({
   imgStart,

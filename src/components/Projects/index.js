@@ -12,8 +12,8 @@ import {
   ProjectIcon1,
   ProjectIcon2,
   ProjectIcon3,
-} from './ProjectElements2';
-import { Button2 } from '../ButtonElement';
+} from './ProjectElements';
+import { Button2 } from '../common/ButtonElement';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { ProjectDesc } from '../Main/MainElements';
 

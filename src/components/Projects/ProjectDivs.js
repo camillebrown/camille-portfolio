@@ -4,7 +4,7 @@ import {
   ProjectTitle,
   ProjectSubtitle,
   ProjectLinks,
-} from './ProjectElements2';
+} from './ProjectElements';
 
 export default function ProjectDivs() {
   return projects.map((project, idx) => {

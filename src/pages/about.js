@@ -1,84 +1,78 @@
 import React from 'react';
 import { HiOutlineMail } from 'react-icons/hi';
-import { Flex, Box, Image } from '@chakra-ui/react';
-import { Link as LinkRouter } from 'react-router-dom';
 import { IoCloudDownloadOutline } from 'react-icons/io5';
 
+import {
+  MainContainer,
+  MainRow,
+  MainWrapper,
+  MainBlock1,
+  MainBlock2,
+  MainBackground,
+  Column1,
+  Column2,
+  ProjectDesc,
+} from '../components/Main/MainElements';
 import { Skills } from '../components/Skills';
-import StaticNav from '../components/layout/StaticNav/index';
+import StaticNavbar from '../components/layout/StaticNav';
+import { AboutBtnLink } from '../components/page-css-elements/AboutPageElements';
+import { PageTitle, PageHeader } from '../components/Projects/ProjectElements';
 
-const About = () => {
+export default function About() {
   return (
     <>
-      <StaticNav />
-      <Box className="main-container">
-        <Flex h="100.75vh" w="100%">
-          <Box w="50%" pos="relative">
-            <Image
-              pos="absolute"
-              height="100%"
-              left="0"
-              src="https://i.ibb.co/8mRjBMB/bg-circle.png"
-              alt="Sidebar Half Circle"
-            />
-          </Box>
-          <Box w="50%" pos="relative">
-            <Image
-              pos="absolute"
-              top="20"
-              right="0"
-              src="https://i.ibb.co/Rzwwz9t/Screen-Shot-2021-06-23-at-12-48-32-PM.png"
-              alt="Sidebar Lines"
-            />
-          </Box>
-        </Flex>
-        <Box className="main-wrapper">
-          <Box className="about-row">
-            <Box className="column1">
-              <div className="about-wrapper">
-                <p className="top-line">Hello!</p>
-                <p className="main-h1">I'm Camille Brown. </p>
-                <p className="proj-desc">
-                  When I'm not working at the Frontend Developer at{' '}
-                  <a className="ck" href="https://www.creditkey.com/">
-                    Credit Key
-                  </a>
-                  , as a California native, I love the outdoors, sunny days on
-                  the beach and all things music. Don't hesitate to reach out! I
-                  look forward to working with you.
-                </p>
-                <Flex my="30px" justify="center">
-                  <a
-                    className="about-btn-link"
-                    href="//www.drive.google.com/file/d/1vbl_OcsZT4XjZu0KZk9IEOuulllBHP-z/view?usp=sharing"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="My Resume"
-                  >
-                    my resume
-                    <IoCloudDownloadOutline className="download" />
-                  </a>
-                  <LinkRouter to="/contact" className="about-btn-link">
-                    contact me
-                    <HiOutlineMail className="download" />
-                  </LinkRouter>
-                </Flex>
-                {Skills()}
+      <StaticNavbar />
+      <MainContainer className="is-flex is-justify-content-center is-align-items-center">
+        <MainBackground className="columns is-relative">
+          <MainBlock1 className="column is-half" />
+          <MainBlock2 className="column" />
+        </MainBackground>
+        <MainWrapper className="is-flex is-justify-content-center">
+          <MainRow>
+            <Column1>
+              <PageTitle className="is-size-6 is-uppercase has-text-weight-light-desktop my-3">
+                Hello!
+              </PageTitle>
+              <PageHeader className="is-size-4-desktop is-size-6-touch has-text-weight-semibold my-3">
+                I'm Camille Brown.
+              </PageHeader>
+              <ProjectDesc className="is-size-6 my-5 has-text-weight-light">
+                When I'm not working at the Frontend Developer at{' '}
+                <a className="ck" href="https://www.creditkey.com/">
+                  Credit Key
+                </a>
+                , as a California native, I love the outdoors, sunny days on the
+                beach and all things music. Don't hesitate to reach out! I look
+                forward to working with you.
+              </ProjectDesc>
+              <div className="my-4 is-flex">
+                <AboutBtnLink
+                  className="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-centered is-size-6 mr-3 py-2 px-4"
+                  to="//www.drive.google.com/file/d/1vbl_OcsZT4XjZu0KZk9IEOuulllBHP-z/view?usp=sharing"
+                >
+                  my resume
+                  <IoCloudDownloadOutline className="ml-2" />
+                </AboutBtnLink>
+                <AboutBtnLink
+                  to="/contact"
+                  className="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-centered is-size-6 mr-3 py-2 px-4"
+                >
+                  contact me
+                  <HiOutlineMail className="ml-2" />
+                </AboutBtnLink>
               </div>
-            </Box>
-            <Box className="column2">
-              <Box>
-                <img
-                  src="https://i.ibb.co/X7RLLPy/compgirl.jpg"
-                  alt="About Me"
-                />
-              </Box>
-            </Box>
-          </Box>
-        </Box>
-      </Box>
+              {Skills()}
+            </Column1>
+            <Column2 className="column is-flex is-justify-content-center">
+              <img
+                src="https://i.ibb.co/X7RLLPy/compgirl.jpg"
+                alt="About Me"
+                className="profile-pic2"
+              />
+            </Column2>
+          </MainRow>
+        </MainWrapper>
+      </MainContainer>
     </>
   );
-};
-
-export default About;
+}

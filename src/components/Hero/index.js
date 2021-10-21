@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
-import { Button1 } from '../ButtonElement';
+import { Button1 } from '../common/ButtonElement';
 import {
   HeroContainer,
   HeroBackground,
