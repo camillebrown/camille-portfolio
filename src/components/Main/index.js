@@ -1,67 +1,81 @@
-import React, { useState } from 'react'
-import { Button2 } from '../ButtonElement'
-import { Box, Image, Flex } from "@chakra-ui/react"
-import { MainRow } from './MainElements'
-import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
+import React, { useState } from 'react';
+import classnames from 'classnames';
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 
-const Main = ({ imgStart, topLine, headline, description, buttonLabel, img, alt, id, page }) => {
+import {
+  MainContainer,
+  MainRow,
+  MainWrapper,
+  MainBlock1,
+  MainBlock2,
+  MainBackground,
+  Column1,
+  Column2,
+  ProjectDesc,
+} from './MainElements';
+import { Button2 } from '../common/ButtonElement';
+import { PageTitle, PageHeader } from '../Projects/ProjectElements';
 
-  const [hover, setHover] = useState(false)
+const Main = ({
+  imgStart,
+  topLine,
+  headline,
+  description,
+  buttonLabel,
+  img,
+  alt,
+  id,
+  page,
+  classname,
+}) => {
+  const [hover, setHover] = useState(false);
 
   const onHover = () => {
-    setHover(!hover)
-  }
+    setHover(!hover);
+  };
 
   return (
-      <div className="main-container" id={id}>
-        <Flex h="90vh" w="100%">
-          <Box w="50%" pos="relative">
-            <Image
-              pos="absolute"
-              height="100%"
-              left="0"
-              src="https://i.ibb.co/8mRjBMB/bg-circle.png"
-              alt="Sidebar Half Circle"
+    <MainContainer
+      className="is-flex is-justify-content-center is-align-items-center"
+      id={id}
+    >
+      <MainBackground className="columns is-relative">
+        <MainBlock1 className="column is-half" />
+        <MainBlock2 className="column" />
+      </MainBackground>
+      <MainWrapper className="is-flex is-justify-content-center">
+        <MainRow imgStart={imgStart}>
+          <Column1>
+            <PageTitle className="is-size-6 is-uppercase has-text-weight-light-desktop my-3">
+              {topLine}
+            </PageTitle>
+            <PageHeader className="is-size-4-desktop is-size-6-touch has-text-weight-semibold my-3">
+              {headline}
+            </PageHeader>
+            <ProjectDesc className="is-size-6 my-5 has-text-weight-light">
+              {description}
+            </ProjectDesc>
+            <Button2 to={page} onMouseEnter={onHover} onMouseLeave={onHover}>
+              {' '}
+              {buttonLabel}
+              {hover ? (
+                <MdArrowForward className="arrow-forward" />
+              ) : (
+                <MdKeyboardArrowRight className="arrow-right" />
+              )}
+            </Button2>
+          </Column1>
+          <Column2 className="column is-flex is-justify-content-center">
+            <img
+              className={classnames('image mb-5', classname)}
+              src={img}
+              alt={alt}
             />
-          </Box>
-          <Box w="50%" pos="relative">
-            <Image
-              pos="absolute"
-              top="20"
-              right="0"
-              src='https://i.ibb.co/Rzwwz9t/Screen-Shot-2021-06-23-at-12-48-32-PM.png'
-              alt="Sidebar Lines" />
-          </Box>
-        </Flex>
-        <div className="main-wrapper">
-          <MainRow imgStart={imgStart}>
-            <Box className="column1">
-              <Box width="80%">
-                <p className="top-line">{topLine}</p>
-                <h1 className="main-h1">{headline}</h1>
-                <p className="main-desc" >{description}</p>
-                <div className="btn-wrap-main">
-                  <Button2
-                    to={page}
-                    onMouseEnter={onHover}
-                    onMouseLeave={onHover}
-                  > {buttonLabel}{hover ? <MdArrowForward className="arrow-forward" /> : <MdKeyboardArrowRight className="arrow-right" />}
-                  </Button2>
-                </div>
-              </Box>
-            </Box>
-            <Box className="column2">
-              <Image
-                borderRadius="10"
-                borderColor="black"
-                src={img}
-                alt={alt}
-              />
-            </Box>
-          </MainRow>
-        </div>
-      </div>
-  )
-}
+          </Column2>
+        </MainRow>
+      </MainWrapper>
+    </MainContainer>
+  );
+};
 
-export default Main
+export default Main;

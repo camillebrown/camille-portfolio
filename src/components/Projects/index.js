@@ -1,68 +1,124 @@
-import React, { useState } from 'react'
-import { Box, Image, Flex } from "@chakra-ui/react"
-import { ProjectCard } from './ProjectElements'
-import { Button2 } from '../ButtonElement'
-import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
+import React, { useState } from 'react';
+import {
+  MainContainer,
+  ProjectBg1,
+  MainImg,
+  IndexProjectContainer,
+  IndexProjectSubtitle,
+  ProjectCard,
+  PageTitle,
+  ProjectTitle,
+  ProjectSubtitle,
+  ProjectIcon1,
+  ProjectIcon2,
+  ProjectIcon3,
+} from './ProjectElements';
+import { Button2 } from '../common/ButtonElement';
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import { ProjectDesc } from '../Main/MainElements';
 
 const Projects = () => {
-
-  const [hover, setHover] = useState(false)
-
+  const [hover, setHover] = useState(false);
   const onHover = () => {
-    setHover(!hover)
-  }
+    setHover(!hover);
+  };
 
   return (
-    <>
-      <div className="main-container" >
-        <Flex h="90vh" w="100%">
-          <Box w="50%" style={{ backgroundColor: "#EBE9E6" }} pos="relative" />
-          <Box w="50%" style={{ backgroundColor: "#EBE9E6" }} pos="relative">
-            <Image
-              pos="absolute"
-              top="20"
-              right="0"
-              src='https://i.ibb.co/CVBFVBw/half-stripes.png'
-              alt="Sidepanel Half Circle and Bars"
-            />
-          </Box>
-        </Flex>
-        <div className="proj-container" id='work'>
-          <div className="info-wrapper">
-            <p className="top-line">Check Out My Work</p>
-            <h1 className="main-h1">A Few Featured Projects</h1>
-            <p className="proj-desc">
-              Need someone focused on attention to detail and design accuracy? <br></br> I look forward  to helping you in all of the stages of your digital project: strategy, design, and web development.
-            </p>
-          </div>
-          <div className="proj-wrapper">
-            <ProjectCard to="/work">
-              <img className="proj-icon" src="https://i.ibb.co/XFCdsq7/undraw-fitness-tracker-3033.png" alt="Fitness Tracker Icon" />
-              <h2 className="proj-h2">Better.</h2>
-              <p className="proj-p">The Better.™ App allows users to track their daily fitness activity, moods, sleep patterns, and meals over time.</p>
-            </ProjectCard>
-            <ProjectCard to="/work">
-              <img className="proj-icon" src="https://i.ibb.co/1LLmbXV/cooking.png" alt="Cooking Icon" />
-              <h2 className="proj-h2">Cookbook Curator</h2>
-              <p className="proj-p">Find thousands of recipes and add them to your own personalized cookbook or create and save your own recipes!</p>
-            </ProjectCard>
-            <ProjectCard to="/work">
-              <img className="proj-icon2" src="https://i.ibb.co/xDF52cw/game.png" alt="Trivia Game Icon" />
-              <h2 className="proj-h2">Got the Beat!</h2>
-              <p className="proj-p">This music trivia game tests users' music industry knowledge. <br></br>Can you get the high score?</p>
-            </ProjectCard>
-          </div>
-          <Button2
-            to='/work'
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            style={{ width: "20%", margin:"0 auto" }}
-          > See More! {hover ? <MdArrowForward className="arrow-forward" /> : <MdKeyboardArrowRight className="arrow-right" />}
-          </Button2>
-        </div>
+    <MainContainer
+      className="is-flex is-justify-content-center is-align-items-center"
+      id="work"
+    >
+      <div className="columns" style={{ width: '100%' }}>
+        <ProjectBg1 className="column" />
+        <ProjectBg1 className="column">
+          <MainImg
+            src="https://i.ibb.co/CVBFVBw/half-stripes.png"
+            alt="Half Stripes"
+          />
+        </ProjectBg1>
       </div>
-    </>
-  )
-}
+      <IndexProjectContainer className="is-flex is-flex-direction-column has-text-centered is-align-items-center">
+        <div className="is-flex is-flex-direction-column is-align-items-center px-5">
+          <PageTitle className="is-size-6 is-uppercase has-text-weight-light-desktop has-text-centered is-uppercase mt-3">
+            Check Out My Work
+          </PageTitle>
+          <IndexProjectSubtitle className="mb-3 mt-2 is-size-4-desktop is-size-6-touch has-text-centered has-text-weight-bold">
+            A Few Featured Projects
+          </IndexProjectSubtitle>
+          <ProjectDesc className="is-size-6 has-text-weight-light">
+            Need someone focused on attention to detail and design accuracy?{' '}
+            <br /> I look forward to helping you in all of the stages of your
+            digital project: strategy, design, and web development.
+          </ProjectDesc>
+        </div>
+        <div className="columns is-flex is-justify-content-center m-6 is-multiline">
+          <ProjectCard
+            to="/work"
+            className="column is-one-quarter is-flex is-flex-direction-column is-align-items-center is-justify-content-center p-6 m-3"
+          >
+            <ProjectIcon1
+              src="https://i.ibb.co/XFCdsq7/undraw-fitness-tracker-3033.png"
+              alt="Fitness Tracker Icon"
+            />
+            <ProjectTitle className="is-size-4-desktop is-size-6-touch has-text-centered is-uppercase has-text-weight-bold mb-2">
+              Better.
+            </ProjectTitle>
+            <ProjectSubtitle className="is-size-6-desktop is-size-7-touch">
+              The Better.™ App allows users to track their daily fitness
+              activity, moods, sleep patterns, and meals over time.
+            </ProjectSubtitle>
+          </ProjectCard>
+          <ProjectCard
+            to="/work"
+            className="column is-one-quarter is-flex is-flex-direction-column is-align-items-center is-justify-content-center p-6 m-3"
+          >
+            <ProjectIcon2
+              src="https://i.ibb.co/1LLmbXV/cooking.png"
+              alt="Cooking Icon"
+            />
+            <ProjectTitle className="is-size-4-desktop is-size-6-touch has-text-centered is-uppercase has-text-weight-bold mb-2">
+              Cookbook Curator
+            </ProjectTitle>
+            <ProjectSubtitle className="is-size-6-desktop is-size-7-touch">
+              Find thousands of recipes and add them to your own personalized
+              cookbook or create and save your own recipes!
+            </ProjectSubtitle>
+          </ProjectCard>
+          <ProjectCard
+            to="/work"
+            className="column is-one-quarter is-flex is-flex-direction-column is-align-items-center is-justify-content-center p-6 m-3"
+          >
+            <ProjectIcon3
+              src="https://i.ibb.co/xDF52cw/game.png"
+              alt="Trivia Game Icon"
+            />
+            <ProjectTitle className="is-size-4-desktop is-size-6-touch has-text-centered is-uppercase has-text-weight-bold mb-2">
+              Got the Beat!
+            </ProjectTitle>
+            <ProjectSubtitle className="is-size-6-desktop is-size-7-touch gtb">
+              This music trivia game tests users' music industry knowledge. Can
+              you get the high score?
+            </ProjectSubtitle>
+          </ProjectCard>
+        </div>
+        <Button2
+          to="/work"
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+          style={{ width: '20%', margin: '0 auto' }}
+          className="mt-3"
+        >
+          {' '}
+          See More!{' '}
+          {hover ? (
+            <MdArrowForward className="arrow-forward" />
+          ) : (
+            <MdKeyboardArrowRight className="arrow-right" />
+          )}
+        </Button2>
+      </IndexProjectContainer>
+    </MainContainer>
+  );
+};
 
-export default Projects
+export default Projects;

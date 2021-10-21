@@ -1,15 +1,21 @@
 import React from 'react';
 import { FaTimes } from 'react-icons/fa';
-import { SidebarContainer, SidebarLink, SidebarRoute } from './SidebarElements';
+import {
+  SidebarContainer,
+  SidebarLink,
+  SidebarRoute,
+  SidebarMenu,
+  Icon,
+} from './SidebarElements';
 
 const Sidebar = ({ toggle, isOpen }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <div className="icon" onClick={toggle}>
+      <Icon className="is-size-4" onClick={toggle}>
         <FaTimes className="close-icon" />
-      </div>
-      <div className="sidebar-wrapper">
-        <ul className="sidebar-menu">
+      </Icon>
+      <div style={{ color: 'white' }}>
+        <SidebarMenu className="has-text-centered">
           <SidebarLink to="about" onClick={toggle}>
             about.
           </SidebarLink>
@@ -19,8 +25,8 @@ const Sidebar = ({ toggle, isOpen }) => {
           <SidebarLink to="contact" onClick={toggle}>
             contact.
           </SidebarLink>
-        </ul>
-        <div className="side-btn-wrap">
+        </SidebarMenu>
+        <div className="is-flex is-justify-content-center">
           <SidebarRoute to="/contact">let's connect.</SidebarRoute>
         </div>
       </div>

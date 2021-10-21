@@ -1,0 +1,68 @@
+@import '~@creativebulma/bulma-divider';
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Lato:wght@100;300;400;500;600;700;900&family=Lora&family=Montserrat:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:empty.divider:before {
+  margin-right: 0;
+}
+
+:empty.divider:after {
+  margin-left: 0;
+}
+
+.close-icon {
+  transform: translate(-100%, 60%);
+  cursor: pointer;
+  color: #444443;
+}
+
+.profile-pic {
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.profile-pic2 {
+  border-radius: 6px;
+  border: 2px solid #df9c37;
+  padding: 30px;
+  width: 75%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.proj-wrapper {
+  grid-template-columns: 1fr;
+  max-width: 90%;
+}
+
+.gtb {
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .profile-pic {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-pic,
+  .profile-pic2 {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .gtb {
+    padding: 0px;
+  }
+
+  .profile-pic2 {
+    width: 100%;
+  }
+}

@@ -1,40 +1,63 @@
-import React, { useState, useEffect } from 'react';
-import Logo from './Logo';
-import MenuToggle from './MenuToggle';
-import MenuLinks from './MenuLinks';
-import NavBarContainer from './NavBarContainer';
-import Sidebar from '../Sidebar';
+import React, { useState } from 'react';
+import classnames from 'classnames';
+import { Nav, NavBarLogo, NavLinks, Hamburger } from './StaticNavbarElements';
 
-const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+export default function StaticNavbar() {
+  let [active, setActive] = useState(false);
 
-  const [scrollNav, setScrollNav] = useState(false);
-  const [state, setState] = useState({});
-
-  const changeNav = () => {
-    if (window.scrollY >= 170) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
+  const toggle = () => {
+    setActive(!active);
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', changeNav);
-    return () => {
-      setState({});
-    };
-  }, []);
-
   return (
-    <NavBarContainer scrollNav={scrollNav}>
-      <Logo />
-      <MenuToggle toggle={toggle} isOpen={isOpen} />
-      <MenuLinks isOpen={isOpen} />
-      <Sidebar toggle={toggle} isOpen={isOpen} />
-    </NavBarContainer>
-  );
-};
+    <Nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand is-flex is-align-items-center">
+        <NavBarLogo className="is-size-5 is-uppercase has-text-centered" to="/">
+          Camille Brown
+        </NavBarLogo>
 
-export default NavBar;
+        <Hamburger
+          className={classnames('navbar-burger', { 'is-active': active })}
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          onClick={toggle}
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </Hamburger>
+      </div>
+
+      <div
+        id="navbarBasicExample"
+        className={classnames('navbar-menu', { 'is-active': active })}
+      >
+        <div className="navbar-start" />
+        <div className="navbar-end mx-6">
+          <NavLinks
+            to="/about"
+            className="navbar-item is-size-6 is-uppercase px-2 mx-4"
+            style={{ background: 'transparent', textDecoration: 'none' }}
+          >
+            about me.
+          </NavLinks>
+          <NavLinks
+            className="navbar-item is-size-6 is-uppercase px-2 mx-4"
+            style={{ background: 'transparent', textDecoration: 'none' }}
+            to="/work"
+          >
+            work.
+          </NavLinks>
+          <NavLinks
+            className="navbar-item is-size-6 is-uppercase px-2 mx-4"
+            style={{ background: 'transparent', textDecoration: 'none' }}
+            to="/contact"
+          >
+            contact.
+          </NavLinks>
+        </div>
+      </div>
+    </Nav>
+  );
+}
