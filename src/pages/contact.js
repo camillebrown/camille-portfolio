@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import classnames from 'classnames';
-// import { useDisclosure } from '@chakra-ui/react';
 
 import StaticNavbar from '../components/layout/StaticNav';
 import ConfirmationModal from '../components/common/Modal';
