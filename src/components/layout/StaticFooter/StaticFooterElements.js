@@ -26,6 +26,12 @@ export const SocialIcon = styled(LinkRouter)`
 export const FooterIcons = styled.div`
   width: 10vw;
 
+  @media screen and (max-width: 1024px) {
+    width: 20vw;
+  }
+  @media screen and (max-width: 768px) {
+    width: 20vw;
+  }
   @media screen and (max-width: 375px) {
     width: 100%;
   }

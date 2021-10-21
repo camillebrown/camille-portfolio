@@ -1,9 +1,37 @@
 import styled from 'styled-components';
 
+export const MainContainer = styled.div`
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+
+  @media screen and (max-width: 1024px) {
+    height: 83vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 90vh;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 115vh;
+  }
+`;
+
 export const ContactContainer = styled.div`
   height: 71.5vh;
   width: 60%;
   margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
 `;
 
 export const ContactTitle = styled.h1`
@@ -19,6 +47,7 @@ export const ContactSubtitle = styled.div`
   color: #444443;
   font-family: 'Lora', serif;
   letter-spacing: 1.5px;
+  margin: 0 auto;
 `;
 
 export const ContactForm = styled.form`

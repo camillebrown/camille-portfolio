@@ -20,8 +20,21 @@ export const Single = styled.div`
 `;
 
 export const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 65%;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
 `;
 
 export const Skills = () => {
@@ -79,7 +92,7 @@ export const Skills = () => {
   ));
 
   return (
-    <SkillsContainer className="is-flex is-flex-direction-row is-justify-content-flex-start ">
+    <SkillsContainer>
       {skillsDivs}
     </SkillsContainer>
   );

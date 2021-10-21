@@ -4,16 +4,16 @@ import {
   ProjectTitle,
   ProjectSubtitle,
   ProjectLinks,
+  ProjectDivCard
 } from './ProjectElements';
 
 export default function ProjectDivs() {
   return projects.map((project, idx) => {
     return (
       <div className="column">
-        <div
-          className="card my-6"
+        <ProjectDivCard
+          className="card"
           key={idx}
-          style={{ border: '0.5px solid #ebe9e5' }}
         >
           <div className="card-image">
             <figure className="image">
@@ -57,7 +57,7 @@ export default function ProjectDivs() {
               view the code
             </ProjectLinks>
           </footer>
-        </div>
+        </ProjectDivCard>
       </div>
     );
   });

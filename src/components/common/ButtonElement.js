@@ -65,4 +65,8 @@ export const Button2 = styled(LinkRouter)`
     width: 60%;
     margin: 0 auto;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  }
 `;

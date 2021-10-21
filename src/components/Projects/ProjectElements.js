@@ -8,15 +8,11 @@ export const MainContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     background: #ebe9e6;
-    margin: 30% 0%;
-  }
-
-  @media screen and (max-width: 1024px) {
-    height: 80vh;
+    margin: 60vh 0%;
   }
 
   @media screen and (max-width: 375px) {
-    height: 110vh;
+    height: 30vh;
   }
 `;
 
@@ -37,7 +33,7 @@ export const MainImg = styled.img`
 export const IndexProjectContainer = styled.div`
   z-index: 3;
   position: absolute;
-  
+
   @media screen and (max-width: 1024px) {
     z-index: 1;
     background: transparent;
@@ -149,5 +145,24 @@ export const ProjectIcon3 = styled.img`
 
   @media screen and(max-width: 768px) {
     background: #ebe9e6;
+  }
+`;
+
+export const ProjectDivCard = styled.div`
+  border: 0.5px solid #ebe9e5;
+  margin: 3vh 0;
+
+  @media screen and (max-width: 1024px) {
+    height: 32.5vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    transform: scale(0.9);
+    height: 60vh;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 10%;
+    margin: 0;
   }
 `;

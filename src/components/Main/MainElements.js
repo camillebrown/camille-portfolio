@@ -4,6 +4,9 @@ export const MainContainer = styled.div`
   z-index: 1;
   font-family: 'Montserrat', sans-serif;
 
+  @media screen and (max-width: 1024px) {
+    height: 50%;
+  }
   @media screen and (max-width: 768px) {
     width: 100%;
   }

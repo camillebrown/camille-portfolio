@@ -3,11 +3,16 @@ import ProjectDivs from '../components/Projects/ProjectDivs';
 import StaticNavbar from '../components/layout/StaticNav';
 import { PageTitle, PageHeader } from '../components/Projects/ProjectElements';
 
+import {
+  WorkPageContainer,
+  WorkPageParagraph,
+} from '../components/page-css-elements/WorkPageElements';
+
 export default function Work() {
   return (
     <>
       <StaticNavbar />
-      <div className="container" style={{ maxWidth: '90%', height: '80vh' }}>
+      <WorkPageContainer className="container">
         <div className="has-text-centered">
           <PageTitle className="is-size-4 is-uppercase has-text-weight-light mt-6 mb-3">
             Projects
@@ -15,20 +20,19 @@ export default function Work() {
           <PageHeader className="is-size-3 has-text-weight-semibold my-3">
             Check Out My Latest Work
           </PageHeader>
-          <p className="is-size-6 has-text-weight-light px-6 mx-6 my-5">
-            Amet non reprehenderit ut fugiat exercitation anim. Enim mollit do
-            elit enim tempor sunt excepteur minim qui laboris elit cillum
-            excepteur. Non aliqua amet id nostrud laboris esse aliqua ad cillum
-            laborum. Esse reprehenderit aliqua mollit non sit. Lorem duis mollit
-            nisi eu laborum est irure adipisicing voluptate do sunt elit ipsum
-            ad. Aliquip voluptate mollit velit sit officia Lorem mollit ad
-            laboris.
-          </p>
+          <WorkPageParagraph className="is-size-6 has-text-weight-light">
+            I'm always looking for new and creative ways to focus on the success
+            of my clients and enhance product development. As a self-starter who
+            adapts and works easily between developing and implementing
+            strategies, I contribute creative problem-solving skills and
+            innovative solutions while blending my approachable, fun spirit to
+            every project I take on.
+          </WorkPageParagraph>
         </div>
         <div class="columns mb-6">
           <ProjectDivs />
         </div>
-      </div>
+      </WorkPageContainer>
     </>
   );
 }

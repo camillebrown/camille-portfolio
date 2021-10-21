@@ -3,7 +3,6 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { IoCloudDownloadOutline } from 'react-icons/io5';
 
 import {
-  MainContainer,
   MainRow,
   MainWrapper,
   MainBlock1,
@@ -15,7 +14,7 @@ import {
 } from '../components/Main/MainElements';
 import { Skills } from '../components/Skills';
 import StaticNavbar from '../components/layout/StaticNav';
-import { AboutBtnLink } from '../components/page-css-elements/AboutPageElements';
+import { Buttons, AboutBtnLink, MainContainer } from '../components/page-css-elements/AboutPageElements';
 import { PageTitle, PageHeader } from '../components/Projects/ProjectElements';
 
 export default function About() {
@@ -45,22 +44,22 @@ export default function About() {
                 beach and all things music. Don't hesitate to reach out! I look
                 forward to working with you.
               </ProjectDesc>
-              <div className="my-4 is-flex">
+              <Buttons className="my-4 is-flex columns is-multiline">
                 <AboutBtnLink
-                  className="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-centered is-size-6 mr-3 py-2 px-4"
+                  className="column is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-centered is-size-6 mb-2 mr-3 py-2 px-4"
                   to="//www.drive.google.com/file/d/1vbl_OcsZT4XjZu0KZk9IEOuulllBHP-z/view?usp=sharing"
                 >
-                  my resume
+                  <p>my resume</p>
                   <IoCloudDownloadOutline className="ml-2" />
                 </AboutBtnLink>
                 <AboutBtnLink
-                  to="/contact"
-                  className="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-centered is-size-6 mr-3 py-2 px-4"
+                  className="column is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-centered is-size-6 mb-2 mr-3 py-2 px-4"
+                  to="//www.drive.google.com/file/d/1vbl_OcsZT4XjZu0KZk9IEOuulllBHP-z/view?usp=sharing"
                 >
-                  contact me
+                  <p>contact me</p>
                   <HiOutlineMail className="ml-2" />
                 </AboutBtnLink>
-              </div>
+              </Buttons>
               {Skills()}
             </Column1>
             <Column2 className="column is-flex is-justify-content-center">

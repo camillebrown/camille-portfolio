@@ -13,8 +13,8 @@ import {
   ContactTitle,
   ContactSubtitle,
   ContactContainer,
+  MainContainer
 } from '../components/page-css-elements/ContactElements';
-import { MainContainer } from '../components/Main/MainElements';
 
 const Contact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -40,7 +40,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(true)
+    setLoading(true);
     emailjs
       .send(
         'service_32otv78',
@@ -50,7 +50,7 @@ const Contact = () => {
       )
       .then(
         () => {
-          setLoading(false)
+          setLoading(false);
           onOpen();
         },
         (error) => {
@@ -64,8 +64,8 @@ const Contact = () => {
       <StaticNavbar />
       <MainContainer className="is-flex is-justify-content-center is-align-items-center">
         <ConfirmationModal isOpen={isOpen} onClose={onClose} />
-        <ContactContainer className="my-6 has-text-centered">
-          <ContactSubtitle className="my-6 is-size-4 has-text-weight-bold">
+        <ContactContainer className="has-text-centered">
+          <ContactSubtitle className="is-size-4 has-text-weight-bold">
             <ContactTitle className="is-uppercase has-text-weight-semibold has-text-centered mb-4 is-size-5">
               Let's Work Together
             </ContactTitle>
@@ -119,10 +119,9 @@ const Contact = () => {
             />
             <SubmitBtn
               onClick={sendEmail}
-              className={classnames(
-                'button is-size-6 is-uppercase px-5 py-3',
-                { 'is-loading': loading },
-              )}
+              className={classnames('button is-size-6 is-uppercase px-5 py-3', {
+                'is-loading': loading,
+              })}
               type="submit"
             >
               Submit

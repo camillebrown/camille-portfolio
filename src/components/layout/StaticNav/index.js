@@ -1,40 +1,39 @@
-import React from 'react';
-import { NavBarLogo, NavLinks } from './StaticNavbarElements';
+import React, { useState } from 'react';
+import classnames from 'classnames';
+import { Nav, NavBarLogo, NavLinks, Hamburger } from './StaticNavbarElements';
 
 export default function StaticNavbar() {
+  let [active, setActive] = useState(false);
+
+  const toggle = () => {
+    setActive(!active);
+  };
+
   return (
-    <nav
-      className="navbar"
-      role="navigation"
-      aria-label="main navigation"
-      style={{
-        minHeight: '10vh',
-        borderBottom: '1px solid #ffdead',
-      }}
-    >
+    <Nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand is-flex is-align-items-center">
-        <NavBarLogo
-          className="is-size-5 is-uppercase has-text-centered mx-6"
-          to="/"
-        >
+        <NavBarLogo className="is-size-5 is-uppercase has-text-centered" to="/">
           Camille Brown
         </NavBarLogo>
 
-        <button
-          className="navbar-burger"
+        <Hamburger
+          className={classnames('navbar-burger', { 'is-active': active })}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
+          onClick={toggle}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </button>
+        </Hamburger>
       </div>
 
-      <div id="navbarBasicExample" className="navbar-menu">
+      <div
+        id="navbarBasicExample"
+        className={classnames('navbar-menu', { 'is-active': active })}
+      >
         <div className="navbar-start" />
-
         <div className="navbar-end mx-6">
           <NavLinks
             to="/about"
@@ -59,6 +58,6 @@ export default function StaticNavbar() {
           </NavLinks>
         </div>
       </div>
-    </nav>
+    </Nav>
   );
 }
