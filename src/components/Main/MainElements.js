@@ -12,7 +12,7 @@ export const MainContainer = styled.div`
     width: 100%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     height: 110vh;
   }
 `;
@@ -26,7 +26,7 @@ export const MainBackground = styled.div`
     margin-top: 45%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     margin: 20%;
   }
 `;
@@ -48,7 +48,7 @@ export const MainBlock1 = styled.div`
     height: 51%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     display: none;
   }
 `;
@@ -62,7 +62,7 @@ export const MainBlock2 = styled.div`
     height: 52.5%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     display: none;
   }
 `;
@@ -76,7 +76,7 @@ export const MainRow = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
@@ -91,7 +91,7 @@ export const Column1 = styled.div`
     text-align: center;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -113,7 +113,7 @@ export const Column2 = styled.div`
     padding: 0;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     margin: 0;
     padding: 0;
   }
@@ -126,7 +126,7 @@ export const ProjectDesc = styled.p`
   font-family: 'Lato', serif;
   letter-spacing: 1.2px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     max-width: 100%;
   }
   @media screen and (max-width: 768px) {

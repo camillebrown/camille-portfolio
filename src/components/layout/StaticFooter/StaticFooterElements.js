@@ -32,7 +32,7 @@ export const FooterIcons = styled.div`
   @media screen and (max-width: 768px) {
     width: 20vw;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     width: 100%;
   }
 `;

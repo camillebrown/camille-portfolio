@@ -12,7 +12,7 @@ export const WorkPageContainer = styled.div`
     height: 225vh;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     width: 100%;
   }
 `;

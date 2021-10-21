@@ -33,14 +33,14 @@ export const NavBarLogo = styled(LinkRouter)`
     margin: 25px;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     margin-top: 15px;
     margin-left: 10px;
   }
 `;
 
 export const Hamburger = styled.button`
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     margin-top: -20px;
     margin-right: -15px;
   }

@@ -26,7 +26,7 @@ export const Buttons = styled.div`
     width: 100%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     margin: 0 auto;
   }
 `;
@@ -44,7 +44,7 @@ export const MainContainer = styled.div`
     width: 100%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     height: 150vh;
   }
 `;

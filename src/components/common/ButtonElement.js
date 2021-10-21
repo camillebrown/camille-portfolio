@@ -24,7 +24,7 @@ export const Button1 = styled(LinkScroll)`
     color: #df9c37;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     transform: scale(0.7);
   }
 `;
@@ -54,7 +54,7 @@ export const Button2 = styled(LinkRouter)`
     color: #df9c37;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     padding: 14px 48px;
     width: 60%;
     font-size: 11px;

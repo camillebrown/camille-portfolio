@@ -9,7 +9,7 @@ export const HeroBackground = styled.div`
   height: 110vh;
   width: 100%;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     height: 80vh;
     width: 100%;
   }
@@ -23,7 +23,7 @@ export const HeroBlock1 = styled.div`
     height: 51%;
     width: 100%;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     height: 65%;
     width: 100%;
   }
@@ -37,7 +37,7 @@ export const HeroBlock2 = styled.div`
     height: 52.5%;
     width: 100%;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     height: 45%;
     width: 100%;
   }
@@ -56,7 +56,7 @@ export const HeroImg1 = styled.img`
     left: 10%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     display: none;
   }
 `;
@@ -82,7 +82,7 @@ export const HeroImg3 = styled.img`
     right: 10%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     display: none;
   }
 `;
@@ -96,7 +96,7 @@ export const HeroContent = styled.div`
     width: 100%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     width: 100%;
     margin-top: 50%;
   }
@@ -114,7 +114,7 @@ export const HeroSubtitle = styled.h1`
   font-family: 'Lora', serif;
   letter-spacing: 1.5px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     max-width: 75%;
   }
 `;

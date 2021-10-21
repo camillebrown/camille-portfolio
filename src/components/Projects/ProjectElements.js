@@ -11,7 +11,7 @@ export const MainContainer = styled.div`
     margin: 60vh 0%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     height: 30vh;
   }
 `;
@@ -51,7 +51,7 @@ export const IndexProjectSubtitle = styled.h1`
   font-family: 'Lora', serif;
   letter-spacing: 1.5px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     max-width: 75%;
   }
 `;
@@ -113,7 +113,7 @@ export const ProjectCard = styled(LinkRouter)`
     height: 20px;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     min-width: 70%;
     max-width: 90%;
     height: 20px;
@@ -161,7 +161,7 @@ export const ProjectDivCard = styled.div`
     height: 60vh;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 414px) {
     height: 10%;
     margin: 0;
   }
