@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const MainContainer = styled.div`
   z-index: 1;
   font-family: 'Montserrat', sans-serif;
+  height: 81vh;
 
   @media screen and (max-width: 1024px) {
     height: 83vh;

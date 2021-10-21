@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import classnames from 'classnames';
-import { useDisclosure } from '@chakra-ui/react';
+// import { useDisclosure } from '@chakra-ui/react';
 
 import StaticNavbar from '../components/layout/StaticNav';
 import ConfirmationModal from '../components/common/Modal';
@@ -13,11 +13,16 @@ import {
   ContactTitle,
   ContactSubtitle,
   ContactContainer,
-  MainContainer
+  MainContainer,
 } from '../components/page-css-elements/ContactElements';
 
 const Contact = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [active, setActive] = useState(false);
+
+  const toggle = () => {
+    setActive(!active);
+  };
+
   const [loading, setLoading] = useState(false);
   const [messageData, setMessageData] = useState({
     first_name: '',
@@ -51,7 +56,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          onOpen();
+          toggle();
         },
         (error) => {
           console.log(error.text);
@@ -63,7 +68,11 @@ const Contact = () => {
     <>
       <StaticNavbar />
       <MainContainer className="is-flex is-justify-content-center is-align-items-center">
-        <ConfirmationModal isOpen={isOpen} onClose={onClose} />
+        <ConfirmationModal
+          active={active}
+          setActive={setActive}
+          toggle={toggle}
+        />
         <ContactContainer className="has-text-centered">
           <ContactSubtitle className="is-size-4 has-text-weight-bold">
             <ContactTitle className="is-uppercase has-text-weight-semibold has-text-centered mb-4 is-size-5">
