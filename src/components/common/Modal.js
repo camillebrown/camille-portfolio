@@ -13,6 +13,16 @@ export default function ConfirmationModal({ active, toggle }) {
   const ModalCard = styled.div`
     width: 30%;
     font-family: 'Lora', serif;
+
+    @media screen and (max-width: 1024px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 375px) {
+      width: 90%;
+    }
   `;
 
   return (
