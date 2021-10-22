@@ -29,7 +29,7 @@ export default function Work() {
             every project I take on.
           </WorkPageParagraph>
         </div>
-        <div class="columns mb-6">
+        <div className="columns mb-6">
           <ProjectDivs />
         </div>
       </WorkPageContainer>

@@ -17,6 +17,11 @@ import { Button2 } from '../common/ButtonElement';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { ProjectDesc } from '../Main/MainElements';
 
+import game from '../../images/icons/game.png';
+import cooking from '../../images/icons/cooking.png';
+import fitness from '../../images/icons/fitness.png';
+import half_stripes from '../../images/backgrounds/half-stripes.png';
+
 const Projects = () => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
@@ -32,7 +37,7 @@ const Projects = () => {
         <ProjectBg1 className="column" />
         <ProjectBg1 className="column">
           <MainImg
-            src="https://i.ibb.co/CVBFVBw/half-stripes.png"
+            src={half_stripes}
             alt="Half Stripes"
           />
         </ProjectBg1>
@@ -57,7 +62,7 @@ const Projects = () => {
             className="column is-one-quarter is-flex is-flex-direction-column is-align-items-center is-justify-content-center p-6 m-3"
           >
             <ProjectIcon1
-              src="https://i.ibb.co/XFCdsq7/undraw-fitness-tracker-3033.png"
+              src={fitness}
               alt="Fitness Tracker Icon"
             />
             <ProjectTitle className="is-size-4-desktop is-size-6-touch has-text-centered is-uppercase has-text-weight-bold mb-2">
@@ -73,7 +78,7 @@ const Projects = () => {
             className="column is-one-quarter is-flex is-flex-direction-column is-align-items-center is-justify-content-center p-6 m-3"
           >
             <ProjectIcon2
-              src="https://i.ibb.co/1LLmbXV/cooking.png"
+              src={cooking}
               alt="Cooking Icon"
             />
             <ProjectTitle className="is-size-4-desktop is-size-6-touch has-text-centered is-uppercase has-text-weight-bold mb-2">
@@ -89,7 +94,7 @@ const Projects = () => {
             className="column is-one-quarter is-flex is-flex-direction-column is-align-items-center is-justify-content-center p-6 m-3"
           >
             <ProjectIcon3
-              src="https://i.ibb.co/xDF52cw/game.png"
+              src={game}
               alt="Trivia Game Icon"
             />
             <ProjectTitle className="is-size-4-desktop is-size-6-touch has-text-centered is-uppercase has-text-weight-bold mb-2">

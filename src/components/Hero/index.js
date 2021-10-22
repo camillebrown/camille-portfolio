@@ -14,6 +14,10 @@ import {
   HeroSubtitle,
 } from './HeroElements';
 
+import line from '../../images/hero/line.png';
+import phone from '../../images/hero/phone-desk.jpeg';
+import coffee from '../../images/hero/desk-coffee.jpeg';
+
 const Hero = () => {
   const [hover, setHover] = useState(false);
 
@@ -26,19 +30,15 @@ const Hero = () => {
         <HeroBlock1 className="column is-half">
           <HeroImg1
             className="image"
-            src="https://i.ibb.co/Yth9ZR6/ben-kolde-cp-Ls-Wm-MEa1-Q-unsplash.jpg"
+            src={phone}
             alt="Phone and Plant on Desk"
           />
-          <HeroImg2
-            className="image"
-            src="https://i.ibb.co/wWP5CYd/line.png"
-            alt="Black Line"
-          />
+          <HeroImg2 className="image" src={line} alt="Black Line" />
         </HeroBlock1>
         <HeroBlock2 className="column is-relative">
           <HeroImg3
             className="image"
-            src="https://i.ibb.co/2Z4kg9B/mathilde-langevin-bg4-Vz54j9x8-unsplash.jpg"
+            src={coffee}
             alt="Desk with Computer Image"
           />
         </HeroBlock2>

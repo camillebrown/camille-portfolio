@@ -13,9 +13,14 @@ import {
   ProjectDesc,
 } from '../components/Main/MainElements';
 import { Skills } from '../components/Skills';
-import StaticNavbar from '../components/layout/StaticNav';
-import { Buttons, AboutBtnLink, MainContainer } from '../components/page-css-elements/AboutPageElements';
+import {
+  Buttons,
+  AboutBtnLink,
+  MainContainer,
+} from '../components/page-css-elements/AboutPageElements';
 import { PageTitle, PageHeader } from '../components/Projects/ProjectElements';
+import about from '../images/about/compgirl.jpeg';
+import StaticNavbar from '../components/layout/StaticNav';
 
 export default function About() {
   return (
@@ -63,11 +68,7 @@ export default function About() {
               {Skills()}
             </Column1>
             <Column2 className="column is-flex is-justify-content-center">
-              <img
-                src="https://i.ibb.co/X7RLLPy/compgirl.jpg"
-                alt="About Me"
-                className="profile-pic2"
-              />
+              <img src={about} alt="About Me" className="profile-pic2" />
             </Column2>
           </MainRow>
         </MainWrapper>

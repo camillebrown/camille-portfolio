@@ -10,6 +10,10 @@ import {
   SiPostgresql,
 } from 'react-icons/si';
 
+import better from '../../images/work/better-home.png';
+import cookbook from '../../images/work/cookbook-home.png';
+import beat from '../../images/work/gotthebeat-home.png';
+
 export const projects = [
   {
     id: 'better',
@@ -18,7 +22,7 @@ export const projects = [
       'Track your daily fitness activity, moods, sleep patterns, and meals over time.',
     git: '//www.github.com/camillebrown/Better-frontend',
     url: '//better-you-app.herokuapp.com/',
-    img: 'https://i.ibb.co/QPRMHT7/better-home.png',
+    img: better,
     alt: 'Better. Home Page',
     page: '/work/better',
     label: 'Better App',
@@ -48,7 +52,7 @@ export const projects = [
       'Find and create recipes to build your own personalized cookbook.',
     git: '//www.github.com/camillebrown/CookbookCurator',
     url: '//cookbook-curator.herokuapp.com/',
-    img: 'https://i.ibb.co/JmjFbF0/cookbook-home.png',
+    img: cookbook,
     alt: 'Cookbook Curator Home Page',
     page: '/work/cookbook-curator',
     label: 'Cookbook Curator App',
@@ -78,7 +82,7 @@ export const projects = [
       'Test your music industry knowledge with this trivia fun and challenging game.',
     git: '//www.github.com/camillebrown/GOT-THE-BEAT-GAME',
     url: '//camillebrown.github.io/GOT-THE-BEAT-GAME/',
-    img: 'https://i.ibb.co/k4fLXM5/gotthebeat-home.png',
+    img: beat,
     alt: 'Got the Beat Home Page',
     page: '/work/got-the-beat',
     label: 'Got the Beat App',
