@@ -55,6 +55,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contact-margin {
+    height: 150vh !important;
+  }
 
   .profile-pic,
   .profile-pic2 {
@@ -62,8 +65,26 @@
   }
 }
 
-@media screen and (max-width: 414px) {
+@media only screen and (device-width: 414px) {
+  .about-margin {
+    margin-top: 30px;
+  }
+
   .contact-margin {
-    margin-top: -175px;
+    margin-top: -125px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (device-width: 390px) {
+  .contact-margin {
+    margin-top: -205px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (device-width: 375px) {
+  .contact-margin {
+    height: 125vh !important;
   }
 }

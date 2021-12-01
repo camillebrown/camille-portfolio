@@ -20,7 +20,7 @@ export default function ConfirmationModal({ active, toggle }) {
     @media screen and (max-width: 768px) {
       width: 60%;
     }
-    @media screen and (max-width: 414px) {
+    @media only screen and (device-width: 414px) {
       width: 90%;
     }
   `;

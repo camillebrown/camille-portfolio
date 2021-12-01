@@ -64,9 +64,9 @@ const Hero = () => {
             exact="true"
             offset={-80}
           >
-            See My Projects{' '}
+            See My Projects
             {hover ? (
-              <MdArrowForward className="arrow-forward" />
+              <MdArrowForward className=" ml-1arrow-forward" />
             ) : (
               <MdKeyboardArrowRight className="arrow-right" />
             )}

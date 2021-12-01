@@ -13,7 +13,7 @@ export const homeObjOne = {
   alt: 'Portfolio Image of Camille',
   page: '/about',
   classname: 'profile-pic',
-  container_class: '',
+  container_class: 'about-margin',
 };
 
 export const homeObjTwo = {

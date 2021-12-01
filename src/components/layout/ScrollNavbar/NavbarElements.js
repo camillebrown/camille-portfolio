@@ -33,15 +33,14 @@ export const NavBarLogo = styled(LinkRouter)`
     margin: 25px;
   }
 
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-    margin-top: 15px;
+  @media only screen and (device-width: 414px) {
+    margin-top: 23.5px;
     margin-left: 10px;
   }
 `;
 
 export const Hamburger = styled.button`
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-    margin-top: -20px;
+  @media only screen and (device-width: 414px) {
     margin-right: -15px;
   }
 `;

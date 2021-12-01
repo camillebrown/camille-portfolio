@@ -24,7 +24,11 @@ export const Button1 = styled(LinkScroll)`
     color: #df9c37;
   }
 
-  @media screen and (max-width: 414px) {
+  @media only screen and (device-width: 414px) {
+    transform: scale(0.7);
+  }
+
+  @media only screen and (device-width: 375px) {
     transform: scale(0.7);
   }
 `;
@@ -64,7 +68,13 @@ export const Button2 = styled(LinkRouter)`
     margin: 0 auto;
   }
 
-  @media screen and (max-width: 414px) {
+  @media only screen and (device-width: 414px) {
+    padding: 14px 48px;
+    width: 60%;
+    font-size: 11px;
+  }
+  
+  @media only screen and (device-width: 375px) {
     padding: 14px 48px;
     width: 60%;
     font-size: 11px;

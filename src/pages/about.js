@@ -17,7 +17,7 @@ import {
   Buttons,
   AboutBtnLink,
   MainContainer,
-} from '../components/page-css-elements/AboutPageElements';
+} from './page-css-elements/AboutPageElements';
 import { PageTitle, PageHeader } from '../components/Projects/ProjectElements';
 import about from '../images/about/compgirl.jpeg';
 import StaticNavbar from '../components/layout/StaticNav';

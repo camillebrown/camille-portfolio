@@ -4,10 +4,17 @@ import { Link as LinkRouter } from 'react-router-dom';
 export const Nav = styled.nav`
   min-height: 10vh;
   border-bottom: 1px solid #ffdead;
+
+  @media screen and (max-width: 1024px) {
+    min-height: 5vh;
+  }
 `;
 
 export const Hamburger = styled.button`
   background: white;
+  @media screen and (max-width: 1024px) {
+    margin-right: 15px;
+  }
   @media screen and (max-width: 768px) {
     margin-right: 15px;
   }

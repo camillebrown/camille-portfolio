@@ -13,7 +13,7 @@ import {
   ContactSubtitle,
   ContactContainer,
   MainContainer,
-} from '../components/page-css-elements/ContactElements';
+} from './page-css-elements/ContactElements';
 
 const Contact = () => {
   const [active, setActive] = useState(false);
@@ -74,7 +74,7 @@ const Contact = () => {
         />
         <ContactContainer className="has-text-centered">
           <ContactSubtitle className="is-size-4 has-text-weight-bold">
-            <ContactTitle className="is-uppercase has-text-weight-semibold has-text-centered mb-4 is-size-5">
+            <ContactTitle className="is-uppercase has-text-weight-semibold has-text-centered mt-6 my-4 is-size-5">
               Let's Work Together
             </ContactTitle>
             <p className="mb-2">Have a project in mind?</p>

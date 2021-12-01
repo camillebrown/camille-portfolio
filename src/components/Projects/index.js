@@ -43,7 +43,7 @@ const Projects = () => {
         </ProjectBg1>
       </div>
       <IndexProjectContainer className="is-flex is-flex-direction-column has-text-centered is-align-items-center">
-        <div className="is-flex is-flex-direction-column is-align-items-center px-5">
+        <div className="is-flex is-flex-direction-column is-align-items-center">
           <PageTitle className="is-size-6 is-uppercase has-text-weight-light-desktop has-text-centered is-uppercase mt-3">
             Check Out My Work
           </PageTitle>
@@ -51,12 +51,12 @@ const Projects = () => {
             A Few Featured Projects
           </IndexProjectSubtitle>
           <ProjectDesc className="is-size-6 has-text-weight-light">
-            Need someone focused on attention to detail and design accuracy?{' '}
+            Need someone focused on attention to detail and design accuracy?
             <br /> I look forward to helping you in all of the stages of your
             digital project: strategy, design, and web development.
           </ProjectDesc>
         </div>
-        <div className="columns is-flex is-justify-content-center m-6 is-multiline">
+        <div className="columns is-flex is-justify-content-center mx-6 my-3 is-multiline">
           <ProjectCard
             to="/work"
             className="column is-one-quarter is-flex is-flex-direction-column is-align-items-center is-justify-content-center p-6 m-3"

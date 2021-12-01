@@ -2,18 +2,24 @@ import styled from 'styled-components';
 
 export const WorkPageContainer = styled.div`
   max-width: 90%;
-  height: 75.5vh;
+  height: 76vh;
 
   @media screen and (max-width: 1024px) {
-    height: 79vh;
+    width: 100%;
+    height: min-content;
   }
 
   @media screen and (max-width: 768px) {
-    height: 225vh;
+    height: min-content;
   }
 
-  @media screen and (max-width: 414px) {
+  @media only screen and (device-width: 414px) {
     width: 100%;
+    height: min-content;
+  }
+  @media only screen and (device-width: 375px) {
+    width: 100%;
+    height: min-content;
   }
 `;
 

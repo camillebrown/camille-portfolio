@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const MainContainer = styled.div`
   z-index: 1;
   font-family: 'Montserrat', sans-serif;
-  height: 81vh;
+  height: 80vh;
 
   @media screen and (max-width: 1024px) {
     height: 83vh;
@@ -14,13 +14,16 @@ export const MainContainer = styled.div`
     width: 100%;
   }
 
-  @media screen and (max-width: 414px) {
-    height: 115vh;
+  @media only screen and (device-width: 414px) {
+    height: fit-content;
+  }
+  @media only screen and (device-width: 375px) {
+    height: fit-content;
   }
 `;
 
 export const ContactContainer = styled.div`
-  height: 71.5vh;
+  height: min-content;
   width: 60%;
   margin: 0 auto;
 
@@ -30,7 +33,10 @@ export const ContactContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 80%;
   }
-  @media screen and (max-width: 414px) {
+  @media only screen and (device-width: 414px) {
+    width: 100%;
+  }
+  @media only screen and (device-width: 375px) {
     width: 100%;
   }
 `;
@@ -52,7 +58,7 @@ export const ContactSubtitle = styled.div`
 `;
 
 export const ContactForm = styled.form`
-  margin: 70px auto;
+  margin: 40px auto;
   flex-wrap: wrap;
 `;
 

@@ -8,11 +8,17 @@ export const MainContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     background: #ebe9e6;
-    margin: 60vh 0%;
+    margin: 40vh 0 60vh 0;
   }
 
-  @media screen and (max-width: 414px) {
-    height: 150vh;
+  @media only screen and (device-width: 414px) {
+    height: 85vh;
+  }
+  @media only screen and (device-width: 390px){
+    height: 100vh;
+  }
+  @media only screen and (device-width: 375px){
+    height: 85vh;
   }
 `;
 
@@ -35,17 +41,16 @@ export const IndexProjectContainer = styled.div`
   position: absolute;
 
   @media screen and (max-width: 1024px) {
-    z-index: 1;
-    background: transparent;
-    padding: 30px 0px;
+    width: 100%;
   }
+
   @media screen and (max-width: 768px) {
     width: 100%;
     margin: 35% 0%;
     background: #ebe9e6;
   }
 
-  @media screen and (max-width: 414px) {
+  @media only screen and (device-width: 414px) {
     width: 100%;
     margin-top: -50px;
   }
@@ -56,7 +61,7 @@ export const IndexProjectSubtitle = styled.h1`
   font-family: 'Lora', serif;
   letter-spacing: 1.5px;
 
-  @media screen and (max-width: 414px) {
+  @media only screen and (device-width: 414px) {
     max-width: 75%;
   }
 `;
@@ -112,13 +117,18 @@ export const ProjectCard = styled(LinkRouter)`
     cursor: pointer;
   }
 
+  @media screen and (max-width: 1024px) {
+    min-width: 29.9%;
+    max-width: 29.9%;
+  }
+
   @media screen and (max-width: 768px) {
     min-width: 70%;
     max-width: 70%;
     height: 20px;
   }
 
-  @media screen and (max-width: 414px) {
+  @media only screen and (device-width: 414px) {
     min-width: 70%;
     max-width: 90%;
     height: min-content;
@@ -164,7 +174,9 @@ export const ProjectDivCard = styled.div`
   margin: 3vh 0;
 
   @media screen and (max-width: 1024px) {
-    height: 32.5vh;
+    width: 400px;
+    height: min-content;
+    margin: 10px auto;
   }
 
   @media screen and (max-width: 768px) {
@@ -172,7 +184,7 @@ export const ProjectDivCard = styled.div`
     height: 60vh;
   }
 
-  @media screen and (max-width: 414px) {
+  @media only screen and (device-width: 414px) {
     height: 10%;
     margin: 0;
   }

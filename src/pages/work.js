@@ -6,7 +6,7 @@ import { PageTitle, PageHeader } from '../components/Projects/ProjectElements';
 import {
   WorkPageContainer,
   WorkPageParagraph,
-} from '../components/page-css-elements/WorkPageElements';
+} from './page-css-elements/WorkPageElements';
 
 export default function Work() {
   return (
@@ -29,9 +29,9 @@ export default function Work() {
             every project I take on.
           </WorkPageParagraph>
         </div>
-        <div className="columns mb-6">
-          <ProjectDivs />
-        </div>
+        <div className="columns is-flex is-justify-content-center  mb-6 mx-6 my-3 is-multiline">
+            <ProjectDivs />
+          </div>
       </WorkPageContainer>
     </>
   );
