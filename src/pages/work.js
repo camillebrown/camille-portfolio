@@ -30,8 +30,8 @@ export default function Work() {
           </WorkPageParagraph>
         </div>
         <div className="columns is-flex is-justify-content-center  mb-6 mx-6 my-3 is-multiline">
-            <ProjectDivs />
-          </div>
+          <ProjectDivs />
+        </div>
       </WorkPageContainer>
     </>
   );

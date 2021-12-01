@@ -29,6 +29,12 @@ export const Buttons = styled.div`
   @media only screen and (device-width: 414px) {
     margin: 0 auto;
   }
+  @media only screen and (device-width: 390px) {
+    margin: 0 auto;
+  }
+  @media only screen and (device-width: 375px) {
+    margin: 0 auto;
+  }
 `;
 
 export const MainContainer = styled.div`

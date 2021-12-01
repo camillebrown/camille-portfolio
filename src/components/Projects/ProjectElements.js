@@ -12,13 +12,13 @@ export const MainContainer = styled.div`
   }
 
   @media only screen and (device-width: 414px) {
-    height: 85vh;
+    height: 100vh;
   }
   @media only screen and (device-width: 390px){
     height: 100vh;
   }
   @media only screen and (device-width: 375px){
-    height: 85vh;
+    height: 100vh;
   }
 `;
 
@@ -133,6 +133,11 @@ export const ProjectCard = styled(LinkRouter)`
     max-width: 90%;
     height: min-content;
   }
+  @media only screen and (device-width: 375px) {
+    min-width: 70%;
+    max-width: 90%;
+    height: min-content;
+  }
 `;
 
 export const ProjectIcon1 = styled.img`
@@ -185,7 +190,12 @@ export const ProjectDivCard = styled.div`
   }
 
   @media only screen and (device-width: 414px) {
-    height: 10%;
     margin: 0;
+    height: min-content;
+  }
+
+  @media only screen and (device-width: 375px) {
+    margin: 0;
+    height: min-content;
   }
 `;
