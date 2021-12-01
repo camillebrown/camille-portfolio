@@ -17,16 +17,17 @@ import { Button2 } from '../common/ButtonElement';
 import { PageTitle, PageHeader } from '../Projects/ProjectElements';
 
 const Main = ({
-  imgStart,
-  topLine,
-  headline,
-  description,
-  buttonLabel,
+  id,
   img,
   alt,
-  id,
   page,
+  topLine,
+  imgStart,
+  headline,
   classname,
+  description,
+  buttonLabel,
+  container_class
 }) => {
   const [hover, setHover] = useState(false);
 
@@ -36,7 +37,7 @@ const Main = ({
 
   return (
     <MainContainer
-      className="is-flex is-justify-content-center is-align-items-center"
+      className={classnames('is-flex is-justify-content-center is-align-items-center', container_class)}
       id={id}
     >
       <MainBackground className="columns is-relative">
@@ -56,18 +57,17 @@ const Main = ({
               {description}
             </ProjectDesc>
             <Button2 to={page} onMouseEnter={onHover} onMouseLeave={onHover}>
-              {' '}
               {buttonLabel}
               {hover ? (
-                <MdArrowForward className="arrow-forward" />
+                <MdArrowForward className="arrow-forward ml-1" />
               ) : (
-                <MdKeyboardArrowRight className="arrow-right" />
+                <MdKeyboardArrowRight className="arrow-right ml-1" />
               )}
             </Button2>
           </Column1>
           <Column2 className="column is-flex is-justify-content-center">
             <img
-              className={classnames('image mb-5', classname)}
+              className={classnames('image', classname)}
               src={img}
               alt={alt}
             />

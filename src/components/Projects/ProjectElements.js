@@ -12,7 +12,7 @@ export const MainContainer = styled.div`
   }
 
   @media screen and (max-width: 414px) {
-    height: 30vh;
+    height: 150vh;
   }
 `;
 
@@ -43,6 +43,11 @@ export const IndexProjectContainer = styled.div`
     width: 100%;
     margin: 35% 0%;
     background: #ebe9e6;
+  }
+
+  @media screen and (max-width: 414px) {
+    width: 100%;
+    margin-top: -50px;
   }
 `;
 
@@ -116,7 +121,7 @@ export const ProjectCard = styled(LinkRouter)`
   @media screen and (max-width: 414px) {
     min-width: 70%;
     max-width: 90%;
-    height: 20px;
+    height: min-content;
   }
 `;
 
@@ -128,6 +133,12 @@ export const ProjectIcon1 = styled.img`
     width: 65%;
     height: auto;
   }
+
+  @media screen and(max-width: 414px) {
+    width: 65%;
+    height: auto;
+  }
+
 `;
 
 export const ProjectIcon2 = styled.img`

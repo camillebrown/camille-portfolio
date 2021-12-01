@@ -13,6 +13,7 @@ export const homeObjOne = {
   alt: 'Portfolio Image of Camille',
   page: '/about',
   classname: 'profile-pic',
+  container_class: '',
 };
 
 export const homeObjTwo = {
@@ -27,4 +28,5 @@ export const homeObjTwo = {
   alt: 'Contact Illustration',
   page: '/contact',
   classname: '',
+  container_class: 'contact-margin',
 };

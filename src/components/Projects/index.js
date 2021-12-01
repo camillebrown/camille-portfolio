@@ -110,11 +110,9 @@ const Projects = () => {
           to="/work"
           onMouseEnter={onHover}
           onMouseLeave={onHover}
-          style={{ width: '20%', margin: '0 auto' }}
           className="mt-3"
         >
-          {' '}
-          See More!{' '}
+          <span>See More!</span>
           {hover ? (
             <MdArrowForward className="arrow-forward" />
           ) : (

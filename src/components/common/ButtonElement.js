@@ -45,7 +45,7 @@ export const Button2 = styled(LinkRouter)`
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-decoration: none;
-  width: 60%;
+  width: 50%;
   
 
   &:hover {
@@ -54,10 +54,8 @@ export const Button2 = styled(LinkRouter)`
     color: #df9c37;
   }
 
-  @media screen and (max-width: 414px) {
-    padding: 14px 48px;
-    width: 60%;
-    font-size: 11px;
+  @media screen and (max-width: 1024px) {
+    width: 80%;
   }
 
   @media screen and (max-width: 768px) {
@@ -66,7 +64,11 @@ export const Button2 = styled(LinkRouter)`
     margin: 0 auto;
   }
 
-  @media screen and (max-width: 1024px) {
-    width: 80%;
+  @media screen and (max-width: 414px) {
+    padding: 14px 48px;
+    width: 60%;
+    font-size: 11px;
   }
+
+
 `;

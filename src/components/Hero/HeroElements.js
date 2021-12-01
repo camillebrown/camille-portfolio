@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const HeroContainer = styled.div`
   z-index: 1;
   font-family: 'Montserrat', sans - serif;
+
+  @media screen and (max-width: 414px) {
+    height: 110vh;
+  }
 `;
 
 export const HeroBackground = styled.div`
@@ -98,7 +102,7 @@ export const HeroContent = styled.div`
 
   @media screen and (max-width: 414px) {
     width: 100%;
-    margin-top: 50%;
+    margin-top: 20%;
   }
 `;
 

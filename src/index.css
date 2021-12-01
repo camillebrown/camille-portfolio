@@ -44,19 +44,6 @@
   padding: 0 20px;
 }
 
-@media screen and (max-width: 414px) {
-  .profile-pic {
-    transform: scale(0.6);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .profile-pic,
-  .profile-pic2 {
-    transform: scale(0.8);
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .gtb {
     padding: 0px;
@@ -64,5 +51,19 @@
 
   .profile-pic2 {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .profile-pic,
+  .profile-pic2 {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .contact-margin {
+    margin-top: -175px;
   }
 }
