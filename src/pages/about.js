@@ -42,7 +42,10 @@ export default function About() {
               </PageHeader>
               <ProjectDesc className="is-size-6 my-5 has-text-weight-light">
                 When I'm not working at the Frontend Developer at{' '}
-                <a className="ck" href="https://www.creditkey.com/">
+                <a
+                  className="has-text-weight-semibold"
+                  href="https://www.creditkey.com/"
+                >
                   Credit Key
                 </a>
                 , as a California native, I love the outdoors, sunny days on the
