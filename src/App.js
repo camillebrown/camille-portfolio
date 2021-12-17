@@ -1,23 +1,27 @@
 import './index.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 import About from './pages/about';
 import Work from './pages/work';
 import Contact from './pages/contact';
-import StaticFooter from './components/layout/StaticFooter';
+import { Navbar, Footer } from './components';
 
-function App() {
+function App2() {
+  // const location = useLocation();
+  // const is_root = location.pathname === "/";
+
   return (
     <Router>
-      <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} exact />
-        <Route path="/work" component={Work} exact />
-        <Route path="/contact" component={Contact} exact />
-      </Switch>
-      <StaticFooter />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} exact />
+        <Route path="/about" element={<About />} exact />
+        <Route path="/work" element={<Work />} exact />
+        <Route path="/contact" element={<Contact />} exact />
+      </Routes>
+      <Footer />
     </Router>
   );
 }
 
-export default App;
+export default App2;

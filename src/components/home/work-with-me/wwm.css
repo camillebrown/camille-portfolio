@@ -1,0 +1,160 @@
+.wwm {
+  width: 100%;
+  padding: 6rem 8rem;
+}
+
+.wwm_main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5rem;
+  background: #f4f6f6;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.wwm-heading {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+.wwm-line {
+  width: 80%;
+  height: 3px;
+  background: var(--gradient-bar);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0.5rem 0rem;
+}
+
+.wwm-heading h1 {
+  color: var(--color-heading);
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  font-family: var(--header-font-family);
+  margin-bottom: 0.5rem;
+}
+
+.wwm-heading p {
+  font-size: 15px;
+  line-height: 28px;
+  font-family: var(--font-family);
+  color: #5f5f64;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.wwm-container {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  margin-top: 2rem;
+}
+
+.wwm-container .wwm-container__feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 210px;
+  display: unset;
+  flex-direction: column;
+}
+
+.wwm-container .wwm-container__feature-text {
+  margin-top: 0.5rem;
+}
+
+.wwm-btn button {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0.5rem 2.5rem;
+  border-radius: 1rem;
+  letter-spacing: 0.07em;
+  background: var(--color-heading);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 150px;
+  margin: 12px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wwm-btn button:hover {
+  color: rgba(76, 194, 184, 0.7);
+}
+
+@media screen and (max-width: 1250px) {
+  .wwm {
+    flex-direction: column;
+    padding: 4rem 6rem;
+  }
+
+  .wwm-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-right: 2.5rem;
+  }
+
+  .wwm-heading span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .wwm {
+    flex-direction: column;
+  }
+
+  .wwm-heading {
+    margin: 0 0 2rem 0;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wwm-heading h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .wwm-btn {
+    margin: 0;
+  }
+
+  .wwm-btn button {
+    font-size: 14px;
+    line-height: 28px;
+    transform: translateX(0);
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .wwm {
+    padding: 3rem;
+  }
+
+  .wwm-container {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .wwm-container__feature-title {
+    margin: 0 auto;
+  }
+}

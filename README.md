@@ -5,6 +5,5 @@
 ## Website: https://camillebrown.me/
 
 ## Portfolio Updates
-* 10/22/2021 - Responsive site v1
-* 12/01/2021 - Responsive site v2
+* 12/07/2021 - Completion of Navbar and Landing Page Header
 

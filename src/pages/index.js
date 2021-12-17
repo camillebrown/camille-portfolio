@@ -1,31 +1,16 @@
-import React, { useState } from 'react'
-import Main from '../components/Main'
-import Hero from '../components/Hero'
-import Navbar from '../components/layout/ScrollNavbar'
-import Sidebar from '../components/layout/Sidebar'
-import { homeObjOne, homeObjTwo } from '../components/Main/Data'
-import Projects from '../components/Projects'
+import React from 'react';
 
+import { Header, Skills, WorkWithMe, Projects } from '../components';
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-
   return (
-    <>
-      <div className="body">
-        <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Navbar toggle={toggle} />
-        <Hero />
-        <Main {...homeObjOne} />
-        <Projects />
-        <Main {...homeObjTwo} />
-      </div>
-    </>
-  )
-}
+    <div className="body">
+      <Header />
+      <Skills />
+      <WorkWithMe />
+      <Projects />
+    </div>
+  );
+};
 
-export default Home
+export default Home;

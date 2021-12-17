@@ -1,90 +1,126 @@
-@import '~@creativebulma/bulma-divider';
-@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Lato:wght@100;300;400;500;600;700;900&family=Lora&family=Montserrat:wght@200&display=swap');
-
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-:empty.divider:before {
-  margin-right: 0;
+body {
+  background: white;
+  font-family: 'Product Sans', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.045em;
 }
 
-:empty.divider:after {
-  margin-left: 0;
+a {
+  color: unset;
+  text-decoration: none;
 }
 
-.close-icon {
-  transform: translate(-100%, 60%);
-  cursor: pointer;
-  color: #444443;
+.section__padding {
+  padding: 4rem 6rem;
 }
 
-.profile-pic {
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+.section__margin {
+  margin: 4rem 6rem;
 }
 
-.profile-pic2 {
-  border-radius: 6px;
-  border: 2px solid #df9c37;
-  padding: 30px;
-  width: 75%;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+.scale-up-top {
+  -webkit-animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.proj-wrapper {
-  grid-template-columns: 1fr;
-  max-width: 90%;
-}
-
-.gtb {
-  padding: 0 20px;
-}
-
-@media screen and (max-width: 1024px) {
-  .gtb {
-    padding: 0px;
+@-webkit-keyframes scale-up-top {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
   }
 
-  .profile-pic2 {
-    width: 100%;
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .contact-margin {
-    height: 150vh !important;
+@keyframes scale-up-top {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
   }
 
-  .profile-pic,
-  .profile-pic2 {
-    transform: scale(0.8);
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
   }
 }
 
-@media only screen and (device-width: 414px) {
-  .about-margin {
-    margin-top: 30px;
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
   }
 
-  .contact-margin {
-    margin-top: -100px;
-    margin-bottom: 100px;
+  .section__margin {
+    margin: 4rem;
   }
 }
 
-@media only screen and (device-width: 390px) {
-  .contact-margin {
-    margin-top: -175px;
-    margin-bottom: 50px;
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem 2rem;
   }
 }
 
-@media only screen and (device-width: 375px) {
-  .contact-margin {
-    margin-top: -100px;
-  }
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('./assets/fonts/ProductSans-Light.woff2') format('woff2'),
+    url('./assets/fonts/ProductSans-Light.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Product Sans Medium';
+  src: url('./assets/fonts/ProductSans-Medium.woff2') format('woff2'),
+    url('./assets/fonts/ProductSans-Medium.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Product Sans Bold';
+  src: url('./assets/fonts/ProductSans-Bold.woff2') format('woff2'),
+    url('./assets/fonts/ProductSans-Bold.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Noto+Serif+Display:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --header-font-family: 'Noto Serif Display', serif;
+  --text-font-family: 'Product Sans', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif, sans-serif;
+
+  --gradient-bar: linear-gradient(121deg, #75a5a5 19%, #e38d51 100%);
+
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-heading: #244d4d;
+  --color-subtext: #ff8a71;
 }
