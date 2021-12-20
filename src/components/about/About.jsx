@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './about.css';
-import { profile1, profile2, profile3, profile4 } from '../../assets/images';
+import { profile1, profile2, profile3, profile4 } from '../../../assets/images';
 
 const About = () => {
   return (

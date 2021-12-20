@@ -7,9 +7,6 @@ import Contact from './pages/contact';
 import { Navbar, Footer } from './components';
 
 function App2() {
-  // const location = useLocation();
-  // const is_root = location.pathname === "/";
-
   return (
     <Router>
       <Navbar />

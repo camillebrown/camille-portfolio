@@ -10,5 +10,6 @@ export { default as WorkWithMe } from '../components/home/work-with-me/WorkWithM
 export { default as Feature } from './home/work-with-me/feature/Feature';
 export { default as Projects } from './home/projects/Projects';
 
-///// ABOUT PAGE /////
-export { default as About } from './about/About';
+///// PAGES /////
+export { default as About } from './pages/about/About';
+export { default as Contact } from './pages/contact/Contact';

@@ -1,10 +1,16 @@
 import React from 'react';
 
-export default function Contact() {
+
+import { Contact } from '../components';
+
+const ContactPage = () => {
   return (
     <>
-      <div style={{ height: '6rem' }} />
-      <div style={{ background: 'red', minHeight: '350px' }}>contact</div>
+      <div className="body">
+        <Contact />
+      </div>
     </>
   );
-}
+};
+
+export default ContactPage;
