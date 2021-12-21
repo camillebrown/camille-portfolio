@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
-import { Link as LinkRouter, useLocation } from 'react-router-dom';
-import {
-  RiTwitterFill,
-  RiLinkedinBoxFill,
-  RiCloseLine,
-  RiMenu3Line,
-  RiGithubFill,
-} from 'react-icons/ri';
-import { FaDribbbleSquare } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
+import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 
 import './navbar.css';
 import Menu from './Menu';
+import SocialIcons from '../../shared/SocialIcons';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -29,41 +23,9 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-sign">
-          <LinkRouter
-            to="//www.twitter.com/camilllebrown"
-            className="social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <RiTwitterFill size={27} />
-          </LinkRouter>
-          <LinkRouter
-            to="//www.linkedin.com/in/camillenbrown/"
-            className="social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <RiLinkedinBoxFill size={27} />
-          </LinkRouter>
-          <LinkRouter
-            to="//www.github.com/camillebrown"
-            className="social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <RiGithubFill size={27} />
-          </LinkRouter>
-          <LinkRouter
-            to="//www.dribbble.com/camillebrown11"
-            className="social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaDribbbleSquare size={27} />
-          </LinkRouter>
+          <SocialIcons className="social-link" />
         </div>
       </div>
-
       <div className="navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
@@ -81,33 +43,10 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="navbar-menu_container scale-up-top">
             <div className="navbar-menu_container-links">
-              <Menu setToggleMenu={setToggleMenu}/>
+              <Menu setToggleMenu={setToggleMenu} />
             </div>
             <div className="navbar-menu_container-links-sign">
-              <LinkRouter
-                to="//www.twitter.com/camilllebrown"
-                className="social-link"
-              >
-                <RiTwitterFill size={27} />
-              </LinkRouter>
-              <LinkRouter
-                to="//www.linkedin.com/in/camillenbrown/"
-                className="social-link"
-              >
-                <RiLinkedinBoxFill size={27} />
-              </LinkRouter>
-              <LinkRouter
-                to="//www.github.com/camillebrown"
-                className="social-link"
-              >
-                <RiGithubFill size={27} />
-              </LinkRouter>
-              <LinkRouter
-                to="//www.dribbble.com/camillebrown11"
-                className="social-link"
-              >
-                <FaDribbbleSquare size={27} />
-              </LinkRouter>
+              <SocialIcons className="social-link" />
             </div>
           </div>
         )}

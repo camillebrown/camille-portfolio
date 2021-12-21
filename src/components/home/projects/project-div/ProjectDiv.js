@@ -43,8 +43,8 @@ export default function ProjectDiv({ tag }) {
 
   return array.map((proj, idx) => {
     return (
-      <Tilt className="Tilt">
-        <div className="project_div" key={idx}>
+      <Tilt className="Tilt" key={idx}>
+        <div className="project_div">
           <div className="project_div-icons">
             <a href={proj.git} rel="noopener noreferrer" target="_blank">
               <FiGithub className="icon" />
