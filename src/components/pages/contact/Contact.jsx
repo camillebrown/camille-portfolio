@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 import './contact.css';
 import ContactForm from './ContactForm';
 import SocialIcons from '../../shared/SocialIcons';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = async () => {
+    emailjs
+      .sendForm(
+        'gmail_service', //service ID
+        process.env.REACT_APP_TEMPLATE_ID, //emailjs template
+        form.current, //queryselector
+        process.env.REACT_APP_USER_ID, //user id access code
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+  };
+
   return (
     <div className="contact_container">
       <div className="contact_form-container">
@@ -14,7 +35,7 @@ const Contact = () => {
             <p>Please complete the form below to send your request.</p>
           </div>
           <div className="contact_form-main">
-            <ContactForm />
+            <ContactForm form={form} sendEmail={sendEmail} />
           </div>
           <div className="contact_form-icons">
             <SocialIcons className="social-link" />

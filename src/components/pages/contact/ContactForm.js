@@ -9,7 +9,7 @@ import {
   SelectInput,
 } from '../../shared/inputs';
 
-export default function ContactForm() {
+export default function ContactForm({ form, sendEmail }) {
   return (
     <Formik
       initialValues={{
@@ -38,18 +38,19 @@ export default function ContactForm() {
         }
         return errors;
       }}
-      onSubmit={async (values) => {
-        console.log(values);
+      onSubmit={(values, { resetForm }) => {
+        sendEmail();
+        resetForm({});
       }}
     >
-      {({ isSubmitting, values }) => (
-        <Form className="form">
+      {({ isSubmitting, values}) => (
+        <Form ref={form}>
           <TextInput
             id="full_name"
             field_name="full_name"
             label_text="Full Name"
             className="full_name"
-            values={values}
+            value={values.full_name || ''}
           />
           <div className="contact_form-email_phone-container">
             <div className="contact_form-email_phone">
@@ -58,7 +59,7 @@ export default function ContactForm() {
                 field_name="email"
                 label_text="Email"
                 className="email_phone"
-                values={values}
+                value={values.email || ''}
               />
             </div>
             <div className="contact_form-email_phone">
@@ -67,7 +68,7 @@ export default function ContactForm() {
                 field_name="phone"
                 label_text="Phone"
                 className="phone_number"
-                values={values}
+                value={values.phone || ''}
               />
             </div>
           </div>
@@ -76,14 +77,14 @@ export default function ContactForm() {
             field_name="message"
             label_text="Describe your project..."
             className="contact_form-message"
-            values={values}
+            value={values.message || ''}
           />
           <SelectInput
             id="found_by"
             field_name="found_by"
             label_text="How did you find me?"
             className="found_by"
-            values={values}
+            value={values.found_by || ''}
           />
           <button type="submit" disabled={isSubmitting} className="form-btn">
             Send

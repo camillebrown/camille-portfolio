@@ -10,10 +10,10 @@ export default function PhoneInput({
   label_text,
   type = 'text',
   className,
-  values,
+  value,
 }) {
   let filled;
-  if (values[field_name]) filled = true;
+  if (value) filled = true;
 
   return (
     <>

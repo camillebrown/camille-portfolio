@@ -8,10 +8,10 @@ export default function SelectInput({
   field_name,
   label_text,
   className,
-  values,
+  value,
 }) {
   let filled;
-  if (values[field_name]) filled = true;
+  if (value) filled = true;
 
   return (
     <>
