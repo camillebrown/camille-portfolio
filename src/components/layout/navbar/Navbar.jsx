@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 
 import './navbar.css';
@@ -8,8 +7,6 @@ import SocialIcons from '../../shared/SocialIcons';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const location = useLocation();
-  const is_root = location.pathname === '/';
 
   return (
     <div className="navbar">
@@ -19,7 +16,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-links_container">
-          <Menu is_root={is_root} />
+          <Menu />
         </div>
 
         <div className="navbar-sign">

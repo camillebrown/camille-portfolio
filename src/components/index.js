@@ -2,6 +2,8 @@
 export { default as Navbar } from './layout/navbar/Navbar';
 export { default as Footer } from './layout/footer/Footer';
 
+///// SHARED /////
+export { default as ScrollUp } from './shared/scroll-up/ScrollUp';
 
 ///// HOME PAGE /////
 export { default as Header } from './home/header/Header';

@@ -1,6 +1,7 @@
 import { AiFillHtml5 } from 'react-icons/ai';
 import { SiJavascript, SiMongodb, SiFlask, SiPostgresql } from 'react-icons/si';
 import { FiPlay, FiGithub } from 'react-icons/fi';
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
 import {
   FaCss3Alt,
   FaReact,
@@ -21,5 +22,7 @@ export {
   FaNodeJs,
   FaDatabase,
   FiGithub,
-  FiPlay
+  FiPlay,
+  MdKeyboardArrowUp,
+  MdKeyboardArrowDown
 };

@@ -82,7 +82,6 @@ a {
   }
 }
 
-
 @font-face {
   font-family: 'Product Sans';
   src: url('./assets/fonts/ProductSans-Light.woff2') format('woff2'),
@@ -117,17 +116,17 @@ a {
 
   --gradient-bar: linear-gradient(121deg, #75a5a5 19%, #e38d51 100%);
 
-  --color-grey-hover: #4A4A4A;
-  --color-grey-tabs: #A9A7A6;
-  --color-grey-main: #5F5F64;
-  --color-grey-border: #E6E6E6;
-  --color-grey-background: #F5F7F7;
+  --color-grey-hover: #4a4a4a;
+  --color-grey-tabs: #a9a7a6;
+  --color-grey-main: #5f5f64;
+  --color-grey-border: #e6e6e6;
+  --color-grey-background: #f5f7f7;
 
-  --color-teal-main: #244D4D;
-  --color-teal-icons: #2B7272;
-  --color-teal-subtext: #36A8A8;
-  
-  --color-brown-main: #94603B;
-  --color-brown-icons: #D6C4B8;
-  --color-brown-background: #F1E4DB;
+  --color-teal-main: #244d4d;
+  --color-teal-icons: #2b7272;
+  --color-teal-subtext: #36a8a8;
+
+  --color-brown-main: #94603b;
+  --color-brown-icons: #d6c4b8;
+  --color-brown-background: #f1e4db;
 }
