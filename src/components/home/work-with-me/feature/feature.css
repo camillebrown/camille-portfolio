@@ -14,7 +14,7 @@
 }
 
 .wwm-container__feature-title h1 {
-  font-family: 'Product Sans Bold';
+  font-family: var(--text-bold-font-family);
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -24,7 +24,7 @@
 
 .wwm-icon {
   font-size: 32px;
-  color: #bd9b83;
+  color: var(--color-brown-icons);
 }
 
 .wwm-container__feature-text {
@@ -37,7 +37,7 @@
   font-family: var(--font-family);
   font-size: 14px;
   line-height: 24px;
-  color: #5F5F64;
+  color: var(--color-grey-main);
   font-weight: 400;
   letter-spacing: 0.05em;
 }
@@ -47,11 +47,11 @@
     text-align: center;
   }
 
-  .wwm-container__feature-title{
+  .wwm-container__feature-title {
     margin: 0 auto;
   }
 
-  .wwm-container__feature-text{
+  .wwm-container__feature-text {
     margin: 0 auto;
   }
 }

@@ -52,7 +52,7 @@
   line-height: 37px;
   letter-spacing: -0.03em;
   font-family: var(--header-font-family);
-  color: #244d4d;
+  color: var(--color-teal-main);
 }
 
 .contact_form-email_phone-container {
@@ -73,7 +73,7 @@
   width: 95%;
   margin: 1rem auto;
   height: 50px;
-  background-color: #267e7e;
+  background-color: var(--color-teal-main);
   border-radius: 25px;
   font-size: 16px;
   color: #fff;
@@ -90,6 +90,6 @@
 }
 
 .form-btn:hover {
-  background-color: #36a8a8;
+  background-color: var(--color-teal-subtext);
   cursor: pointer;
 }

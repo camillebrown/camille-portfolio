@@ -8,7 +8,7 @@
   justify-content: space-between;
   flex-direction: row;
   padding: 5rem;
-  background: #f4f6f6;
+  background: var(--color-grey-background);
   border-radius: 5px;
   margin: 0 auto;
 }
@@ -31,21 +31,12 @@
 }
 
 .wwm-heading h1 {
-  color: var(--color-heading);
+  color: var(--color-teal-main);
   font-size: 50px;
   line-height: 50px;
   font-weight: 500;
   font-family: var(--header-font-family);
   margin-bottom: 0.5rem;
-}
-
-.wwm-heading p {
-  font-size: 15px;
-  line-height: 28px;
-  font-family: var(--font-family);
-  color: #5f5f64;
-  margin-top: 1rem;
-  width: 80%;
 }
 
 .wwm-container {

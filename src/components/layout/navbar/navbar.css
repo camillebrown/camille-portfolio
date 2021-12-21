@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #244d4d;
+  color: var(--color-teal-main);
 
   padding: 0rem 6rem;
 
@@ -48,11 +48,11 @@
 
 .social-link {
   margin: 0 1em;
-  color: #244d4d;
+  color: var(--color-teal-main);
 }
 
 .social-link:hover {
-  color: #267e7e;
+  color: var(--color-teal-subtext);
 }
 
 .navbar-links_container div {
@@ -79,12 +79,12 @@
 }
 
 .navbar-menu_container-links div:hover {
-  color: #36a8a8;
+  color: var(--color-teal-subtext);
 }
 
 .navbar-links_container div:hover,
 .navbar-sign p:hover {
-  color: #267e7e;
+  color: var(--color-teal-subtext);
   font-weight: 700;
 }
 
@@ -105,7 +105,7 @@
   flex-direction: column;
 
   text-align: end;
-  background: #244d4d;
+  background: var(--color-teal-main);
   padding: 2rem;
   position: absolute;
   right: 0;
@@ -169,7 +169,7 @@
   }
 
   .navbar-menu_container-links-sign .social-link {
-    color: #fbf8f0;
+    color: white;
     padding: 0 0.25em;
   }
 }

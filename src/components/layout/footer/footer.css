@@ -1,5 +1,5 @@
 .footer-container {
-  color: #244d4d;
+  color: var(--color-teal-main);
 }
 
 .footer_cta {
@@ -49,8 +49,8 @@
   padding: 0.5rem 2.5rem;
   border-radius: 1rem;
   letter-spacing: 0.07em;
-  background: #f4f6f6;
-  color: #36a8a8;
+  background: var(--color-grey-background);
+  color: var(--color-teal-subtext);
   border: none;
   outline: none;
   cursor: pointer;
@@ -74,7 +74,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background: #f1e4db;
+  background: var(--color-brown-background);
 }
 
 .footer_links-webrights {
@@ -88,7 +88,7 @@
 }
 
 .icons:hover {
-  color: #267e7e;
+  color: var(--color-teal-subtext);
 }
 
 @media screen and (max-width: 1024px) {
@@ -123,7 +123,7 @@
     font-size: 18px;
     line-height: 32px;
     margin: 1rem auto;
-    font-family: 'Product Sans Medium';
+    font-family: var(--text-medium-font-family);
     width: 100%;
     text-align: center;
   }

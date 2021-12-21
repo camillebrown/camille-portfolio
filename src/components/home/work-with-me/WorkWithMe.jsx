@@ -61,7 +61,7 @@ const WorkWithMe = () => {
           <Feature
             id="design"
             title="Design Inspired"
-            text="Sit eiusmod incididunt nulla duis reprehenderit pariatur nulla in culpa. Sit eiusmod incididunt nulla duis reprehenderit pariatur nulla in culpa."
+            text="lakjsdlfkjalskdjflskfjsdf. laskjdflskdjfsd. Sit eiusmod incididunt nulla duis reprehenderit pariatur nulla in culpa."
           />
         </div>
       </div>

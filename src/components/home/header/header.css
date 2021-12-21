@@ -33,7 +33,8 @@
   min-height: 60%;
   width: 90%;
   padding: 4rem 4rem 4rem 10rem;
-  -webkit-animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -81,7 +82,7 @@
   font-weight: 800;
   font-size: 52px;
   letter-spacing: -0.03em;
-  color: var(--color-heading);
+  color: var(--color-teal-main);
 }
 
 .header-content p {
@@ -90,7 +91,7 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.05em;
-  color: #94603b;
+  color: var(--color-brown-main);
   margin-top: 3.5rem;
 }
 
@@ -286,12 +287,14 @@
 }
 
 .roll-in-blurred-top {
-  -webkit-animation: roll-in-blurred-top 0.75s cubic-bezier(0.23, 1, 0.32, 1) both;
+  -webkit-animation: roll-in-blurred-top 0.75s cubic-bezier(0.23, 1, 0.32, 1)
+    both;
   animation: roll-in-blurred-top 0.75s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .slide-in-left {
-  -webkit-animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
