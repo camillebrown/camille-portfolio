@@ -93,3 +93,37 @@
   background-color: var(--color-teal-subtext);
   cursor: pointer;
 }
+
+@media screen and (max-width: 1024px) {
+  #rightHalf {
+    display: none;
+  }
+
+  #leftHalf {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_form-email_phone-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact_form-email_phone {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact_form-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .contact_form-container {
+    height: 850px;
+  }
+}

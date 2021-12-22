@@ -142,6 +142,7 @@
 
   .navbar-menu {
     display: flex;
+    box-shadow: none;
   }
 }
 
