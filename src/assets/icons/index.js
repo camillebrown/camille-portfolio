@@ -1,7 +1,7 @@
 import { AiFillHtml5 } from 'react-icons/ai';
-import { SiJavascript, SiMongodb, SiFlask, SiPostgresql } from 'react-icons/si';
+import { BsFillCheckCircleFill } from 'react-icons/bs';
 import { FiPlay, FiGithub } from 'react-icons/fi';
-import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
+import { SiJavascript, SiMongodb, SiFlask, SiPostgresql } from 'react-icons/si';
 import {
   FaCss3Alt,
   FaReact,
@@ -12,17 +12,16 @@ import {
 
 export {
   AiFillHtml5,
-  SiJavascript,
-  SiMongodb,
-  SiFlask,
-  SiPostgresql,
+  BsFillCheckCircleFill,
   FaCss3Alt,
-  FaReact,
-  FaPython,
-  FaNodeJs,
   FaDatabase,
+  FaNodeJs,
+  FaPython,
+  FaReact,
   FiGithub,
   FiPlay,
-  MdKeyboardArrowUp,
-  MdKeyboardArrowDown
+  SiFlask,
+  SiJavascript,
+  SiMongodb,
+  SiPostgresql,
 };

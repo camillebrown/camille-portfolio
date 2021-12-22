@@ -4,9 +4,13 @@ import emailjs from 'emailjs-com';
 import './contact.css';
 import ContactForm from './ContactForm';
 import SocialIcons from '../../shared/SocialIcons';
+import SuccessModal from '../../shared/modal/SuccessModal';
+
+import useModal from '../../../hooks/useModal';
 
 const Contact = () => {
   const form = useRef();
+  const { isModalActive, toggleModal, closeModal } = useModal();
 
   const sendEmail = async () => {
     emailjs
@@ -27,23 +31,30 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact_container">
-      <div className="contact_form-container">
-        <div id="leftHalf">
-          <div className="contact_form-content">
-            <h1>Contact Me</h1>
-            <p>Please complete the form below to send your request.</p>
+    <>
+      <div className="contact_container">
+        <div className="contact_form-container">
+          <div id="leftHalf">
+            <div className="contact_form-content">
+              <h1>Contact Me</h1>
+              <p>Please complete the form below to send your request.</p>
+            </div>
+            <div className="contact_form-main">
+              <ContactForm
+                form={form}
+                sendEmail={sendEmail}
+                toggleModal={toggleModal}
+              />
+            </div>
+            <div className="contact_form-icons">
+              <SocialIcons className="social-link" />
+            </div>
           </div>
-          <div className="contact_form-main">
-            <ContactForm form={form} sendEmail={sendEmail} />
-          </div>
-          <div className="contact_form-icons">
-            <SocialIcons className="social-link" />
-          </div>
+          <div id="rightHalf"></div>
         </div>
-        <div id="rightHalf"></div>
       </div>
-    </div>
+      <SuccessModal isModalActive={isModalActive} closeModal={closeModal} />
+    </>
   );
 };
 

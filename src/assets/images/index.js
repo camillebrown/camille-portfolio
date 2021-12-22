@@ -5,6 +5,7 @@ import cooking from './cooking.svg';
 import desk from './desk.jpg';
 import dots from './dots.png';
 import draw from './draw.svg';
+import sent from './sent.gif';
 import fitness from './fitness.svg';
 import game from './game.svg';
 import login from './login.svg';
@@ -32,4 +33,5 @@ export {
   profile3,
   profile4,
   responsive,
+  sent
 };

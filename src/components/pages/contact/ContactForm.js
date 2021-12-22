@@ -1,6 +1,6 @@
 import React from 'react';
-import { Formik, Form } from 'formik';
 import validator from 'validator';
+import { Formik, Form } from 'formik';
 
 import {
   TextInput,
@@ -9,7 +9,7 @@ import {
   SelectInput,
 } from '../../shared/inputs';
 
-export default function ContactForm({ form, sendEmail }) {
+export default function ContactForm({ form, sendEmail, toggleModal }) {
   return (
     <Formik
       initialValues={{
@@ -41,9 +41,10 @@ export default function ContactForm({ form, sendEmail }) {
       onSubmit={(values, { resetForm }) => {
         sendEmail();
         resetForm({});
+        toggleModal();
       }}
     >
-      {({ isSubmitting, values}) => (
+      {({ isSubmitting, values }) => (
         <Form ref={form}>
           <TextInput
             id="full_name"
