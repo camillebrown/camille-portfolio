@@ -119,16 +119,16 @@
 }
 
 .success-checkmark .check-icon .icon-line.line-tip {
-  top: 46px;
-  left: 14px;
+  top: 48px;
+  left: 15px;
   width: 25px;
   transform: rotate(45deg);
   animation: icon-line-tip 2.5s;
 }
 
 .success-checkmark .check-icon .icon-line.line-long {
-  top: 38px;
-  right: 8px;
+  top: 40px;
+  right: 5px;
   width: 47px;
   transform: rotate(-45deg);
   animation: icon-line-long 2.5s;

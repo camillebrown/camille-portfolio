@@ -40,9 +40,9 @@ const WorkWithMe = () => {
             >
               <span>Meet the Developer</span>
               {hover ? (
-                <MdArrowForward className="arrow-right" />
+                <MdArrowForward className="arrow-icon arrow-right" />
               ) : (
-                <MdKeyboardArrowRight />
+                <MdKeyboardArrowRight className="arrow-icon"/>
               )}
             </button>
           </div>

@@ -1,7 +1,7 @@
 .back-to-top {
   position: fixed;
-  bottom: 0;
-  right: 2.5rem;
+  bottom: 16%;
+  right: 1.5rem;
   color: var(--color-teal-subtext);
   cursor: pointer;
   font-family: var(--text-font-family);
@@ -18,7 +18,6 @@
 
 .down-scroll div {
   position: absolute;
-  bottom: 0;
   right: 1rem;
   z-index: 2;
   display: inline-block;
@@ -64,7 +63,7 @@
 #span::before {
   position: absolute;
   top: 10px;
-  left: 53.75%;
+  left: 50%;
   content: '';
   width: 5.5px;
   height: 5.5px;
@@ -89,4 +88,10 @@
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 765px) {
+  .back-to-top {
+    display: none;
+  }
 }

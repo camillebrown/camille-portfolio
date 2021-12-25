@@ -5,12 +5,9 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Home from './pages';
 import Work from './pages/work';
-import useScrollToTop from './hooks/useScrollToTop';
-import { Navbar, Footer, ScrollUp } from './components';
+import { Navbar, Footer } from './components';
 
 function App2() {
-  const { showButton } = useScrollToTop();
-
   return (
     <Router>
       <Navbar />
@@ -20,7 +17,6 @@ function App2() {
         <Route path="/work" element={<Work />} exact />
         <Route path="/contact" element={<Contact />} exact />
       </Routes>
-      {showButton && <ScrollUp />}
       <Footer />
     </Router>
   );

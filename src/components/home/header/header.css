@@ -33,8 +33,7 @@
   min-height: 60%;
   width: 90%;
   padding: 4rem 4rem 4rem 10rem;
-  -webkit-animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
+  -webkit-animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -128,6 +127,10 @@
 @media screen and (max-width: 1050px) {
   .header {
     flex-direction: column;
+    padding: 0;
+  }
+
+  .header-content_text-description {
     padding: 0;
   }
 
@@ -280,4 +283,3 @@
     bottom: -10%;
   }
 }
-

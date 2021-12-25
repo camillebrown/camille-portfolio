@@ -1,14 +1,19 @@
 import React from 'react';
 
-import { Header, Skills, WorkWithMe, Projects } from '../components';
+import useScrollToTop from '../hooks/useScrollToTop';
+import { Header, Skills, WorkWithMe, Projects, ScrollUp } from '../components';
 
 const Home = () => {
+  const { showButton } = useScrollToTop();
+
   return (
     <div className="body">
       <Header />
       <Skills />
       <WorkWithMe />
       <Projects />
+
+      {showButton && <ScrollUp />}
     </div>
   );
 };

@@ -32,6 +32,7 @@ const Contact = () => {
 
   return (
     <>
+      <div style={{ height: '6rem' }} />
       <div className="contact_container">
         <div className="contact_form-container">
           <div id="leftHalf">
