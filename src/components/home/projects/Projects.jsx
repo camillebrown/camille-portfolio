@@ -5,11 +5,14 @@ import { useNavigate } from 'react-router-dom';
 
 import './projects.css';
 import ProjectDiv from './project-div/ProjectDiv';
+import useEntryScroll from '../../../hooks/useEntryScroll';
 import useTabs from '../../../hooks/useTabs';
 
 const Projects = () => {
   const { tabTitles, deactvateAllTabs, hideTabsContent, activateTabsContent } =
     useTabs();
+
+  useEntryScroll(document.querySelector('#work'));
 
   const navigate = useNavigate();
   const routeChange = (path) => {

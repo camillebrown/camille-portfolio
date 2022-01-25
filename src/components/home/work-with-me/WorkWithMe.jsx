@@ -3,6 +3,7 @@ import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 import './wwm.css';
+import useEntryScroll from '../../../hooks/useEntryScroll';
 import { Feature } from '../..';
 
 const WorkWithMe = () => {
@@ -16,6 +17,8 @@ const WorkWithMe = () => {
   const routeChange = (path) => {
     navigate(path);
   };
+  
+  useEntryScroll(document.querySelector('#work_with_me'));
 
   return (
     <div className="wwm" id="work_with_me">

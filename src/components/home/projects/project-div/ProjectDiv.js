@@ -43,8 +43,7 @@ export default function ProjectDiv({ tag }) {
 
   return array.map((proj, idx) => {
     return (
-      <Tilt className="Tilt" key={idx}>
-        <div className="project_div">
+        <div className="project_div" key={idx}>
           <div className="project_div-icons">
             <a href={proj.git} rel="noopener noreferrer" target="_blank">
               <FiGithub className="icon" />
@@ -74,7 +73,6 @@ export default function ProjectDiv({ tag }) {
             <img src={proj.img} alt={proj.alt} className={proj.classname} />
           </div>
         </div>
-      </Tilt>
     );
   });
 }
