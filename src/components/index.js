@@ -15,3 +15,4 @@ export { default as Projects } from './home/projects/Projects';
 ///// PAGES /////
 export { default as About } from './pages/about/About';
 export { default as Contact } from './pages/contact/Contact';
+export { default as Work } from './pages/work/Work';

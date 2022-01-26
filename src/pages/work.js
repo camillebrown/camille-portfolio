@@ -1,9 +1,15 @@
 import React from 'react';
 
-export default function Work() {
+import { Work } from '../components';
+
+const WorkPage = () => {
   return (
-    <div>
-      work
-    </div>
+    <>
+      <div className="body">
+        <Work />
+      </div>
+    </>
   );
-}
+};
+
+export default WorkPage;
