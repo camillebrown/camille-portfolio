@@ -18,6 +18,9 @@ function useScrollToTop() {
         setShowButton(false);
       }
     });
+    return () => {
+      setShowButton(false);
+    };
   }, []);
 
   return {

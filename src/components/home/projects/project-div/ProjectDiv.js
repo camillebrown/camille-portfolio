@@ -1,9 +1,8 @@
 import React from 'react';
 import './project-div.css';
-import Tilt from 'react-tilt';
 
 import { FiGithub, FiPlay } from '../../../../assets/icons';
-import { projects } from './data';
+import { projects } from '../../../../assets/project_data';
 
 export default function ProjectDiv({ tag }) {
   let array = [];
@@ -13,7 +12,7 @@ export default function ProjectDiv({ tag }) {
     'gpt3',
     'mint',
     'cookbook',
-    'game',
+    'got_the_beat',
   ];
 
   switch (tag) {
@@ -43,36 +42,36 @@ export default function ProjectDiv({ tag }) {
 
   return array.map((proj, idx) => {
     return (
-        <div className="project_div" key={idx}>
-          <div className="project_div-icons">
-            <a href={proj.git} rel="noopener noreferrer" target="_blank">
-              <FiGithub className="icon" />
+      <div className="project_div" key={idx}>
+        <div className="project_div-icons">
+          <a href={proj.git} rel="noopener noreferrer" target="_blank">
+            <FiGithub className="icon" />
+          </a>
+          {proj.url && (
+            <a href={proj.url} rel="noopener noreferrer" target="_blank">
+              <FiPlay className="icon go" />
             </a>
-            {proj.url && (
-              <a href={proj.url} rel="noopener noreferrer" target="_blank">
-                <FiPlay className="icon go" />
-              </a>
-            )}
-          </div>
-          <div className="project_div-content">
-            <h1 className="project_div-title">{proj.title}</h1>
-            <div className="project_div-languages">
-              {proj.languages.slice(0, 2).map((lang, i) => {
-                return (
-                  <p key={i}>
-                    {lang}
-                    {i + 1 !== proj.languages.slice(0, 2).length && (
-                      <span>•</span>
-                    )}
-                  </p>
-                );
-              })}
-            </div>
-          </div>
-          <div className="project-div_img">
-            <img src={proj.img} alt={proj.alt} className={proj.classname} />
+          )}
+        </div>
+        <div className="project_div-content">
+          <h1 className="project_div-title">{proj.title}</h1>
+          <div className="project_div-languages">
+            {proj.languages.slice(0, 2).map((lang, i) => {
+              return (
+                <p key={i}>
+                  {lang}
+                  {i + 1 !== proj.languages.slice(0, 2).length && (
+                    <span>•</span>
+                  )}
+                </p>
+              );
+            })}
           </div>
         </div>
+        <div className="project-div_img">
+          <img src={proj.images[0]} alt={proj.alt} className={proj.classname} />
+        </div>
+      </div>
     );
   });
 }

@@ -24,7 +24,7 @@
   margin-right: 2rem;
 }
 
-.navbar-links_logo h3 {
+.navbar-links_logo .site-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 37px;

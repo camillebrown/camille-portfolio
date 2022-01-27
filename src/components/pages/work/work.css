@@ -19,25 +19,93 @@
   padding: 0.5rem;
 }
 
-.column .work-project-div {
-  border-radius: 10px;
-  background: var(--color-brown-background);
+.project-div {
+  position: relative;
+  margin: auto;
+  border-radius: 3px;
+  border: 1px solid var(--color-grey-border);
   margin-bottom: 1rem;
 }
 
-.column img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.project-div .project-div-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 
-.column .with-border {
-  border: 1px solid var(--color-brown-background);
+.project-div:hover .project-div-overlay {
+  opacity: 1;
 }
 
-.column p {
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--color-brown-main);
+.project-div-image {
+  width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.project-div-details {
+  color: #fff;
+  position: absolute;
   text-align: center;
-  padding: 0.5rem 0 0.75rem 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.project-div:hover .project-div-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.project-div h2 {
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0.25rem 0 0.5rem 0.25rem;
+  text-align: center;
+}
+
+.project-div-details h3 {
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.project-div-details h6 {
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.project-div-details p {
+  font-size: 1.2em;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+  margin-left: 0.25rem;
+}
+
+.fadeIn-top {
+  top: 20%;
 }

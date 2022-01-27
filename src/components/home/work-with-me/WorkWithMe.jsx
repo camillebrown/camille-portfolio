@@ -18,7 +18,7 @@ const WorkWithMe = () => {
     navigate(path);
   };
   
-  useEntryScroll(document.querySelector('#work_with_me'));
+  useEntryScroll('#work_with_me', 'fade-in-top');
 
   return (
     <div className="wwm" id="work_with_me">

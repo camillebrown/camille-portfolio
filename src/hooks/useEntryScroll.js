@@ -1,17 +1,24 @@
 import { useEffect } from 'react';
 
-function useEntryScroll(entry) {
-  return useEffect(() => {
-    const observer = new IntersectionObserver((item) => {
-      if (item[0].isIntersecting) {
-        item[0].target.classList.add('fade-in-top');
+function useEntryScroll(tag, animation) {
+  useEffect(() => {
+    let elements = document.querySelectorAll(tag);
+
+    const observer = new IntersectionObserver((entry) => {
+      if (entry[0].isIntersecting) {
+        entry[0].target.classList.add(animation);
       }
     });
 
-    if (entry) {
-      observer.observe(entry);
+    if (elements) {
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
     }
-  }, [entry]);
-}
 
+    return () => {
+      elements = '';
+    };
+  }, [tag, animation]);
+}
 export default useEntryScroll;

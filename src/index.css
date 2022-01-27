@@ -114,7 +114,7 @@ a {
 }
 
 .fade-in-top {
-  -webkit-animation: fade-in-top 1.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in-top 10.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in-top 0.96s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 

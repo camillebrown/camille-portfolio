@@ -38,7 +38,7 @@ const Header = () => {
             <div className="header-image">
               <img
                 src={computer_hands}
-                alt="desk"
+                alt="Computer Hands"
                 className="flip-in-hor-bottom"
               />
               <div className="scroll-div bounce-in-top">

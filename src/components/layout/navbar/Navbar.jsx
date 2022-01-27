@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+import { Link } from 'react-router-dom';
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 
 import './navbar.css';
@@ -12,7 +14,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-links">
         <div className="navbar-links_logo">
-          <h3>camille.brown</h3>
+          <Link to='/' className='site-title'>camille.brown</Link>
         </div>
 
         <div className="navbar-links_container">

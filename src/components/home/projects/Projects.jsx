@@ -12,7 +12,7 @@ const Projects = () => {
   const { tabTitles, deactvateAllTabs, hideTabsContent, activateTabsContent } =
     useTabs();
 
-  useEntryScroll(document.querySelector('#work'));
+  useEntryScroll('#work', 'fade-in-top');
 
   const navigate = useNavigate();
   const routeChange = (path) => {

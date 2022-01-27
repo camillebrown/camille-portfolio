@@ -5,9 +5,9 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Home from './pages';
 import Work from './pages/work';
-import { Navbar, Footer } from './components';
+import { Navbar, Footer, ProjectDetail } from './components';
 
-function App2() {
+function App() {
   return (
     <Router>
       <Navbar />
@@ -15,6 +15,7 @@ function App2() {
         <Route path="/" element={<Home />} exact />
         <Route path="/about" element={<About />} exact />
         <Route path="/work" element={<Work />} exact />
+        <Route path="/work/:id" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact />} exact />
       </Routes>
       <Footer />
@@ -22,4 +23,4 @@ function App2() {
   );
 }
 
-export default App2;
+export default App;

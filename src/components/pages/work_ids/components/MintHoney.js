@@ -1,0 +1,10 @@
+import React from 'react';
+
+export default function Better() {
+  return (
+    <>
+      <div style={{ height: '6rem' }} />
+      <h1>Mint & Honey</h1>
+    </>
+  );
+}
