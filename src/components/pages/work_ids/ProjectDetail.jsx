@@ -43,22 +43,27 @@ const ProjectDetail = () => {
         return <MintHoney selected_project={selected_project} />;
       }
       default:
-        return <div>Uh oh! There's been an error. Please contact me for further assistance.</div>
+        return (
+          <div>
+            Uh oh ! There's been an error. Please contact me for further
+            assistance.
+          </div>
+        );
     }
   };
 
   return (
     <>
       <div style={{ height: '6rem' }} />
-      <div className="work_id_header">
-        <div className="work_id_header-img">
+      <div className="project-detail_header">
+        <div className="project-detail_header-img">
           <img src={selected_project.images[2]} alt={selected_project.alt} />
         </div>
-        <div className="work_id_header-content ">
-          <h1 className="work_id_header-content-h1 ">
+        <div className="project-detail_header-content">
+          <h1 className="project-detail_header-content-h1">
             {selected_project.title}
           </h1>
-          <p className="work_id_header-content-p ">
+          <p className="project-detail_header-content-p">
             {selected_project.category}
           </p>
         </div>

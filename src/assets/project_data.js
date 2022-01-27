@@ -35,7 +35,17 @@ export const projects = [
     classname: '',
     work_page_classname: '',
     category: 'Full Stack Application',
+    client: 'General Assembly',
     images: [fitness, better_header, better_homepage],
+    colors: [
+      '#F85C4A',
+      '#FF9B20',
+      '#76CDD8',
+      '#8A90DB',
+      '#D8D8D8',
+      '#1D0038',
+      '#EA7613',
+    ],
   },
   {
     id: 'cookbook',
@@ -47,6 +57,7 @@ export const projects = [
     classname: 'cook',
     work_page_classname: 'with-border',
     category: 'Full Stack Application',
+    client: 'General Assembly',
     images: [cooking, cookbook_header],
   },
   {
@@ -59,6 +70,7 @@ export const projects = [
     classname: '',
     work_page_classname: 'with-border',
     category: 'Frontend Application',
+    client: 'General Assembly',
     images: [game, gtb_header],
   },
   {
@@ -71,6 +83,7 @@ export const projects = [
     classname: 'login',
     work_page_classname: '',
     category: 'Web Design',
+    client: 'Credit Key©',
     images: [login, login_header],
   },
   {
@@ -83,6 +96,7 @@ export const projects = [
     classname: 'mint',
     work_page_classname: '',
     category: 'Web Design',
+    client: 'Personal Project',
     images: [mint, mh_header],
   },
   {
@@ -95,6 +109,7 @@ export const projects = [
     classname: 'responsive',
     work_page_classname: '',
     category: 'Web Design',
+    client: 'Personal Project',
     images: [responsive, gpt_header],
   },
   {
@@ -107,6 +122,7 @@ export const projects = [
     classname: 'burger',
     work_page_classname: '',
     category: 'Frontend Application',
+    client: 'General Assembly',
     images: [burger, burger_stack_header],
   },
   {
@@ -117,6 +133,7 @@ export const projects = [
     git: '//www.github.com/camillebrown/hangman-python',
     url: null,
     classname: 'hangman',
+    client: 'General Assembly',
     images: [draw],
   },
 ];

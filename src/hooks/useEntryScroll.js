@@ -5,9 +5,9 @@ function useEntryScroll(tag, animation) {
     let elements = document.querySelectorAll(tag);
 
     const observer = new IntersectionObserver((entry) => {
-      if (entry[0].isIntersecting) {
-        entry[0].target.classList.add(animation);
-      }
+      entry.forEach((item) => {
+        item.isIntersecting && item.target.classList.add(animation);
+      });
     });
 
     if (elements) {
