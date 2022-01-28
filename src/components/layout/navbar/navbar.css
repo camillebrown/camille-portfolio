@@ -55,7 +55,7 @@
   color: var(--color-teal-subtext);
 }
 
-.navbar-links_container div {
+.navbar-links_container a {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -66,7 +66,7 @@
   cursor: pointer;
 }
 
-.navbar-menu_container-links div {
+.navbar-menu_container-links a {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -78,11 +78,11 @@
   color: white;
 }
 
-.navbar-menu_container-links div:hover {
+.navbar-menu_container-links a:hover {
   color: var(--color-teal-subtext);
 }
 
-.navbar-links_container div:hover,
+.navbar-links_container a:hover,
 .navbar-sign p:hover {
   color: var(--color-teal-subtext);
   font-weight: 700;
@@ -125,7 +125,7 @@
 }
 
 @media screen and (max-width: 1650px) {
-  .navbar-links_container div {
+  .navbar-links_container a {
     margin: 0 0.75rem;
     font-size: 16px;
   }
