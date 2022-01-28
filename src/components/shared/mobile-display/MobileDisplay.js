@@ -1,8 +1,11 @@
 import React from 'react';
 
+import './mobile_display.css';
+import { gpt_mobile1, gpt_mobile2, gpt_mobile3 } from '../../../assets/images';
+
 export default function MobileDisplay() {
   return (
-    <div className="project-detail_mobile-dislays">
+    <div className="mobile-dislays">
       <div className="smartphone">
         <div className="content">
           <img src={gpt_mobile3} alt="GPT Mobile View 3" />

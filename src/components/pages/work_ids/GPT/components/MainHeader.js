@@ -1,15 +1,16 @@
 import React from 'react';
 import { startCase } from 'lodash';
 
-import { Buttons } from './';
+import { Cursor, Buttons } from './';
 
 export default function MainHeader({ selected_project }) {
   return (
     <div className="project-detail-main">
       <div className="project-detail-column1">
-        <div className="project-detail-main_img">
+        <div className="gpt-detail-main_img" style={{ cursor: 'none' }}>
+          <Cursor />
           <img
-            src={selected_project.images[2]}
+            src={selected_project.images[3]}
             alt={selected_project.alt}
             className="entry-load"
           />
@@ -18,11 +19,11 @@ export default function MainHeader({ selected_project }) {
       <div className="project-detail-column2">
         <div className="project-detail-main_content">
           <div className="entry-load project-detail-main_content-heading">
-            <span className="logo">better</span>
-            <span className="logo-dot">.</span> allows user to track their daily
-            fitness activity, moods, sleep patterns, and meals over time. Using
-            charts and graphs that make it easy to understand, the user can get
-            insights into how each goal gets 'better'.
+            <span>GPT-3</span> is a mock AI site with UI from a Figma template
+            by <a href="https://www.arshakir.com/for-followers">AR Shakir</a>.
+            It includes various informational sections, CTA banners, and blog
+            posts. It also is 100% mobile optimized for responsiveness covering
+            most devices.
           </div>
           <div className="project-detail-main_lang">
             <h6 className="entry-load">Languages</h6>
@@ -44,10 +45,11 @@ export default function MainHeader({ selected_project }) {
           <div className="project-detail-main_desc">
             <h6 className="entry-load">Goal</h6>
             <span className="entry-load">
-              Build a full-stack application with frontend and backend code that
-              implements thoughtful user stories. The project was required to be
-              deployed online so that it's publicly accessible and needed to be
-              scoped out using a comprehensive ERD chart and wireframes.
+              As a personal project, I practiced building functional and
+              reusable React components with clear file and folder structure.
+              Focusing on fundamental CSS, I recreated a landing page based on
+              the Figma template to test my ability to build a responsive site,
+              create soft animations, and deploy to Netlify.
             </span>
           </div>
         </div>

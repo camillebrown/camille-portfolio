@@ -18,6 +18,8 @@ const ProjectDetail = () => {
   const url = useParams();
   const selected_project = projects.find((proj) => proj.id === url.id);
 
+  console.log(selected_project);
+
   useEntryScroll('.entry-load', 'fade-in-top');
   useEntryScroll('.square', 'swing-in-top-fwd');
   useEntryScroll('.project-detail__img', 'swing-in-top-fwd');
@@ -36,7 +38,7 @@ const ProjectDetail = () => {
       case 'got_the_beat': {
         return <GotTheBeat selected_project={selected_project} />;
       }
-      case 'gpt': {
+      case 'gpt3': {
         return <GPT selected_project={selected_project} />;
       }
       case 'burger_stack': {
@@ -63,12 +65,8 @@ const ProjectDetail = () => {
           <img src={selected_project.images[2]} alt={selected_project.alt} />
         </div>
         <div className="project-detail_header-content">
-          <h1 className="project-detail_header-content-h1">
-            {selected_project.title}
-          </h1>
-          <p className="project-detail_header-content-p">
-            {selected_project.category}
-          </p>
+          <h1>{selected_project.title}</h1>
+          <p>{selected_project.category}</p>
         </div>
         {getComponent()}
         <ProjectDetailFooter id={selected_project.id} />

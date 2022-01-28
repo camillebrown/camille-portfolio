@@ -5,6 +5,7 @@ import {
   HiOutlineArrowNarrowRight,
   HiOutlineArrowNarrowLeft,
 } from 'react-icons/hi';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 import { SiJavascript, SiMongodb, SiFlask, SiPostgresql } from 'react-icons/si';
 import {
   FaCss3Alt,
@@ -26,6 +27,7 @@ export {
   FiPlay,
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
+  MdKeyboardArrowDown,
   SiFlask,
   SiJavascript,
   SiMongodb,

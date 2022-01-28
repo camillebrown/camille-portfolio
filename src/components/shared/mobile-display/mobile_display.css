@@ -1,7 +1,8 @@
-.project-detail_mobile-dislays {
+.mobile-dislays {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 2rem auto;
 }
 
 .smartphone {
@@ -47,13 +48,11 @@
 .smartphone .content {
   width: 305px;
   height: 510px;
-  background: red;
 }
 
 .smartphone .content img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 50%;
   object-position: 0 0;
 }

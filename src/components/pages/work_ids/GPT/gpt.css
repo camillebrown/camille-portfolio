@@ -1,3 +1,58 @@
+.gpt-detail-main_img {
+  max-width: 75%;
+  height: 75vh;
+  overflow: scroll;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.gpt-detail-main_img img {
+  width: 100%;
+}
+
+.project-detail-main_content-heading span {
+  color: #AE67FA;
+  font-weight: 900;
+}
+
+.project-detail-main_content-heading a {
+  color: #05407a;
+  text-decoration: underline;
+  line-height: 32px;
+}
+
+.cursor {
+  visibility: hidden;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  transition-property: background, border, transform;
+  transform-origin: 150% 150%;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: var(--header-font-family);
+  color: var(--color-teal-main);
+  color: #042c54;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 1.2rem;
+}
+
+.gpt-detail__additional{
+  width: 80%;
+  margin: 2rem auto;
+}
+
 .better-detail__column1,
 .better-detail__column2 {
   width: 40%;

@@ -25,6 +25,8 @@ import gtb_header from './got-the-beat/gotthebeat.png';
 // GPT //
 import responsive from './gpt/responsive.svg';
 import gpt_header from './gpt/gpt.png';
+import gpt_homepage from './gpt/gpt_homepage.png';
+import gpt_full from './gpt/gpt_full.png';
 import gpt_mobile1 from './gpt/gpt-mobile1.png';
 import gpt_mobile2 from './gpt/gpt-mobile2.png';
 import gpt_mobile3 from './gpt/gpt-mobile3.png';
@@ -65,7 +67,9 @@ export {
   email_success,
   fitness,
   game,
+  gpt_full,
   gpt_header,
+  gpt_homepage,
   gpt_mobile1,
   gpt_mobile2,
   gpt_mobile3,
