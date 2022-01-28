@@ -62,6 +62,10 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.project-detail-main_img img {
+  width: 100%;
+}
+
 .project-detail-main_content div {
   padding-right: 20%;
   margin: 3rem auto;
@@ -165,7 +169,7 @@
   line-height: 25px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--color-teal-icons)
+  color: var(--color-teal-icons);
 }
 
 .project-detail__iframe {
@@ -192,4 +196,60 @@
 
 .project-detail__img {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.project-detail__footer {
+  width: 80%;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-detail__footer-switch {
+  display: flex;
+  align-items: center;
+}
+
+.project-detail__footer-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.project-detail__footer-content p {
+  font-family: var(--text-font-family);
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-teal-icons);
+  margin-left: 2px;
+}
+
+.project-detail__footer-content h2 {
+  font-family: var(--header-font-family);
+  color: black;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+.project-detail__footer-icon {
+  font-size: 1.5rem;
+  color: var(--color-teal-icons);
+}
+
+.project-detail__footer-gridicon {
+  font-size: 2.5rem;
+  padding-top: 0.5rem;
+}
+
+.project-detail__footer-gridicon:hover,
+.project-detail__footer-content h2:hover {
+  color: var(--color-grey-tabs);
 }

@@ -8,7 +8,7 @@ export default function ImgContainer({ selected_project }) {
         src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FNYaHn4GiOgXZud07yDWa39%2FBetter.-App%3Fnode-id%3D0%253A1"
         className="project-detail__iframe"
         title="Figma wireframes"
-        allowFullScreen
+        allowfullscreen
       />
       <div className="project-detail__additional">
         <p>Additional Assets</p>

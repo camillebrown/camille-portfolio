@@ -12,12 +12,15 @@ import {
 } from './components';
 import useEntryScroll from '../../../hooks/useEntryScroll';
 import { projects } from '../../../assets/project_data';
+import ProjectDetailFooter from './ProjectDetailFooter';
 
 const ProjectDetail = () => {
   const url = useParams();
   const selected_project = projects.find((proj) => proj.id === url.id);
 
   useEntryScroll('.entry-load', 'fade-in-top');
+  useEntryScroll('.square', 'swing-in-top-fwd');
+  useEntryScroll('.project-detail__img', 'swing-in-top-fwd');
 
   const getComponent = () => {
     switch (url.id) {
@@ -68,6 +71,7 @@ const ProjectDetail = () => {
           </p>
         </div>
         {getComponent()}
+        <ProjectDetailFooter id={selected_project.id} />
       </div>
     </>
   );

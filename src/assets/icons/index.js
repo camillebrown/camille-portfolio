@@ -1,6 +1,10 @@
 import { BsFillCheckCircleFill } from 'react-icons/bs';
+import { CgMenuGridO } from 'react-icons/cg';
 import { FiPlay, FiGithub } from 'react-icons/fi';
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import {
+  HiOutlineArrowNarrowRight,
+  HiOutlineArrowNarrowLeft,
+} from 'react-icons/hi';
 import { SiJavascript, SiMongodb, SiFlask, SiPostgresql } from 'react-icons/si';
 import {
   FaCss3Alt,
@@ -12,6 +16,7 @@ import {
 
 export {
   BsFillCheckCircleFill,
+  CgMenuGridO,
   FaCss3Alt,
   FaDatabase,
   FaNodeJs,
@@ -19,6 +24,7 @@ export {
   FaReact,
   FiGithub,
   FiPlay,
+  HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
   SiFlask,
   SiJavascript,

@@ -1,10 +1,15 @@
 import React from 'react';
 
-export default function Better() {
+import '../project_detail.css';
+import './gpt.css';
+import { ColorPalette, ImgContainer, MainHeader } from './components';
+
+export default function GPT({ selected_project }) {
   return (
-    <>
-      <div style={{ height: '6rem' }} />
-      <h1>GPT</h1>
-    </>
+    <div>
+      <MainHeader selected_project={selected_project} />
+      <ColorPalette selected_project={selected_project} />
+      <ImgContainer selected_project={selected_project} />
+    </div>
   );
 }
