@@ -7,7 +7,7 @@ import { ColorPalette, ImgContainer, MainHeader } from './components';
 
 export default function Better({ selected_project }) {
   useEntryScroll('.square', 'swing-in-top-fwd');
-  useEntryScroll('.project-detail__img', 'bounce-in-top-slow');
+  useEntryScroll('.project-detail__img', 'swing-in-top-fwd');
 
   return (
     <>

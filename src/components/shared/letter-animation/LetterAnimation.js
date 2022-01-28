@@ -1,7 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react/cjs/react.development';
 
-export default function Hover() {
+import './letter_animation.css'
+
+export default function LetterAnimation(word) {
   useEffect(() => {
     const lettersArray = [];
     const word = document.getElementById('word');
@@ -56,7 +58,7 @@ export default function Hover() {
 
   return (
     <span id="word" className="word">
-      hover images
+      {word}
     </span>
   );
 }

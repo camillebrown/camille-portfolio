@@ -5,6 +5,7 @@
   font-family: 'Boing';
   color: #1d0038;
   line-height: 1.2rem;
+  text-transform: lowercase;
 }
 
 .logo-dot {
@@ -12,4 +13,36 @@
   font-weight: bolder;
   font-size: 36px;
   line-height: 1.2rem;
+}
+
+.better-detail__column1,
+.better-detail__column2 {
+  width: 40%;
+  margin: 0 1rem;
+}
+
+.better-detail__column1 span {
+  font-size: 12px;
+  color: var(--color-grey-tabs);
+  text-transform: uppercase;
+}
+
+.better-detail__column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.better-detail__column2-charts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.better-detail__column2-charts img {
+  width: 50%;
+  box-shadow: none;
 }

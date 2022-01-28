@@ -1,9 +1,10 @@
 // Better //
 import fitness from './better/fitness.svg';
 import better_header from './better/better.png';
-import better_homepage from './better/better-homepage.png';
+import better_homepage from './better/full-home.png';
+import better_diet from './better/dietchart.png';
+import better_mood from './better/moodchart.png';
 import better_erd from './better/erd.png';
-import better_wireframe from './better/form-wf.png';
 
 // Burger Stack //
 import burger from './burger-stack/burger.svg';
@@ -51,7 +52,8 @@ export {
   better_erd,
   better_header,
   better_homepage,
-  better_wireframe,
+  better_diet,
+  better_mood,
   burger,
   burger_stack_header,
   computer_hands,
