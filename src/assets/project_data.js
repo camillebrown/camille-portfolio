@@ -1,6 +1,8 @@
 import {
+  better_erd,
   better_header,
   better_homepage,
+  better_wireframe,
   burger,
   burger_stack_header,
   cookbook_header,
@@ -36,7 +38,7 @@ export const projects = [
     work_page_classname: '',
     category: 'Full Stack Application',
     client: 'General Assembly',
-    images: [fitness, better_header, better_homepage],
+    images: [fitness, better_header, better_homepage, better_erd, better_wireframe],
     colors: [
       '#F85C4A',
       '#FF9B20',

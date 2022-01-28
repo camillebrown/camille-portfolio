@@ -1,5 +1,5 @@
-import Better from './Better'
-import GPT from './GPT'
+import Better from '../Better/Better'
+import GPT from '../GPT/GPT'
 import BurgerStack from './BurgerStack'
 import CKLogin from './CKLogin'
 import CookbookCurator from './CookbookCurator'

@@ -2,6 +2,8 @@
 import fitness from './better/fitness.svg';
 import better_header from './better/better.png';
 import better_homepage from './better/better-homepage.png';
+import better_erd from './better/erd.png';
+import better_wireframe from './better/form-wf.png';
 
 // Burger Stack //
 import burger from './burger-stack/burger.svg';
@@ -22,6 +24,9 @@ import gtb_header from './got-the-beat/gotthebeat.png';
 // GPT //
 import responsive from './gpt/responsive.svg';
 import gpt_header from './gpt/gpt.png';
+import gpt_mobile1 from './gpt/gpt-mobile1.png';
+import gpt_mobile2 from './gpt/gpt-mobile2.png';
+import gpt_mobile3 from './gpt/gpt-mobile3.png';
 
 // Hangman //
 import draw from './hangman/draw.svg';
@@ -43,8 +48,10 @@ import profile4 from './general/profile-4.jpg';
 import sent from './general/sent.gif';
 
 export {
+  better_erd,
   better_header,
   better_homepage,
+  better_wireframe,
   burger,
   burger_stack_header,
   computer_hands,
@@ -57,6 +64,9 @@ export {
   fitness,
   game,
   gpt_header,
+  gpt_mobile1,
+  gpt_mobile2,
+  gpt_mobile3,
   gtb_header,
   login,
   login_header,

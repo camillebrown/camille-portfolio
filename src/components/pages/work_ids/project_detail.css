@@ -1,19 +1,3 @@
-.logo {
-  font-size: 24px;
-  font-weight: bolder;
-  text-decoration: none;
-  font-family: 'Boing';
-  color: #1d0038;
-  line-height: 1.2rem;
-}
-
-.logo-dot {
-  color: #ea7613;
-  font-weight: bolder;
-  font-size: 36px;
-  line-height: 1.2rem;
-}
-
 .project-detail_header-img {
   width: 100%;
   height: 72vh;
@@ -56,7 +40,7 @@
 }
 
 .project-detail-main {
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   margin: 0 4rem;
@@ -80,7 +64,7 @@
 
 .project-detail-main_content div {
   padding-right: 20%;
-  margin: 4rem auto;
+  margin: 3rem auto;
 }
 
 .project-detail-main_content-heading {
@@ -93,14 +77,54 @@
   letter-spacing: 0.15em;
 }
 
+.project-detail-main_buttons {
+  display: flex;
+}
+
+.project-detail-main_btn-container a {
+  background-color: #000;
+  padding: 1rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: #fff;
+  border-radius: 0;
+  position: relative;
+  display: inline-block;
+  white-space: normal;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-detail-main_btn-container a:hover {
+  cursor: pointer;
+}
+
+.project-detail-main_btn-container span {
+  margin-left: 0.2rem;
+}
+
+.project-detail-main_btn-container a:hover .arrow {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .project-detail-colors_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
-.project-detail-colors_container h1 {
+.project-detail-colors_container h1,
+.project-detail__img-container h1 {
   font-family: var(--header-font-family);
   color: var(--color-teal-main);
   font-weight: 800;
@@ -130,4 +154,146 @@
 
 .project-detail-colors span {
   margin: 0.25rem auto;
+}
+
+.project-detail__img-container {
+  min-height: 75vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-detail__img-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.project-detail__img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-size: cover;
+  transition: ease-in-out 0.5s;
+  z-index: 2;
+  margin: 0 4rem;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08),
+    0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+
+.project-detail__img:hover {
+  border-radius: 0;
+  width: 650px;
+  height: 510px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08),
+    0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+}
+
+.project-detail__img:first-child {
+  animation-delay: 0.7s;
+}
+
+.project-detail__img:last-child {
+  animation-delay: 0.5s;
+}
+
+.word {
+  font-family: var(--text-font-family);
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 1.25rem;
+  color: var(--color-grey-tabs)
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 1.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 1.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-detail_mobile-dislays {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smartphone {
+  position: relative;
+  width: 340px;
+  height: 640px;
+  margin: auto;
+  border: 18px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 70px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 305px;
+  height: 510px;
+  background: red;
+}
+
+.smartphone .content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  object-position: 0 0;
 }

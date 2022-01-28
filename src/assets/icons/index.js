@@ -1,6 +1,6 @@
-import { AiFillHtml5 } from 'react-icons/ai';
 import { BsFillCheckCircleFill } from 'react-icons/bs';
 import { FiPlay, FiGithub } from 'react-icons/fi';
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { SiJavascript, SiMongodb, SiFlask, SiPostgresql } from 'react-icons/si';
 import {
   FaCss3Alt,
@@ -11,7 +11,6 @@ import {
 } from 'react-icons/fa';
 
 export {
-  AiFillHtml5,
   BsFillCheckCircleFill,
   FaCss3Alt,
   FaDatabase,
@@ -20,6 +19,7 @@ export {
   FaReact,
   FiGithub,
   FiPlay,
+  HiOutlineArrowNarrowRight,
   SiFlask,
   SiJavascript,
   SiMongodb,
