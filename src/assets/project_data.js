@@ -6,6 +6,7 @@ import {
   better_mood,
   burger,
   burger_stack_header,
+  cookbook_banner,
   cookbook_header,
   cooking,
   draw,
@@ -70,7 +71,8 @@ export const projects = [
     work_page_classname: 'with-border',
     category: 'Full Stack Application',
     client: 'General Assembly',
-    images: [cooking, cookbook_header],
+    images: [cooking, cookbook_header, cookbook_banner],
+    colors: ['#F4B804', '#8BC34A', '#4CAF50', '#FF0000', '#000000', '#FFFFFF'],
   },
   {
     id: 'got_the_beat',

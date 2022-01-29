@@ -17,6 +17,7 @@ import login_header from './ck-login/ck-login.png';
 // Cookbook Curator //
 import cooking from './cookbook/cooking.svg';
 import cookbook_header from './cookbook/cookbook.png';
+import cookbook_banner from './cookbook/cookbook_banner.png';
 
 // Got the Beat //
 import game from './got-the-beat/game.svg';
@@ -60,6 +61,7 @@ export {
   burger_stack_header,
   computer_hands,
   contact,
+  cookbook_banner,
   cookbook_header,
   cooking,
   dots,

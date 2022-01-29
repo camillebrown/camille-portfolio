@@ -18,6 +18,10 @@ const ProjectDetail = () => {
   const url = useParams();
   const selected_project = projects.find((proj) => proj.id === url.id);
 
+  let diffBanner =
+    selected_project.id === 'cookbook' ? { objectPosition: '50% 50%' } : '';
+  console.log(diffBanner);
+
   console.log(selected_project);
 
   useEntryScroll('.entry-load', 'fade-in-top');
@@ -61,8 +65,16 @@ const ProjectDetail = () => {
     <>
       <div style={{ height: '6rem' }} />
       <div className="project-detail_header">
-        <div className="project-detail_header-img">
-          <img src={selected_project.images[2]} alt={selected_project.alt} />
+        <div className="project-detail_header-img-container">
+          <img
+            src={selected_project.images[2]}
+            alt={selected_project.alt}
+            className={
+              selected_project.id === 'cookbook'
+                ? 'project-detail_header-img-diff'
+                : 'project-detail_header-img'
+            }
+          />
         </div>
         <div className="project-detail_header-content">
           <h1>{selected_project.title}</h1>

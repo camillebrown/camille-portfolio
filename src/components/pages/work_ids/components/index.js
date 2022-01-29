@@ -1,17 +1,17 @@
-import Better from '../Better/Better'
-import GPT from '../GPT/GPT'
-import BurgerStack from './BurgerStack'
-import CKLogin from './CKLogin'
-import CookbookCurator from './CookbookCurator'
-import GotTheBeat from './GotTheBeat'
-import MintHoney from './MintHoney'
+import Better from '../Better/Better';
+import BurgerStack from './BurgerStack';
+import CKLogin from './CKLogin';
+import CookbookCurator from '../CookbookCurator/CookbookCurator';
+import GPT from '../GPT/GPT';
+import GotTheBeat from './GotTheBeat';
+import MintHoney from './MintHoney';
 
 export {
   Better,
-  GPT,
   BurgerStack,
   CKLogin,
   CookbookCurator,
+  GPT,
   GotTheBeat,
-  MintHoney
-}
+  MintHoney,
+};
