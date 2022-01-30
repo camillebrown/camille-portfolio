@@ -8,7 +8,7 @@ export default function MainHeader({ selected_project }) {
       <div className="project-detail-column1">
         <div className="project-detail-main_img">
           <img
-            src={selected_project.images[2]}
+            src={selected_project.images[3]}
             alt={selected_project.alt}
             className="entry-load"
           />

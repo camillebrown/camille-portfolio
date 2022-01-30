@@ -260,4 +260,5 @@
 .project-detail__footer-gridicon:hover,
 .project-detail__footer-content h2:hover {
   color: var(--color-grey-tabs);
+  cursor: pointer;
 }

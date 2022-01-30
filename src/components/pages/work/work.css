@@ -22,13 +22,15 @@
 .project-div {
   position: relative;
   margin: auto;
-  border-radius: 3px;
-  border: 1px solid var(--color-grey-border);
   margin-bottom: 1rem;
 }
 
+.project-div:hover {
+  cursor: pointer;
+}
+
 .project-div .project-div-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   position: absolute;
   height: 99%;
   width: 100%;
@@ -47,9 +49,10 @@
 }
 
 .project-div-image {
+  height: 100%;
   width: 100%;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  object-fit: cover;
+  border-radius: 3px;
 }
 
 .project-div-details {
@@ -108,4 +111,20 @@
 
 .fadeIn-top {
   top: 20%;
+}
+
+.wp__cc-header {
+  height: 500px;
+}
+
+.wp__gtb-header {
+  height: 650px;
+}
+
+.wp__gpt-header {
+  height: 350px;
+}
+
+.wp__better-header {
+  height: 400px;
 }

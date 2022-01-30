@@ -18,6 +18,9 @@ const ProjectDetail = () => {
   const url = useParams();
   const selected_project = projects.find((proj) => proj.id === url.id);
 
+  const diff =
+    selected_project.id === 'better' || selected_project.id === 'cookbook';
+
   useEntryScroll('.entry-load', 'fade-in-top');
   useEntryScroll('.square', 'swing-in-top-fwd');
   useEntryScroll('.project-detail__img', 'swing-in-top-fwd');
@@ -64,7 +67,7 @@ const ProjectDetail = () => {
             src={selected_project.images[2]}
             alt={selected_project.alt}
             className={
-              selected_project.id === 'cookbook'
+              diff
                 ? 'project-detail_header-img-diff'
                 : 'project-detail_header-img'
             }

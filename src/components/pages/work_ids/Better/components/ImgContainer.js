@@ -16,7 +16,7 @@ export default function ImgContainer({ selected_project }) {
           <div className="better-detail__column1">
             <img
               className="project-detail__img"
-              src={selected_project.images[1]}
+              src={selected_project.images[7]}
               alt="Better Headers"
             />
             <p>Custom Page Headers</p>
@@ -36,7 +36,7 @@ export default function ImgContainer({ selected_project }) {
             <div>
               <img
                 className="project-detail__img"
-                src={selected_project.images[3]}
+                src={selected_project.images[4]}
                 alt="Better ERD"
               />
               <p>ERD</p>
@@ -45,12 +45,12 @@ export default function ImgContainer({ selected_project }) {
               <div>
                 <img
                   className="project-detail__img"
-                  src={selected_project.images[4]}
+                  src={selected_project.images[5]}
                   alt="Better Diet Chart"
                 />
                 <img
                   className="project-detail__img"
-                  src={selected_project.images[5]}
+                  src={selected_project.images[6]}
                   alt="Better Mood Chart"
                 />
                 <p>Example Charts</p>

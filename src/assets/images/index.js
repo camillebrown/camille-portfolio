@@ -1,6 +1,7 @@
 // Better //
 import fitness from './better/fitness.svg';
-import better_header from './better/better.png';
+import better from './better/better.png';
+import better_header from './better/better-header.png';
 import better_homepage from './better/full-home.png';
 import better_diet from './better/dietchart.png';
 import better_mood from './better/moodchart.png';
@@ -16,7 +17,7 @@ import login_header from './ck-login/ck-login.png';
 
 // Cookbook Curator //
 import cooking from './cookbook/cooking.svg';
-import cookbook_header from './cookbook/cookbook.png';
+import cookbook_header from './cookbook/cookbook_banner.png';
 import cookbook_banner from './cookbook/cookbook_banner.png';
 import cookbook_homepage from './cookbook/cc-homepage.png';
 import cookbook_categories from './cookbook/categories.png';
@@ -26,7 +27,7 @@ import cookbook_landing from './cookbook/my-cookbook.png';
 
 // Got the Beat //
 import game from './got-the-beat/game.svg';
-import gtb_header from './got-the-beat/gotthebeat.png';
+import gtb_header from './got-the-beat/gtb-header(2).png';
 import gtb_banner from './got-the-beat/gtb-banner.png';
 import gtb_start from './got-the-beat/start.png';
 import gtb_home from './got-the-beat/home.png';
@@ -35,8 +36,7 @@ import gtb_incorrect from './got-the-beat/wrong.png';
 
 // GPT //
 import responsive from './gpt/responsive.svg';
-import gpt_header from './gpt/gpt.png';
-import gpt_homepage from './gpt/gpt_homepage.png';
+import gpt_header from './gpt/gpt-header.png';
 import gpt_full from './gpt/gpt_full.png';
 import gpt_mobile1 from './gpt/gpt-mobile1.png';
 import gpt_mobile2 from './gpt/gpt-mobile2.png';
@@ -62,6 +62,7 @@ import profile4 from './general/profile-4.jpg';
 import sent from './general/sent.gif';
 
 export {
+  better,
   better_erd,
   better_header,
   better_homepage,
@@ -86,7 +87,6 @@ export {
   game,
   gpt_full,
   gpt_header,
-  gpt_homepage,
   gpt_mobile1,
   gpt_mobile2,
   gpt_mobile3,
