@@ -18,6 +18,11 @@ import login_header from './ck-login/ck-login.png';
 import cooking from './cookbook/cooking.svg';
 import cookbook_header from './cookbook/cookbook.png';
 import cookbook_banner from './cookbook/cookbook_banner.png';
+import cookbook_homepage from './cookbook/cc-homepage.png';
+import cookbook_categories from './cookbook/categories.png';
+import cookbook_detail from './cookbook/recipe-detail.png';
+import cookbook_new from './cookbook/new-recipe.png';
+import cookbook_landing from './cookbook/my-cookbook.png';
 
 // Got the Beat //
 import game from './got-the-beat/game.svg';
@@ -63,6 +68,11 @@ export {
   contact,
   cookbook_banner,
   cookbook_header,
+  cookbook_homepage,
+  cookbook_categories,
+  cookbook_detail,
+  cookbook_new,
+  cookbook_landing,
   cooking,
   dots,
   draw,

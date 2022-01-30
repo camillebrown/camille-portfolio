@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-.project-detail-main_content-heading span {
+.gpt-detail-main_content-span {
   color: #AE67FA;
   font-weight: 900;
 }
@@ -48,7 +48,7 @@
   padding-bottom: 1.2rem;
 }
 
-.gpt-detail__additional{
+.gpt-detail__additional {
   width: 80%;
   margin: 2rem auto;
 }

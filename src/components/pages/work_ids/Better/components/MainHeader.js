@@ -1,7 +1,6 @@
 import React from 'react';
-import { startCase } from 'lodash';
 
-import { Buttons } from './';
+import { ProjectButtons, LangsClient } from '../../ProjComponents';
 
 export default function MainHeader({ selected_project }) {
   return (
@@ -24,23 +23,7 @@ export default function MainHeader({ selected_project }) {
             charts and graphs that make it easy to understand, the user can get
             insights into how each goal gets 'better'.
           </div>
-          <div className="project-detail-main_lang">
-            <h6 className="entry-load">Languages</h6>
-            {selected_project.languages.map((lang, i) => {
-              return (
-                <span key={i} className="entry-load">
-                  {startCase(lang)}
-                  {i + 1 !== selected_project.languages.length && (
-                    <span>, </span>
-                  )}
-                </span>
-              );
-            })}
-          </div>
-          <div className="project-detail-main_client">
-            <h6 className="entry-load">Client</h6>
-            <span className="entry-load">{selected_project.client}</span>
-          </div>
+          <LangsClient selected_project={selected_project} />
           <div className="project-detail-main_desc">
             <h6 className="entry-load">Goal</h6>
             <span className="entry-load">
@@ -51,7 +34,7 @@ export default function MainHeader({ selected_project }) {
             </span>
           </div>
         </div>
-        <Buttons selected_project={selected_project} />
+        <ProjectButtons selected_project={selected_project} />
       </div>
     </div>
   );
