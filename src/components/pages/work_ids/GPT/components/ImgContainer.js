@@ -1,8 +1,10 @@
 import React from 'react';
 
 import MobileDisplay from '../../../../shared/mobile-display/MobileDisplay.js';
+import { gpt_mobile1, gpt_mobile2, gpt_mobile3 } from '../../../../../assets/images';
 
 export default function ImgContainer() {
+  const images = [gpt_mobile1, gpt_mobile2, gpt_mobile3];
   return (
     <div className="project-detail__asset-container">
       <p>Original Wireframe</p>
@@ -15,7 +17,7 @@ export default function ImgContainer() {
       <div className="gpt-detail__additional">
         <p>Additional Assets</p>
         <div className="gpt-detail__img-group">
-          <MobileDisplay />
+          <MobileDisplay images={images} />
         </div>
       </div>
     </div>

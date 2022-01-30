@@ -3,7 +3,7 @@ import BurgerStack from './BurgerStack';
 import CKLogin from './CKLogin';
 import CookbookCurator from '../CookbookCurator/CookbookCurator';
 import GPT from '../GPT/GPT';
-import GotTheBeat from './GotTheBeat';
+import GotTheBeat from '../GotTheBeat/GotTheBeat';
 import MintHoney from './MintHoney';
 
 export {

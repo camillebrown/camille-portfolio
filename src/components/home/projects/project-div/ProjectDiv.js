@@ -12,7 +12,7 @@ export default function ProjectDiv({ tag }) {
     'gpt3',
     'mint',
     'cookbook',
-    'got_the_beat',
+    'got-the-beat',
   ];
 
   switch (tag) {

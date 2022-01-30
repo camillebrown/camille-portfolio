@@ -27,6 +27,11 @@ import cookbook_landing from './cookbook/my-cookbook.png';
 // Got the Beat //
 import game from './got-the-beat/game.svg';
 import gtb_header from './got-the-beat/gotthebeat.png';
+import gtb_banner from './got-the-beat/gtb-banner.png';
+import gtb_start from './got-the-beat/start.png';
+import gtb_home from './got-the-beat/home.png';
+import gtb_correct from './got-the-beat/right.png';
+import gtb_incorrect from './got-the-beat/wrong.png';
 
 // GPT //
 import responsive from './gpt/responsive.svg';
@@ -86,6 +91,11 @@ export {
   gpt_mobile2,
   gpt_mobile3,
   gtb_header,
+  gtb_banner,
+  gtb_start,
+  gtb_home,
+  gtb_correct,
+  gtb_incorrect,
   login,
   login_header,
   mh_header,

@@ -1,0 +1,23 @@
+.gtb-detail__asset-wireframes {
+  margin: 2rem auto;
+}
+
+.gtb-detail__asset-wireframes-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.gtb-detail__asset-wireframes-secondary {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gtb-detail-main_content-span {
+  color: #3FCECE;
+  font-weight: 900;
+}

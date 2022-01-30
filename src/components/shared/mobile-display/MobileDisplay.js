@@ -1,26 +1,19 @@
 import React from 'react';
 
 import './mobile_display.css';
-import { gpt_mobile1, gpt_mobile2, gpt_mobile3 } from '../../../assets/images';
 
-export default function MobileDisplay() {
+export default function MobileDisplay({ images }) {
   return (
     <div className="mobile-dislays">
-      <div className="smartphone">
-        <div className="content">
-          <img src={gpt_mobile3} alt="GPT Mobile View 3" />
-        </div>
-      </div>
-      <div className="smartphone">
-        <div className="content">
-          <img src={gpt_mobile2} alt="GPT Mobile View 2" />
-        </div>
-      </div>
-      <div className="smartphone">
-        <div className="content">
-          <img src={gpt_mobile1} alt="GPT Mobile View 1" />
-        </div>
-      </div>
+      {images.map((img) => {
+        return (
+          <div className="smartphone">
+            <div className="content">
+              <img src={img} alt="GPT Mobile View 3" />
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

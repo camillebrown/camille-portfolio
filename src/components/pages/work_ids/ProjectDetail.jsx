@@ -18,12 +18,6 @@ const ProjectDetail = () => {
   const url = useParams();
   const selected_project = projects.find((proj) => proj.id === url.id);
 
-  let diffBanner =
-    selected_project.id === 'cookbook' ? { objectPosition: '50% 50%' } : '';
-  console.log(diffBanner);
-
-  console.log(selected_project);
-
   useEntryScroll('.entry-load', 'fade-in-top');
   useEntryScroll('.square', 'swing-in-top-fwd');
   useEntryScroll('.project-detail__img', 'swing-in-top-fwd');
@@ -39,7 +33,7 @@ const ProjectDetail = () => {
       case 'cookbook': {
         return <CookbookCurator selected_project={selected_project} />;
       }
-      case 'got_the_beat': {
+      case 'got-the-beat': {
         return <GotTheBeat selected_project={selected_project} />;
       }
       case 'gpt3': {

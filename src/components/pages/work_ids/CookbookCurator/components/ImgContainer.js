@@ -23,7 +23,7 @@ export default function ImgContainer({ selected_project }) {
         <div className='cc-detail__additional-iframe'>
           <iframe
             allowFullScreen
-            frameborder="0"
+            frameBorder="0"
             style={{
               width: '840px',
               height: '680px',
