@@ -53,7 +53,6 @@ export const projects = [
     git: '//www.github.com/camillebrown/Better-frontend',
     url: '//better-you-app.herokuapp.com/',
     classname: '',
-    work_page_classname: 'wp__better-header',
     category: 'Full Stack Application',
     client: 'General Assembly',
     images: [
@@ -84,7 +83,6 @@ export const projects = [
     git: '//www.github.com/camillebrown/CookbookCurator',
     url: '//cookbook-curator.herokuapp.com/',
     classname: 'cook',
-    work_page_classname: 'wp__cc-header',
     category: 'Full Stack Application',
     client: 'General Assembly',
     images: [
@@ -107,7 +105,6 @@ export const projects = [
     git: '//www.github.com/camillebrown/GOT-THE-BEAT-GAME',
     url: '//camillebrown.github.io/GOT-THE-BEAT-GAME/',
     classname: '',
-    work_page_classname: 'wp__gtb-header',
     category: 'Frontend Application',
     client: 'General Assembly',
     images: [
@@ -129,7 +126,6 @@ export const projects = [
     git: '//www.github.com/camillebrown/ck-login',
     url: '//www.creditkey.com/app/users/sign_in',
     classname: 'login',
-    work_page_classname: 'wp__ck-header',
     category: 'Web Design',
     client: 'Credit Key',
     images: [login, login_header, login_header, login_figma],
@@ -143,7 +139,6 @@ export const projects = [
     git: '//www.github.com/camillebrown/mint-and-honey',
     url: '//mintandhoney.netlify.app',
     classname: 'mint',
-    work_page_classname: 'wp__mint-header',
     category: 'Web Design',
     client: 'Personal Project',
     images: [
@@ -167,7 +162,6 @@ export const projects = [
     git: '//www.github.com/camillebrown/gpt3-responsive',
     url: '//gpt-template-redesign.netlify.app/',
     classname: 'responsive',
-    work_page_classname: 'wp__gpt-header',
     category: 'Web Design',
     client: 'Personal Project',
     images: [responsive, gpt_header, gpt_header, gpt_full, gtb_banner],

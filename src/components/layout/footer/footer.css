@@ -77,9 +77,21 @@
   background: var(--color-brown-background);
 }
 
+.footer_links-info {
+  margin-top: 0.25rem;
+}
+
 .footer_links-webrights {
-  font-size: 16px;
-  margin: 0.25rem auto;
+  margin-bottom: 1rem;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer_links-webrights p,
+.footer_links-webrights span {
+  margin: 0 0.15rem;
 }
 
 .icons {

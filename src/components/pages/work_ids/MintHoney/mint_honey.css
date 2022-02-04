@@ -40,10 +40,21 @@
 .mh-detail__main1 {
   margin: 2rem auto;
   height: 35vh;
+  width: 100%;
+  background: var(--color-grey-hover);
 }
 
 .mh-detail__main1 img {
   height: 80%;
+}
+
+.mh-detail__main1 p,
+.mh-detail__main1 a {
+  color: white;
+}
+
+.mh-detail__main1 a:hover {
+  color: #EFCC91;
 }
 
 .mh-detail__main2 {

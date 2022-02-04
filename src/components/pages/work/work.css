@@ -1,5 +1,6 @@
 .work {
-  padding: 3rem 10rem;
+  padding: 0rem 10rem;
+  width: 100%;
 }
 
 .work-container {
@@ -22,7 +23,7 @@
 .project-div {
   position: relative;
   margin: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-div:hover {
@@ -49,7 +50,7 @@
 }
 
 .project-div-image {
-  height: 100%;
+  height: 45vh;
   width: 100%;
   object-fit: cover;
   border-radius: 3px;
@@ -111,28 +112,4 @@
 
 .fadeIn-top {
   top: 20%;
-}
-
-.wp__cc-header {
-  height: 500px;
-}
-
-.wp__gtb-header {
-  height: 650px;
-}
-
-.wp__gpt-header {
-  height: 350px;
-}
-
-.wp__better-header {
-  height: 400px;
-}
-
-.wp__mint-header {
-  height: 400px;
-}
-
-.wp__ck-header {
-  height: 325px;
 }

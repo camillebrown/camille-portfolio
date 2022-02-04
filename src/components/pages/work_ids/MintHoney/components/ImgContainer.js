@@ -15,7 +15,7 @@ export default function ImgContainer({ selected_project }) {
               target="_blank"
               style={{ marginLeft: '0.2rem' }}
             >
-              Credit: Tyler Misha Design
+              Credit: Tyler Mishá
             </a>
           </div>
           <div className="mh-detail__main2">

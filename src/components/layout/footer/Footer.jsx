@@ -52,8 +52,13 @@ const Footer = () => {
         </div>
       )}
       <div className="footer_links-div">
+        <p className="footer_links-info">
+          Built and designed by Camille Brown.
+        </p>
         <p className="footer_links-webrights">
-          Camille Brown {new Date().getFullYear()}. All rights reserved.
+          <p>All rights reserved </p>
+          <span style={{ fontSize: '28px', paddingTop: '10px' }}>©</span>
+          <p>{new Date().getFullYear()}.</p>
         </p>
         <div className="footer_links-icons">
           <SocialIcons className="icons" />

@@ -1,5 +1,4 @@
 import React from 'react';
-import classnames from 'classnames';
 
 export default function ProjectDiv(array) {
   return array.map((proj) => {
@@ -8,10 +7,7 @@ export default function ProjectDiv(array) {
         <a href={`/work/${proj.id}`}>
           <div className="project-div-overlay"></div>
           <img
-            className={classnames(
-              'project-div-image',
-              proj.work_page_classname,
-            )}
+            className="project-div-image"
             src={proj.images[1]}
             alt={proj.alt}
           />

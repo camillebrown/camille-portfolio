@@ -8,7 +8,7 @@ const Work = () => {
   const column1 = [projects[0], projects[4]];
   const column2 = [projects[1], projects[5]];
   const column3 = [projects[2], projects[3]];
-  
+
   return (
     <>
       <div style={{ height: '6rem' }} />
