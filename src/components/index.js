@@ -16,4 +16,4 @@ export { default as Projects } from './home/projects/Projects';
 export { default as About } from './pages/about/About';
 export { default as Contact } from './pages/contact/Contact';
 export { default as Work } from './pages/work/Work';
-export { default as ProjectDetail } from './pages/work_ids/ProjectDetail';
+export { ProjectDetail } from './pages/work_ids/components';

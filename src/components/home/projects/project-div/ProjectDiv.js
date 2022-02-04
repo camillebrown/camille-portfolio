@@ -33,7 +33,7 @@ export default function ProjectDiv({ tag }) {
       break;
     case 'css':
       array = projects.filter((proj) => {
-        return proj.languages.includes('css');
+        return proj.languages.includes('CSS');
       });
       break;
     default:

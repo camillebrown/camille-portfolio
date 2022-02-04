@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Cursor } from './';
-import { ProjectButtons, LangsClient } from '../../ProjComponents';
+import { ProjectButtons, LangsClient } from '../../components';
 
 export default function MainHeader({ selected_project }) {
   return (

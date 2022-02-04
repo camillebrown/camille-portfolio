@@ -20,17 +20,14 @@ export default function ImgContainer({ selected_project }) {
               alt="Better Headers"
             />
             <p>Custom Page Headers</p>
-            <span>
-              Credit:
-              <a
-                href="https://www.tylermisha.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-                style={{ marginLeft: '0.2rem' }}
-              >
-                Tyler Misha Design
-              </a>
-            </span>
+            <a
+              href="https://www.tylermisha.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+              style={{ marginLeft: '0.2rem' }}
+            >
+              Credit: Tyler Misha Design
+            </a>
           </div>
           <div className="better-detail__column2">
             <div>

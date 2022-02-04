@@ -53,7 +53,7 @@ const Footer = () => {
       )}
       <div className="footer_links-div">
         <p className="footer_links-webrights">
-          Camille Brown © {new Date().getFullYear()}. All rights reserved.
+          Camille Brown {new Date().getFullYear()}. All rights reserved.
         </p>
         <div className="footer_links-icons">
           <SocialIcons className="icons" />

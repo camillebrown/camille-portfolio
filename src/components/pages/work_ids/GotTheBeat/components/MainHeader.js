@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ProjectButtons, LangsClient } from '../../ProjComponents';
+import { ProjectButtons, LangsClient } from '../../components';
 
 export default function MainHeader({ selected_project }) {
   return (

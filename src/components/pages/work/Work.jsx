@@ -5,9 +5,9 @@ import ProjectDiv from './ProjectDiv';
 import { projects } from '../../../assets/project_data';
 
 const Work = () => {
-  const column1 = [projects[0], projects[3]];
-  const column2 = [projects[1], projects[6], projects[5]];
-  const column3 = [projects[2], projects[4]];
+  const column1 = [projects[0], projects[4]];
+  const column2 = [projects[1], projects[5]];
+  const column3 = [projects[2], projects[3]];
   
   return (
     <>

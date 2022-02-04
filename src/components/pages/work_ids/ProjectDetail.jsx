@@ -4,22 +4,20 @@ import { useParams } from 'react-router-dom';
 import {
   Better,
   GPT,
-  BurgerStack,
   CKLogin,
   CookbookCurator,
   GotTheBeat,
   MintHoney,
 } from './components';
 import useEntryScroll from '../../../hooks/useEntryScroll';
+import { ProjectDetailFooter } from './components';
 import { projects } from '../../../assets/project_data';
-import ProjectDetailFooter from './ProjectDetailFooter';
 
 const ProjectDetail = () => {
   const url = useParams();
   const selected_project = projects.find((proj) => proj.id === url.id);
 
-  const diff =
-    selected_project.id === 'better' || selected_project.id === 'cookbook';
+  const diff = ['better', 'cookbook', 'mint', 'ck-login'].includes(selected_project.id);
 
   useEntryScroll('.entry-load', 'fade-in-top');
   useEntryScroll('.square', 'swing-in-top-fwd');
@@ -30,7 +28,7 @@ const ProjectDetail = () => {
       case 'better': {
         return <Better selected_project={selected_project} />;
       }
-      case 'ck_login': {
+      case 'ck-login': {
         return <CKLogin selected_project={selected_project} />;
       }
       case 'cookbook': {
@@ -41,9 +39,6 @@ const ProjectDetail = () => {
       }
       case 'gpt3': {
         return <GPT selected_project={selected_project} />;
-      }
-      case 'burger_stack': {
-        return <BurgerStack selected_project={selected_project} />;
       }
       case 'mint': {
         return <MintHoney selected_project={selected_project} />;

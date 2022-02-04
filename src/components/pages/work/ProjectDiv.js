@@ -1,13 +1,11 @@
 import React from 'react';
 import classnames from 'classnames';
-import { useNavigate } from 'react-router-dom';
 
 export default function ProjectDiv(array) {
-  const navigate = useNavigate();
   return array.map((proj) => {
     return (
       <div className="project-div" key={proj.id}>
-        <div onClick={() => navigate(`/work/${proj.id}`)}>
+        <a href={`/work/${proj.id}`}>
           <div className="project-div-overlay"></div>
           <img
             className={classnames(
@@ -22,7 +20,7 @@ export default function ProjectDiv(array) {
             <h6>{proj.category}</h6>
             <p>View More</p>
           </div>
-        </div>
+        </a>
       </div>
     );
   });
