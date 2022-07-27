@@ -1,5 +1,5 @@
 import contact from '../../images/main/contact.png';
-import portfolio from '../../images/main/portfolio.jpeg';
+import portfolio from '../../images/main/portfolio.jpg';
 
 export const homeObjOne = {
   id: 'about',

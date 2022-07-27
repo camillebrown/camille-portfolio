@@ -10,9 +10,13 @@ import {
   SiPostgresql,
 } from 'react-icons/si';
 
+import apga from '../../images/work/apga-home.png';
+import banddeux from '../../images/work/banddeux-home.png';
+import beat from '../../images/work/gotthebeat-home.png';
 import better from '../../images/work/better-home.png';
 import cookbook from '../../images/work/cookbook-home.png';
-import beat from '../../images/work/gotthebeat-home.png';
+import gpt from '../../images/work/gpt-home.png';
+import squarespace from '../../images/work/squarespace.png';
 
 export const projects = [
   {
@@ -100,5 +104,53 @@ export const projects = [
         icon: SiCss3,
       },
     ],
+  },
+  {
+    id: 'apga',
+    title: 'APGA Foundation',
+    description:
+      'The APGA Foundation provides underserved youth with the knowledge and opportunity to grow into healthy and independent adults.',
+    git: null,
+    url: '//advocatesfoundation.org/',
+    img: apga,
+    alt: 'APGA Foundation Home Page',
+    page: '/work/apga',
+    label: 'APGA Foundation Site',
+    squarespace: squarespace,
+  },
+  {
+    id: 'gpt',
+    title: 'GPT-3 Responsive',
+    description:
+      'The GPT-3 Responsive site was created to practice fully responsive UI/UX design & recreation and soft animations with complex gradients.',
+    git: '//www.github.com/camillebrown/gpt3-responsive',
+    url: '//gpt-template-redesign.netlify.app/',
+    img: gpt,
+    alt: 'GPT-3 Responsive Home Page',
+    page: '/work/gpt',
+    label: 'GPT-3 Responsive Site',
+    langs: [
+      {
+        name: 'Javascript',
+        icon: SiJavascript,
+      },
+      {
+        name: 'CSS',
+        icon: SiCss3,
+      },
+    ],
+  },
+  {
+    id: 'banddeux',
+    title: 'The Banddeux',
+    description:
+      'The Banndeux is a creative collective focused on creating and building community & partnerships.',
+    git: null,
+    url: '//www.thebanddeux.com/',
+    img: banddeux,
+    alt: 'The Banndeux Home Page',
+    page: '/work/banddeux',
+    label: 'The Banndeux Site',
+    squarespace: squarespace,
   },
 ];

@@ -19,7 +19,7 @@ import {
   MainContainer,
 } from './page-css-elements/AboutPageElements';
 import { PageTitle, PageHeader } from '../components/Projects/ProjectElements';
-import about from '../images/about/compgirl.jpeg';
+import about from '../images/about/about.JPG';
 import StaticNavbar from '../components/layout/StaticNav';
 
 export default function About() {
@@ -28,7 +28,7 @@ export default function About() {
       <StaticNavbar />
       <MainContainer className="is-flex is-justify-content-center is-align-items-center">
         <MainBackground className="columns is-relative">
-          <MainBlock1 className="column is-half" />
+          <MainBlock1 className="column is-three-quarters" />
           <MainBlock2 className="column" />
         </MainBackground>
         <MainWrapper className="is-flex is-justify-content-center">

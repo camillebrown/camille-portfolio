@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const WorkPageContainer = styled.div`
   max-width: 90%;
-  height: 76vh;
+  min-height: 76vh;
   max-width: 80%;
   line-height: 28px;
   color: #444443;

@@ -33,8 +33,12 @@ const Contact = () => {
   });
   const templateParams = {
     to_name: 'Camille',
-    from_name: `${messageData.first_name} ${messageData.last_name}`,
-    message: JSON.stringify(messageData),
+    first_name: messageData.first_name,
+    last_name: messageData.last_name,
+    email: messageData.email,
+    phone: messageData.phone,
+    message: messageData.description,
+    found_me: messageData.found_me,
     reply_to: messageData.email,
   };
 
@@ -47,8 +51,8 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .send(
-        'service_32otv78',
-        'template_6k8wzys',
+        'gmail_service',
+        'gmail_template',
         templateParams,
         'user_AxUyMqgma7USNm7CnwYoZ',
       )

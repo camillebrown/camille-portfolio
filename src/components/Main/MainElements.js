@@ -100,8 +100,8 @@ export const MainRow = styled.div`
 
 export const Column1 = styled.div`
   grid-area: col1;
-  padding: 0px 20px;
-  margin: 0px 40px;
+  padding: 0px 10px;
+  margin: 0px 20px;
 
   @media screen and (max-width: 768px) {
     margin: 30px 0px;
