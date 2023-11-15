@@ -1,23 +1,37 @@
-import './index.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages';
-import About from './pages/about';
-import Work from './pages/work';
-import Contact from './pages/contact';
-import StaticFooter from './components/layout/StaticFooter';
+import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
-function App() {
+import About from './components/pages/About/About';
+import Contact from './components/pages/Contact/Contact';
+import Container from './components/Layout/Container';
+import Home from './components/pages/Home/Intro';
+import ProjectDetail from './components/pages/ProjectDetail/ProjectDetail';
+import Work from './components/pages/Work/Work';
+
+import {
+  faArrowRightLong,
+  faBars,
+  faCheck,
+  faChevronDown,
+  faXmark,
+} from '@fortawesome/free-solid-svg-icons';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+// Add icons to FA library for global usage
+library.add(faArrowRightLong, faCheck, faBars, faXmark, faChevronDown);
+
+export default function App() {
+  const location = useLocation();
   return (
-    <Router>
-      <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} exact />
-        <Route path="/work" component={Work} exact />
-        <Route path="/contact" component={Contact} exact />
-      </Switch>
-      <StaticFooter />
-    </Router>
+    <Container>
+      <Routes location={location}>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/work" element={<Work />} />
+        <Route exact path="/work/:id" element={<ProjectDetail />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<Contact />} />
+      </Routes>
+    </Container>
   );
 }
-
-export default App;

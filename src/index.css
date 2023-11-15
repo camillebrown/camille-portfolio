@@ -1,99 +1,65 @@
-@import '~@creativebulma/bulma-divider';
-@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Lato:wght@100;300;400;500;600;700;900&family=Lora&family=Montserrat:wght@200&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:empty.divider:before {
-  margin-right: 0;
-}
-
-:empty.divider:after {
-  margin-left: 0;
-}
-
-.close-icon {
-  transform: translate(-100%, 60%);
-  cursor: pointer;
-  color: #444443;
-}
-
-.profile-pic {
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  width: 80%;
-}
-
-.profile-pic2 {
-  border-radius: 6px;
-  border: 2px solid #df9c37;
-  padding: 30px;
-  width: 75%;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.proj-wrapper {
-  grid-template-columns: 1fr;
-  max-width: 90%;
-}
-
-.card-image {
-  min-height: 22.5vh;
-}
-
-.card-image img{
-  object-fit: cover;
-}
-
-.gtb {
-  padding: 0 20px;
-}
-
-@media screen and (max-width: 1024px) {
-  .gtb {
-    padding: 0px;
+@layer base {
+  @font-face {
+    font-family: gotham-black;
+    src: url('./assets/fonts/Gotham-Black.otf');
   }
-
-  .profile-pic2 {
-    width: 100%;
+  @font-face {
+    font-family: gotham-bold;
+    src: url('./assets/fonts/Gotham-Bold.otf');
+  }
+  @font-face {
+    font-family: gotham-book;
+    src: url('./assets/fonts/Gotham-Book.otf');
+  }
+  @font-face {
+    font-family: gotham-light;
+    src: url('./assets/fonts/Gotham-Light.otf');
+  }
+  @font-face {
+    font-family: gotham-medium;
+    src: url('./assets/fonts/Gotham-Medium.otf');
+  }
+  @font-face {
+    font-family: la-belle;
+    src: url('./assets/fonts/LaBelleAurore.woff2');
+  }
+  @font-face {
+    font-family: dream-ave;
+    src: url('./assets/fonts/Dream-Avenue.ttf');
   }
 }
 
-@media screen and (max-width: 768px) {
-  .contact-margin {
-    height: 150vh !important;
-  }
-
-  .profile-pic,
-  .profile-pic2 {
-    transform: scale(0.8);
-  }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #c8c8c8 !important;
 }
 
-@media only screen and (device-width: 414px) {
-  .about-margin {
-    margin-top: 30px;
-  }
-
-  .contact-margin {
-    margin-top: -100px;
-    margin-bottom: 100px;
-  }
+input:-moz-autofill,
+input:-moz-autofill:hover,
+input:-moz-autofill:focus {
+    background: transparent !important;
 }
 
-@media only screen and (device-width: 390px) {
-  .contact-margin {
-    margin-top: -175px;
-    margin-bottom: 50px;
-  }
-}
-
-@media only screen and (device-width: 375px) {
-  .contact-margin {
-    margin-top: -100px;
-  }
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label,
+textarea:focus ~ label,
+textarea:not(:placeholder-shown) ~ label {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-scale-x: 0.75;
+  --tw-scale-y: 0.75;
+  --tw-translate-y: -1.1rem;
 }
