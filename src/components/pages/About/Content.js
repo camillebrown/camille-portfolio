@@ -35,7 +35,7 @@ export default function Content() {
           myself in new cultures. Let's connect and share experiences!
         </p>
         <Link
-          to="//www.drive.google.com/file/d/1vbl_OcsZT4XjZu0KZk9IEOuulllBHP-z/view?usp=sharing"
+          to="https://drive.google.com/file/d/1vbl_OcsZT4XjZu0KZk9IEOuulllBHP-z/view?usp=drive_link"
           className="block pb transition-max-w duration-2000 ease-in-out border-b-2 hover:border-sage text-deep-gray font-gotham-medium max-w-5 hover:max-w-full hover:text-sage mb-6"
           target="_blank"
           rel="noopener noreferrer"
