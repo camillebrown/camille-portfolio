@@ -23,14 +23,19 @@ export default function PageFooter({ project }) {
           </p>
           <div className="flex flex-col xxs:flex-row gap-3 xxs:gap-0 justify-center items-center my-4 lg:my-10 w-full">
             <Link
-              to={project?.url}
+              to={project?.urlWorking ? project?.url : '/inprogress'}
+              state={{
+                percentage: project?.percentage,
+                projectTitle: project?.title,
+                projectID: project?.id,
+              }}
               className={classnames(
                 'mx-4 min-w-max w-1/4 inline-flex items-center justify-center gap-x-2 xxs:rounded-full xs:px-5 xs:py-2.5 text-xs 3xs:text-sm md:text-base lg:text-sm uppercase font-gotham-book xs:text-deep-gray xs:shadow-sm  transition-colors duration-500 ease-in-out xxs:hover:border-deep-gray pb border-b-2 border-deep-gray xxs:pb-0 xxs:border-none',
                 project?.buttonColor,
                 project?.headerTextColor
               )}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={project?.urlWorking ? '_blank' : '_self'}
+              rel={project?.urlWorking ? 'noopener noreferrer' : 'false'}
             >
               <FaDesktop
                 className="-ml-0.5 h-5 w-5 hidden xxs:inline"

@@ -7,6 +7,7 @@ import Container from './components/Layout/Container';
 import Home from './components/pages/Home/Intro';
 import ProjectDetail from './components/pages/ProjectDetail/ProjectDetail';
 import Work from './components/pages/Work/Work';
+import UnderConstruction from './components/pages/UnderConstruction';
 
 import {
   faArrowRightLong,
@@ -31,6 +32,7 @@ export default function App() {
         <Route exact path="/work/:id" element={<ProjectDetail />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/inprogress" element={<UnderConstruction />} />
       </Routes>
     </Container>
   );

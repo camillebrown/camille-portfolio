@@ -82,10 +82,15 @@ export default function MainContent({ project }) {
                     Github
                   </Link>
                   <Link
-                    to={project?.url}
+                    to={project?.urlWorking ? project?.url : '/inprogress'}
+                    state={{
+                      percentage: project?.percentage,
+                      projectTitle: project?.title,
+                      projectID: project?.id,
+                    }}
                     className="block capitalize pb lg:border-b-2 lg:border-transparent hover:border-sage hover:text-sage text-center 4xs:text-left"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={project?.urlWorking ? '_blank' : '_self'}
+                    rel={project?.urlWorking ? 'noopener noreferrer' : 'false'}
                   >
                     {project?.type}
                   </Link>

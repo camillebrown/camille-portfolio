@@ -26,7 +26,8 @@ export const projects = [
   {
     id: 'better',
     title: 'Better.',
-    customFontSize: 'leading-[7rem] text-heading-fluid md:leading-none md:text-9xl',
+    customFontSize:
+      'leading-[7rem] text-heading-fluid md:leading-none md:text-9xl',
     type: 'web application',
     headerColor: 'bg-rust',
     headerTextColor: 'text-base-tan',
@@ -34,7 +35,7 @@ export const projects = [
     figma: (
       <iframe
         src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FNYaHn4GiOgXZud07yDWa39%2FBetter.-App%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dma2BwPM136x43aRs-1"
-        allowfullscreen
+        allowFullScreen
         className="border border-deep-gray w-4/5 h-full mx-auto"
         title="better-figma"
       />
@@ -45,6 +46,8 @@ export const projects = [
       'The goal of this project was to make a full API-Connected, CRUD Web Application including user creation and authentication.',
     git: '//www.github.com/camillebrown/Better-frontend',
     url: '//better-you-app.herokuapp.com/',
+    urlWorking: false,
+    percentage: 27,
     img: better,
     tags: [
       'User Stories',
@@ -79,7 +82,8 @@ export const projects = [
   {
     id: 'cookbook-curator',
     title: 'Cookbook Curator',
-    customFontSize: 'text-mid-fluid xs:text-5xl sm:text-6xl md:text-mid-fluid xl:text-8xl',
+    customFontSize:
+      'text-mid-fluid xs:text-5xl sm:text-6xl md:text-mid-fluid xl:text-8xl',
     type: 'web application',
     headerColor: 'bg-sage',
     headerTextColor: 'text-deep-gray',
@@ -90,6 +94,8 @@ export const projects = [
       'The goal of this project was to make a full API-Connected, CRUD Web Application including user creation and authentication. Using the Spoonacular API, users search thousands of online recipes and also create their own.',
     git: '//www.github.com/camillebrown/CookbookCurator',
     url: '//cookbook-curator.herokuapp.com/',
+    urlWorking: false,
+    percentage: 39,
     img: cookbook,
     tags: [
       'User Stories',
