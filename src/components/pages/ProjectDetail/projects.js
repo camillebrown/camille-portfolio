@@ -142,6 +142,7 @@ export const projects = [
       'The goal of this project was to make a game style web application. This trivia game includes 3 multiple choice rounds: General Music Trivia, Finish the Lyrics and Guess the Artist',
     git: '//www.github.com/camillebrown/GOT-THE-BEAT-GAME',
     url: '//camillebrown.github.io/GOT-THE-BEAT-GAME/',
+    urlWorking: true,
     img: beat,
     tags: [
       'User Stories',
@@ -182,6 +183,7 @@ export const projects = [
       'The client wanted a revamped and brightly colored site to attract new youth members for their programs. Custom graphics were created and donation collection ability was added.',
     git: null,
     url: '//advocatesfoundation.org/',
+    urlWorking: true,
     img: apga,
     tags: [
       'Web Design',
@@ -209,6 +211,7 @@ export const projects = [
       'The goal of this project was to practice fully responsive design, understand and replicate an existing complex site and learn about animations, gradients and minor parallax scrolling.',
     git: '//www.github.com/camillebrown/gpt3-responsive',
     url: '//gpt-template-redesign.netlify.app/',
+    urlWorking: true,
     img: gpt,
     tags: [
       'React Functional Components',
@@ -246,6 +249,7 @@ export const projects = [
       'The client wanted a visually stimulating, magazine style site to build a community following. The web design highlights events and information for the Banddeux and its founders.',
     git: null,
     url: '//www.thebanddeux.com/',
+    urlWorking: true,
     img: banddeux,
     tags: [
       'Web Design',
